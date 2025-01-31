@@ -1,0 +1,22 @@
+version: '3.8'
+services:
+  redis:
+    image: redis:latest
+    container_name: redis_bullmq
+    restart: always
+    command: ["redis-server", "--loglevel", "verbose"]
+    ports:
+      - "6379:6379"
+    # volumes:
+    #   - redis_data:/data
+
+  redis-insight:
+    image: redislabs/redisinsight:latest
+    container_name: redis_insight
+    restart: always
+    ports:
+      - "5540:5540"
+
+# volumes:
+#   redis_data:
+#     driver: local
