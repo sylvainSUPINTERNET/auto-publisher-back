@@ -3,6 +3,10 @@ import { AppController } from './app.controller';
 import { AppService } from './app.service';
 import { BullModule } from '@nestjs/bullmq';
 import { ConfigModule } from '@nestjs/config';
+import { ConsumerMagicClip } from './consumers/magic-clip.consumer';
+import { Step1Consumer } from './consumers/step1/step1.consumer';
+import { Step2Consumer } from './consumers/step2.consumer';
+import { Step1EventListener } from './consumers/step1/step1.event-listener';
 
 @Module({
   imports: [
@@ -16,13 +20,16 @@ import { ConfigModule } from '@nestjs/config';
       },
     }),
     BullModule.registerQueue({
-      name: 'auto-clip',
+      name: 'magic-clip', //parent queue
+    }),
+    BullModule.registerQueue({
+      name: 'step1',
     }),
     BullModule.registerFlowProducer({
-      name: "flow-producer-auto-publisher"
+      name: "flow-producer-auto-clip"
     })
   ],
   controllers: [AppController],
-  providers: [AppService],
+  providers: [AppService, ConsumerMagicClip, Step1Consumer, Step2Consumer, Step1EventListener],
 })
 export class AppModule {}
