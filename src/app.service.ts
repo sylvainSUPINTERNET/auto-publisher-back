@@ -1,6 +1,6 @@
-import { InjectFlowProducer, InjectQueue } from '@nestjs/bullmq';
+import { InjectFlowProducer } from '@nestjs/bullmq';
 import { Injectable } from '@nestjs/common';
-import { FlowOpts, FlowProducer, Queue } from 'bullmq';
+import { FlowOpts, FlowProducer } from 'bullmq';
 
 @Injectable()
 export class AppService {
