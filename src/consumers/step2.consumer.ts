@@ -1,18 +1,25 @@
 import { Processor, WorkerHost } from "@nestjs/bullmq";
+import { Inject } from "@nestjs/common";
 import { Job } from "bullmq";
 
 @Processor('step2')
 export class Step2Consumer extends WorkerHost {
 
-    constructor() {
+    constructor(@Inject("REDIS_CLIENT") private redisClient) {
         super();
     }
 
     async process(job: Job, token?: string): Promise<any> {
 
+        const getDelResult = await this.redisClient.getdel("step1");
+        console.log("GET DEL RESULT", getDelResult);
 
-        let values = await job.getChildrenValues();
+        // let values = await job.getChildrenValues();
         console.log("JOB STEP 2");
+
+        await job.updateProgress(50);
+
+
 
         
 

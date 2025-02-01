@@ -1,14 +1,36 @@
 import { InjectFlowProducer, InjectQueue } from '@nestjs/bullmq';
 import { Injectable } from '@nestjs/common';
-import { FlowProducer, Queue } from 'bullmq';
+import { FlowOpts, FlowProducer, Queue } from 'bullmq';
 
 @Injectable()
 export class AppService {
+
+  private flowOpts: FlowOpts = {
+    queuesOptions: {
+      'magic-clip': {
+        defaultJobOptions: {
+          removeOnComplete: true,
+          removeOnFail: true,
+        },
+      },
+      "step1": {
+        defaultJobOptions: {
+          removeOnComplete: true,
+          removeOnFail: true,
+        },
+      },
+      "step2": {
+        defaultJobOptions: {
+          removeOnComplete: true,
+          removeOnFail: true,
+        },
+      },
+    },
+  };
   
   constructor(
     // @InjectQueue("magic-clip") private autoClipQueue: Queue, 
     @InjectFlowProducer("flow-producer-auto-clip") private flowProducer: FlowProducer) 
-
     {
 
     ( async () => {
@@ -32,7 +54,8 @@ export class AppService {
             ]
           }
         ],
-      });
+      }, 
+      this.flowOpts);
       
 
     })();

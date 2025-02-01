@@ -7,14 +7,16 @@ import { ConsumerMagicClip } from './consumers/magic-clip.consumer';
 import { Step1Consumer } from './consumers/step1/step1.consumer';
 import { Step2Consumer } from './consumers/step2.consumer';
 import { Step1EventListener } from './consumers/step1/step1.event-listener';
+import { RedisModule } from './redis/redis.module';
 
 @Module({
   imports: [
     ConfigModule.forRoot(),
+    RedisModule,
     BullModule.forRoot({
       connection: {
         host: process.env.REDIS_CONNECTION_STRING as string,
-        port: 6379,
+        port: process.env.REDIS_PORT as unknown as number,
         username: process.env.REDIS_USERNAME as string,
         password: process.env.REDIS_PASSWORD as string,
       },
@@ -24,9 +26,10 @@ import { Step1EventListener } from './consumers/step1/step1.event-listener';
     }),
     BullModule.registerQueue({
       name: 'step1',
+
     }),
     BullModule.registerFlowProducer({
-      name: "flow-producer-auto-clip"
+      name: "flow-producer-auto-clip",
     })
   ],
   controllers: [AppController],
