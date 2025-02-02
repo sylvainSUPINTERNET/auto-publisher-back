@@ -1,6 +1,7 @@
 import { Processor, WorkerHost } from "@nestjs/bullmq";
 import { Inject } from "@nestjs/common";
 import { Job } from "bullmq";
+import { STEPS } from "../constant";
 
 @Processor('step2')
 export class Step2Consumer extends WorkerHost {
@@ -17,7 +18,7 @@ export class Step2Consumer extends WorkerHost {
         // let values = await job.getChildrenValues();
         console.log("JOB STEP 2");
 
-        await job.updateProgress(50);
+        await job.updateProgress(100/STEPS.TOTAL);
 
 
 

@@ -1,6 +1,7 @@
 import { Processor, WorkerHost } from "@nestjs/bullmq";
 import { Inject } from "@nestjs/common";
 import { Job } from "bullmq";
+import { STEPS } from "../constant";
 
 @Processor('step1')
 export class Step1Consumer extends WorkerHost {
@@ -14,8 +15,8 @@ export class Step1Consumer extends WorkerHost {
         await this.redisClient.set("step1", "YYY");
         // let values = await job.getChildrenValues();
 
-        await job.updateProgress(50);
-        console.log("JOB STEP 1 ( call python YT-DLP script ) + upload to R2");
+        await job.updateProgress(100/STEPS.TOTAL);
+        console.log("JOB STEP 1 : process python yt-dlp ( download video locally only ) and keep it for another call with same URL youtube ( no upload on R2 ) ");
 
         
 

@@ -5,9 +5,14 @@ import { BullModule } from '@nestjs/bullmq';
 import { ConfigModule } from '@nestjs/config';
 import { ConsumerMagicClip } from './consumers/magic-clip.consumer';
 import { Step1Consumer } from './consumers/step1/step1.consumer';
-import { Step2Consumer } from './consumers/step2.consumer';
+import { Step2Consumer } from './consumers/step2/step2.consumer';
 import { Step1EventListener } from './consumers/step1/step1.event-listener';
 import { RedisModule } from './redis/redis.module';
+import { Step2EventListener } from './consumers/step2/step2.event-listener';
+import { Step3EventListener } from './consumers/step3/step3.event-listener';
+import { Step4EventListener } from './consumers/step4/step4.event-listener';
+import { Step3Consumer } from './consumers/step3/step3.consumer';
+import { Step4Consumer } from './consumers/step4/step4.consumer';
 
 @Module({
   imports: [
@@ -24,15 +29,23 @@ import { RedisModule } from './redis/redis.module';
     BullModule.registerQueue({
       name: 'magic-clip', //parent queue
     }),
-    BullModule.registerQueue({
-      name: 'step1',
-
-    }),
+    // BullModule.registerQueue({
+    //   name: 'step1',
+    // }),
     BullModule.registerFlowProducer({
       name: "flow-producer-auto-clip",
     })
   ],
   controllers: [AppController],
-  providers: [AppService, ConsumerMagicClip, Step1Consumer, Step2Consumer, Step1EventListener],
+  providers: [AppService, ConsumerMagicClip,
+    Step1Consumer,
+    Step2Consumer,
+    Step3Consumer,
+    Step4Consumer,
+    Step1EventListener, 
+    Step2EventListener,
+    Step3EventListener,
+    Step4EventListener
+  ]
 })
 export class AppModule {}

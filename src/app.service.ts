@@ -45,12 +45,24 @@ export class AppService {
         },
         children: [ // can use different queue for children to execute in parallel
           {
-            name: "step2",
-            queueName: 'step2',
+            name: "step4",
+            queueName: "step4",
             children: [
               {
-                name: "step1",
-                queueName: 'step1'
+                name: "step3",
+                queueName: "step3",
+                children: [
+                  {
+                    name: "step2",
+                    queueName: 'step2',
+                    children: [
+                      {
+                        name: "step1",
+                        queueName: 'step1'
+                      }
+                    ]
+                  }
+                ]
               }
             ]
           }
