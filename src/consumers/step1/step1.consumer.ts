@@ -15,7 +15,7 @@ export class Step1Consumer extends WorkerHost {
         // let values = await job.getChildrenValues();
 
         await job.updateProgress(50);
-        console.log("JOB STEP 1");
+        console.log("JOB STEP 1 ( call python YT-DLP script ) + upload to R2");
 
         
 

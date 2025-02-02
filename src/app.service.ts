@@ -1,6 +1,7 @@
 import { InjectFlowProducer } from '@nestjs/bullmq';
 import { Injectable } from '@nestjs/common';
 import { FlowOpts, FlowProducer } from 'bullmq';
+import { S3Client, ListBucketsCommand } from "@aws-sdk/client-s3";
 
 @Injectable()
 export class AppService {
