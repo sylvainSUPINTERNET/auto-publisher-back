@@ -24,7 +24,7 @@ export class Step1Consumer extends WorkerHost {
             await job.updateProgress(100/STEPS.TOTAL);
             return Promise.resolve();
         } catch ( error ) {
-            this.logger.log(`${this.STEP1.LOG_PREFIX} (jobId :${job.id}) - ${ytbVideoName} Donwload KO`);
+            this.logger.log(`${this.STEP1.LOG_PREFIX} (jobId :${job.id}) - ${ytbVideoName} Donwload KO : ${error}`);
             return Promise.reject(error);
         }
 

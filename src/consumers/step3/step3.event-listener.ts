@@ -3,23 +3,31 @@ import {
     QueueEventsHost,
     OnQueueEvent,
   } from '@nestjs/bullmq';
+import { Logger } from '@nestjs/common';
+import { STEPS } from '../constant';
   
   @QueueEventsListener('step3')
   export class Step3EventListener extends QueueEventsHost {
-
-    @OnQueueEvent('progress')
-    onProgress({ jobId, }: { jobId: string; }) {
-      console.log("STEP 3 LISTENER PROGRESS", jobId);
-    }
-
+    
+    private readonly logger = new Logger(Step3EventListener.name);
+    private readonly STEP1 = STEPS["3"];
 
     @OnQueueEvent('waiting')
     onWaiting({ jobId, }: { jobId: string; }) {
-      console.log("STEP 3 LISTENER WAITING", jobId);
+    }
+
+
+    @OnQueueEvent('progress')
+    onProgress({ jobId, }: { jobId: string; }) {
     }
 
     @OnQueueEvent('completed')
     onCompleted({jobId,}: {jobId: string;returnvalue: string;prev?: string;}) {
-      console.log("STEP 3 LISTENER COMPLETED", jobId);
+      this.logger.log(`${this.STEP1.LOG_PREFIX} completed ${jobId}`);
+    }
+
+    @OnQueueEvent('failed')
+    onFailed({jobId,}: {jobId: string;returnvalue: string;prev?: string;}) {
+      this.logger.log(`${this.STEP1.LOG_PREFIX} failed ${jobId}`);
     }
   }
