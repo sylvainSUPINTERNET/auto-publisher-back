@@ -26,6 +26,18 @@ export class AppService {
           removeOnFail: true,
         },
       },
+      "step3": {
+        defaultJobOptions: {
+          removeOnComplete: true,
+          removeOnFail: true,
+        },
+      },
+      "step4": {
+        defaultJobOptions: {
+          removeOnComplete: true,
+          removeOnFail: true,
+        },
+      }
     },
   };
   

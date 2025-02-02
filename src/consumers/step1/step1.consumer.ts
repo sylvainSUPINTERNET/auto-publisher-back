@@ -1,37 +1,33 @@
 import { Processor, WorkerHost } from "@nestjs/bullmq";
-import { Inject } from "@nestjs/common";
+import { Inject, Logger } from "@nestjs/common";
 import { Job } from "bullmq";
 import { STEPS } from "../constant";
 
 @Processor('step1')
 export class Step1Consumer extends WorkerHost {
+    private readonly logger = new Logger(Step1Consumer.name);
+    private readonly STEP1 = STEPS["1"];
 
     constructor(@Inject("REDIS_CLIENT") private redisClient) {
         super();
     }
 
     async process(job: Job, token?: string): Promise<any> {
-
-        await this.redisClient.set("step1", "YYY");
-        // let values = await job.getChildrenValues();
-
-        await job.updateProgress(100/STEPS.TOTAL);
-        console.log("JOB STEP 1 : process python yt-dlp ( download video locally only ) and keep it for another call with same URL youtube ( no upload on R2 ) ");
-
+        this.logger.log(`${this.STEP1.LOG_PREFIX} (jobId :${job.id}) - started`);
+        // TODO ( video download with python etc .. 
+        const ytbVideoName:string = "Se lever tôt ne te rendra pas meilleur (et c'est tant mieux).webm";
+        //TODO
         
+        try {
+            await this.redisClient.set(this.STEP1.REDIS_KEY_RESULT, "Se lever tôt ne te rendra pas meilleur (et c'est tant mieux).webm");
+            this.logger.log(`${this.STEP1.LOG_PREFIX} (jobId :${job.id}) - ${ytbVideoName} - redis ${this.STEP1.REDIS_KEY_RESULT} key created - Download OK`);
+            await job.updateProgress(100/STEPS.TOTAL);
+            return Promise.resolve();
+        } catch ( error ) {
+            this.logger.log(`${this.STEP1.LOG_PREFIX} (jobId :${job.id}) - ${ytbVideoName} Donwload KO`);
+            return Promise.reject(error);
+        }
 
-        // get previous job data        
-        // let values = await job.getChildrenValues();
-        // const deps = await job.getDependencies()
-        // console.log("DEPS => ", deps);
-        // console.log(token);
-        // console.log("val STEP 2 ", values);
-        // if (values !== undefined && values["step1"]) {
-        //     console.log("prev values => ", values["step1"].data);
-        // }
-        
-        // console.log("JOB data => ", job.data, job.name);
-        return Promise.resolve();
     }
 
 }
