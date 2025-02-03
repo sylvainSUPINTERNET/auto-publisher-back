@@ -1,3 +1,32 @@
+
+
+
+
+```` bash
+
+# zoom in ease : fontsize=20+60*sin(3.14*t/2)
+
+
+ffmpeg -ss 00:00:10 -t 5 -i "Se lever tôt ne te rendra pas meilleur (et c'est tant mieux).webm" -vf "drawtext=fontfile='C\:/\Windows/\Fonts/\arial.ttf': text='🔥 Super sous-titre 🔥': fontcolor=yellow: fontsize=80: x=(w-text_w)/2: y=h-text_h-100+10*sin(2*3.14*3*t): enable='between(t,1,3)': box=1: boxcolor=red@1: boxborderw=10" -c:a copy output.webm
+
+
+
+ffmpeg -ss 00:00:10 -t 5 -i "Se lever tôt ne te rendra pas meilleur (et c'est tant mieux).webm" -vf "drawtext=fontfile='C\:/\Windows/\Fonts/\arial.ttf': text='🔥 Super sous-titre 🔥': fontcolor=yellow: fontsize=80: x=(w-text_w)/2: y=h-text_h-100+10*sin(2*3.14*3*t): enable='between(t,1,3)': box=1: boxcolor=red@1: boxborderw=10: ,fade=t=in:st=0:d=2" -c:a copy output.webm
+
+ ffmpeg -ss 00:00:10 -t 5 -i "Se lever tôt ne te rendra pas meilleur (et c'est tant mieux).webm" -vf "drawtext=fontfile='C\:/\Windows/\Fonts/\arial.ttf': text='🔥 Super sous-titre 🔥': fontcolor=yellow: fontsize=80: x=(w-text_w)/2: y=h-text_h-100+10*sin(2*3.14*3*t): enable='between(t,1,3)': box=1: boxcolor=red@1: boxborderw=10: shadowx=5: shadowy=5: shadowcolor=black@0.7: " -c:a copy output.webm
+
+ ffmpeg -ss 00:00:10 -t 5 -i "Se lever tôt ne te rendra pas meilleur (et c'est tant mieux).webm" -vf "drawtext=fontfile='C\:/\Windows/\Fonts/\arial.ttf': text='🔥 Super sous-titre 🔥': fontcolor=yellow: fontsize=80: x=(w-text_w)/2: y=h-100-(h/2+text_h)*sin((t/2)*3.14/2): enable='between(t,1,3)': box=1: boxcolor=red@1: boxborderw=10: shadowx=5: shadowy=5: shadowcolor=black@0.7: " -c:a copy output.webm
+
+
+ # chain 
+
+ ffmpeg -i input.webm -vf "
+drawtext=fontfile='C\:/\Windows/\Fonts/\arial.ttf': text='🔥 Super': fontcolor=yellow: fontsize=80: x=(w-text_w)/2: y=h-text_h-100: enable='between(t,1,3)', 
+drawtext=fontfile='C\:/\Windows/\Fonts/\arial.ttf': text='Sous-titre 🔥': fontcolor=yellow: fontsize=80: x=(w-text_w)/2: y=h-text_h-100: enable='between(t,3,5)'" -c:a copy output.webm
+
+
+````	
+
 <p align="center">
   <a href="http://nestjs.com/" target="blank"><img src="https://nestjs.com/img/logo-small.svg" width="120" alt="Nest Logo" /></a>
 </p>
