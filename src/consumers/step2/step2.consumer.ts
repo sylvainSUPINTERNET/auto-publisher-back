@@ -51,12 +51,15 @@ export class Step2Consumer extends WorkerHost {
                 return Promise.reject("Audio extraction failed");
             }
 
-            let transcription:string = "";
+            let transcription:string = ""; //srt format
             if ( process.env.WITH_TRANSCRIPTION as string === "true" ) {
+
+                // TODO => use verbose_json instead of srt
                 const transcription = await openai.audio.transcriptions.create({
                     file: fs.createReadStream(path.resolve(this.pathDownload, `${audioName}`)),
                     model: "whisper-1",
                     response_format: "srt",
+                    prompt: "Les segments dans le SRT produit doivent contenir 3 4 mots."
                 });    
                 this.logger.log(`${this.STEP2.LOG_PREFIX} (jobId :${job.id}) Transcription OK : ${transcription}`);
             } else {
@@ -64,7 +67,13 @@ export class Step2Consumer extends WorkerHost {
                 transcription = fs.readFileSync(path.resolve(process.cwd(),"Se lever tôt ne te rendra pas meilleur (et c'est tant mieux).srt"), 'utf8');
             }
 
+
+            // TODO use RPUSH / LRANGE to split large transcription and store it in redis
+            await this.redisClient.set(this.STEP2.REDIS_KEY_RESULT, transcription);
+            
             await job.updateProgress(100/STEPS.TOTAL);
+            return Promise.resolve();
+
         } catch ( error ) {
             this.logger.log(`${this.STEP2.LOG_PREFIX} (jobId :${job.id}) Transcribe KO ${error}`);
             return Promise.reject(error);
