@@ -16,12 +16,8 @@ const extractAudio = (pathDownload:string, videoName:string, audioName:string):P
                 .output(path.resolve(pathDownload, audioName))
                 .noVideo()
                 .audioCodec('copy')
-                .on('end', () => {
-                    resolve(true);
-                })
-                .on('error', err => {
-                    reject(err);
-                })
+                .on('end', () => { resolve(true) })
+                .on('error', err => { reject(err) })
                 .run();
         }
     );
