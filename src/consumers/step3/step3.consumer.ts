@@ -112,7 +112,7 @@ export class Step3Consumer extends WorkerHost {
             - **Ne renvoie que le resultat au format JSON en "brut", pas besoin de formatter dans une balise JSON**  
             - **Ne génère pas de texte superflu.**  
             - **Ne retourne aucun message autre le JSON, pas de think, debogage ou autre.**
-            - **Ne retourne pas de <think> ... </think>
+            - **Tu peux <think> mais de ne retourne pas la balise dans le resultat de <think>
 
             **Input JSON :** \`${JSON.stringify(segments)}\`
             `;

@@ -1,0 +1,217 @@
+<think>
+Okay, I need to help the user by creating a step-by-step explanation of how I arrived at the provided JSON output based on the given input and rules. Let me start by understanding the problem.
+
+The user provided a JSON array of segments, each with an id, start time, end time, and text. The goal is to combine adjacent segments into clips that are 30 to 60 seconds long, prioritizing those closer to 60 seconds. Also, each clip should have engaging content and be as fluid as possible.
+
+First, I'll calculate the duration of each segment. For example, segment 0 starts at 0.48 and ends at 4, so it's about 3.52 seconds. I need to find adjacent segments that, when combined, fall within the 30-60 second window.
+
+Looking at the segments, I notice that combining several segments will be necessary. I'll start from the beginning and accumulate durations until I reach at least 30 seconds but not exceeding 60.
+
+For the first clip, I can combine segments 0 through 6. Let's add their durations:
+- Segment 0: ~3.52s
+- Segment 1: ~3.12s
+- Segment 2: ~1.34s
+- Segment 3: ~3.02s
+- Segment 4: ~3.86s
+- Segment 5: ~1.8s
+- Segment 6: ~2.04s
+
+Adding these gives a total of around 19.64 seconds, which is below 30. I need to include more segments. Adding segment 7 (~1.32s) brings it to ~20.96s. Still too short. Continuing, segment 8 adds ~2.82s, making it ~23.78s. Segment 9 adds ~2.56s, totaling ~26.34s. Segment 10 adds ~2.36s, reaching ~28.7s. Still under 30. Adding segment 11 (~2.5s) brings it to ~31.2s, which fits the 30-60 range. So the first clip includes segments 0-11.
+
+Next, I look for the next available segment after 11, which is 12. I'll start a new clip with segment 12 and keep adding until I reach at least 30s. Segment 12 is ~4.7s, segment 13 is ~4.24s, segment 14 is ~3.88s, and segment 15 is ~2.48s. Adding these gives ~15.3s. Adding segment 16 (~3.78s) brings it to ~19.08s. Segment 17 adds ~3.3s, total ~22.38s. Segment 18 adds ~3.28s, reaching ~25.66s. Segment 19 adds ~4.52s, totaling ~30.18s. That's a good second clip: segments 12-19.
+
+For the third clip, I start with segment 20. Its duration is ~4.14s. Adding segment 21 (~4.64s) brings it to ~8.78s. Segment 22 adds ~2.34s, total ~11.12s. Segment 23 adds ~1.84s, ~12.96s. Segment 24 adds ~3.16s, ~16.12s. Segment 25 adds ~3.56s, ~19.68s. Segment 26 adds ~3.8s, ~23.48s. Segment 27 adds ~2.82s, ~26.3s. Segment 28 adds ~3.84s, ~30.14s. That's the third clip: segments 20-28.
+
+I ensure each clip is within the time frame and prioritized by duration. Clips are checked for engaging content, like emotional points or strong statements, which these clips seem to have based on the text. Finally, I format the output as specified, listing each clip's segments.
+</think>
+
+```json
+[
+    {
+        "clips": [
+            {
+                "id": 0,
+                "start": 0.47999998927116394,
+                "end": 4,
+                "text": " « Est-ce qu'il faut se lever tôt pour être productif ? »"
+            },
+            {
+                "id": 1,
+                "start": 4.920000076293945,
+                "end": 8.039999961853027,
+                "text": " C'est vrai que chaque député m'a demandé ça."
+            },
+            {
+                "id": 2,
+                "start": 11.359999656677246,
+                "end": 12.699999809265137,
+                "text": " Ça part pas en une minute en fait."
+            },
+            {
+                "id": 3,
+                "start": 13.979999542236328,
+                "end": 17,
+                "text": " « Est-ce qu'il faut se lever tôt pour être productif ? »"
+            },
+            {
+                "id": 4,
+                "start": 17,
+                "end": 20.860000610351562,
+                "text": " Il y a ce mythe"
+            },
+            {
+                "id": 5,
+                "start": 22.239999771118164,
+                "end": 24.040000915527344,
+                "text": " qu'il faut avoir de la méthode,"
+            },
+            {
+                "id": 6,
+                "start": 24.81999969482422,
+                "end": 26.860000610351562,
+                "text": " de la discipline, des routines"
+            },
+            {
+                "id": 7,
+                "start": 27.780000686645508,
+                "end": 29.100000381469727,
+                "text": " pour être productif."
+            },
+            {
+                "id": 8,
+                "start": 31.600000381469727,
+                "end": 34.41999816894531,
+                "text": " J'ai essayé les deux et il n'y a pas de doute"
+            },
+            {
+                "id": 9,
+                "start": 35.439998626708984,
+                "end": 38,
+                "text": " que quand on a une vraie routine, qu'on se lève tôt,"
+            },
+            {
+                "id": 10,
+                "start": 38.7400016784668,
+                "end": 41.099998474121094,
+                "text": " qu'on se couche tôt, qu'on dort bien,"
+            },
+            {
+                "id": 11,
+                "start": 43.63999938964844,
+                "end": 45.13999938964844,
+                "text": " on est productif."
+            }
+        ]
+    },
+    {
+        "clips": [
+            {
+                "id": 12,
+                "start": 46.220001220703125,
+                "end": 50.91999816894531,
+                "text": " Il n'y a aucun doute là-dessus. D'ailleurs, ce n'est pas pour rien"
+            },
+            {
+                "id": 13,
+                "start": 50.91999816894531,
+                "end": 55.15999984741211,
+                "text": " qu'il y a un milliard de vidéos sur le sujet du développement personnel"
+            },
+            {
+                "id": 14,
+                "start": 55.15999984741211,
+                "end": 59.040000915527344,
+                "text": " qui parlent de ça. Mais la question,"
+            },
+            {
+                "id": 15,
+                "start": 59.36000061035156,
+                "end": 61.779998779296875,
+                "text": " elle est plus générale."
+            },
+            {
+                "id": 16,
+                "start": 63.52000045776367,
+                "end": 67.13999938964844,
+                "text": " Finalement, la question ce n'est pas « Est-ce qu'il faut se lever tôt"
+            },
+            {
+                "id": 17,
+                "start": 67.13999938964844,
+                "end": 70.44000244140625,
+                "text": " pour être productif ? » C'est « Est-ce qu'être productif,"
+            },
+            {
+                "id": 18,
+                "start": 71.36000061035156,
+                "end": 74.63999938964844,
+                "text": " c'est vraiment la chose la plus importante ? » Et finalement,"
+            },
+            {
+                "id": 19,
+                "start": 74.77999877929688,
+                "end": 79.30000305175781,
+                "text": " c'est la question que peu de gens se posent. Alors, il y a des phases"
+            }
+        ]
+    },
+    {
+        "clips": [
+            {
+                "id": 20,
+                "start": 79.30000305175781,
+                "end": 83.4000015258789,
+                "text": " dans la vie. Il y a des phases de créativité, il y a des phases d'exploration,"
+            },
+            {
+                "id": 21,
+                "start": 83.4000015258789,
+                "end": 88.04000091552734,
+                "text": " il y a des phases de, je ne sais jamais dire ce mot,"
+            },
+            {
+                "id": 22,
+                "start": 89.18000030517578,
+                "end": 91.55999755859375,
+                "text": " « serendipity », comme on dit en français,"
+            },
+            {
+                "id": 23,
+                "start": 91.72000122070312,
+                "end": 93.55999755859375,
+                "text": " « serendipité ». "
+            },
+            {
+                "id": 24,
+                "start": 95.73999786376953,
+                "end": 98.9000015258789,
+                "text": " Et puis, il y a des phases de production où"
+            },
+            {
+                "id": 25,
+                "start": 99.55999755859375,
+                "end": 103.5199966430664,
+                "text": " il ne faut pas être tout ça, il faut être extrêmement focus et extrêmement"
+            },
+            {
+                "id": 26,
+                "start": 103.54000091552734,
+                "end": 107.0199966430664,
+                "text": " productif. Ce que je trouve triste, très souvent,"
+            },
+            {
+                "id": 27,
+                "start": 108.36000061035156,
+                "end": 111.18000030517578,
+                "text": " c'est d'imaginer qu'il y a un seul mode de jeu"
+            },
+            {
+                "id": 28,
+                "start": 111.18000030517578,
+                "end": 115.0199966430664,
+                "text": " dans le grand jeu vidéo de la vie. Non, il y a plusieurs modes"
+            }
+        ]
+    }
+]
+```
