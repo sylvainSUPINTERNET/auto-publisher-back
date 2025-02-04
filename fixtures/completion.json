@@ -1,0 +1,122 @@
+[
+  {
+      "clips": [
+          {
+              "id": 0,
+              "start": 0.48,
+              "end": 4,
+              "text": " « Est-ce qu'il faut se lever tôt pour être productif ? »"
+          },
+          {
+              "id": 1,
+              "start": 4.92,
+              "end": 8.04,
+              "text": " C'est vrai que chaque député m'a demandé ça."
+          },
+          {
+              "id": 2,
+              "start": 11.36,
+              "end": 12.7,
+              "text": " Ça part pas en une minute en fait."
+          },
+          {
+              "id": 3,
+              "start": 13.98,
+              "end": 17,
+              "text": " « Est-ce qu'il faut se lever tôt pour être productif ? »"
+          },
+          {
+              "id": 4,
+              "start": 17,
+              "end": 20.86,
+              "text": " Il y a ce mythe"
+          },
+          {
+              "id": 5,
+              "start": 22.24,
+              "end": 24.04,
+              "text": " qu'il faut avoir de la méthode,"
+          },
+          {
+              "id": 6,
+              "start": 24.82,
+              "end": 26.86,
+              "text": " de la discipline, des routines"
+          }
+      ]
+  },
+  {
+      "clips": [
+          {
+              "id": 8,
+              "start": 31.6,
+              "end": 34.42,
+              "text": " J'ai essayé les deux et il n'y a pas de doute"
+          },
+          {
+              "id": 9,
+              "start": 35.44,
+              "end": 38,
+              "text": " que quand on a une vraie routine, qu'on se lève tôt,"
+          },
+          {
+              "id": 10,
+              "start": 38.74,
+              "end": 41.1,
+              "text": " qu'on se couche tôt, qu'on dort bien,"
+          },
+          {
+              "id": 11,
+              "start": 43.64,
+              "end": 45.14,
+              "text": " on est productif."
+          },
+          {
+              "id": 12,
+              "start": 46.22,
+              "end": 50.92,
+              "text": " Il n'y a aucun doute là-dessus. D'ailleurs, ce n'est pas pour rien"
+          },
+          {
+              "id": 13,
+              "start": 50.92,
+              "end": 55.16,
+              "text": " qu'il y a un milliard de vidéos sur le sujet du développement personnel"
+          }
+      ]
+  },
+  {
+      "clips": [
+          {
+              "id": 32,
+              "start": 127.22,
+              "end": 131.04,
+              "text": " Et s'il y a une chose que la routine détruit,"
+          },
+          {
+              "id": 33,
+              "start": 132.18,
+              "end": 133.14,
+              "text": " c'est la créativité."
+          },
+          {
+              "id": 34,
+              "start": 135.34,
+              "end": 138.32,
+              "text": " Je ne sais pas comment c'est possible d'être créatif"
+          },
+          {
+              "id": 35,
+              "start": 139.76,
+              "end": 141.08,
+              "text": " lorsqu'on est rigide."
+          },
+          {
+              "id": 36,
+              "start": 142.26,
+              "end": 146.64,
+              "text": " Je ne vois pas comment c'est possible d'être créatif"
+          }
+      ]
+  }
+]
