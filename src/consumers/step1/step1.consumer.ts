@@ -13,18 +13,18 @@ export class Step1Consumer extends WorkerHost {
     }
 
     async process(job: Job, token?: string): Promise<any> {
-        this.logger.log(`${this.STEP1.LOG_PREFIX} (jobId :${job.id}) - started`);
+        this.logger.log(`${this.STEP1.LOG_PREFIX} (jobId :${job.id} - jobUUID:${job.data.jobUUID}) - started`);
         // TODO ( video download with python etc .. 
         const ytbVideoName:string = "Se lever tôt ne te rendra pas meilleur (et c'est tant mieux).webm";
         //TODO
         
         try {
-            await this.redisClient.set(this.STEP1.REDIS_KEY_RESULT, "Se lever tôt ne te rendra pas meilleur (et c'est tant mieux).webm");
-            this.logger.log(`${this.STEP1.LOG_PREFIX} (jobId :${job.id}) - ${ytbVideoName} - redis ${this.STEP1.REDIS_KEY_RESULT} key created - Download OK`);
+            await this.redisClient.set(`${job.data.jobUUID}-${this.STEP1.REDIS_KEY_RESULT}`, "Se lever tôt ne te rendra pas meilleur (et c'est tant mieux).webm");
+            this.logger.log(`${this.STEP1.LOG_PREFIX} (jobId :${job.id} - jobUUID:${job.data.jobUUID}) - ${ytbVideoName} - redis ${this.STEP1.REDIS_KEY_RESULT} key created - Download OK`);
             await job.updateProgress(100/STEPS.TOTAL);
             return Promise.resolve();
         } catch ( error ) {
-            this.logger.log(`${this.STEP1.LOG_PREFIX} (jobId :${job.id}) - ${ytbVideoName} Donwload KO : ${error}`);
+            this.logger.log(`${this.STEP1.LOG_PREFIX} (jobId :${job.id} - jobUUID:${job.data.jobUUID}) - ${ytbVideoName} Donwload KO : ${error}`);
             return Promise.reject(error);
         }
 

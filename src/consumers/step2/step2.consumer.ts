@@ -36,9 +36,9 @@ export class Step2Consumer extends WorkerHost {
     }
 
     async process(job: Job, token?: string): Promise<any> {
-        this.logger.log(`${this.STEP2.LOG_PREFIX} (jobId :${job.id}) - started`);
+        this.logger.log(`${this.STEP2.LOG_PREFIX} (jobId :${job.id} - jobUUID:${job.data.jobUUID}) - started`);
         try {
-            const videoName = await this.redisClient.getdel(this.STEP1.REDIS_KEY_RESULT);
+            const videoName = await this.redisClient.getdel(`${job.data.jobUUID}-${this.STEP1.REDIS_KEY_RESULT}`);
             
             const openai = new OpenAI({
                 apiKey: process.env.OPEN_AI_SECRET_KEY as string
@@ -51,31 +51,31 @@ export class Step2Consumer extends WorkerHost {
                 return Promise.reject("Audio extraction failed");
             }
 
-            let transcription:string = ""; //srt format
+            let transcription:any = ""; //srt format
             if ( process.env.WITH_TRANSCRIPTION as string === "true" ) {
 
-                // TODO => use verbose_json instead of srt
                 const transcription = await openai.audio.transcriptions.create({
                     file: fs.createReadStream(path.resolve(this.pathDownload, `${audioName}`)),
                     model: "whisper-1",
-                    response_format: "srt",
-                    prompt: "Les segments dans le SRT produit doivent contenir 3 4 mots."
+                    response_format: "verbose_json",
+                    timestamp_granularities: ["word", "segment"]
                 });    
-                this.logger.log(`${this.STEP2.LOG_PREFIX} (jobId :${job.id}) Transcription OK : ${transcription}`);
+                this.logger.log(`${this.STEP2.LOG_PREFIX} (jobId :${job.id} - jobUUID:${job.data.jobUUID}) Transcription OK : ${transcription}`);
+                //fs.writeFileSync(path.resolve(process.cwd(),"downloads", "Se lever tôt ne te rendra pas meilleur (et c'est tant mieux).json"), JSON.stringify(transcription), 'utf8');
             } else {
-                this.logger.log(`${this.STEP2.LOG_PREFIX} (jobId :${job.id}) Transcription simulated used ( NO OPENAI )`);
-                transcription = fs.readFileSync(path.resolve(process.cwd(),"Se lever tôt ne te rendra pas meilleur (et c'est tant mieux).srt"), 'utf8');
+                this.logger.log(`${this.STEP2.LOG_PREFIX} (jobId :${job.id} - jobUUID:${job.data.jobUUID}) Transcription simulated used ( NO OPENAI )`);
+                transcription = JSON.parse(fs.readFileSync(path.resolve(process.cwd(),"downloads","Se lever tôt ne te rendra pas meilleur (et c'est tant mieux).json"), 'utf8'));
             }
 
 
             // TODO use RPUSH / LRANGE to split large transcription and store it in redis
-            await this.redisClient.set(this.STEP2.REDIS_KEY_RESULT, transcription);
+            await this.redisClient.set(`${job.data.jobUUID}-${this.STEP2.REDIS_KEY_RESULT}`, JSON.stringify(transcription));
             
             await job.updateProgress(100/STEPS.TOTAL);
             return Promise.resolve();
 
         } catch ( error ) {
-            this.logger.log(`${this.STEP2.LOG_PREFIX} (jobId :${job.id}) Transcribe KO ${error}`);
+            this.logger.log(`${this.STEP2.LOG_PREFIX} (jobId :${job.id} - jobUUID:${job.data.jobUUID}) Transcribe KO ${error}`);
             return Promise.reject(error);
         }
     }

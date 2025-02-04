@@ -1,10 +1,12 @@
 import { InjectFlowProducer } from '@nestjs/bullmq';
-import { Injectable } from '@nestjs/common';
+import { Injectable, Logger } from '@nestjs/common';
 import { FlowOpts, FlowProducer } from 'bullmq';
+const { v4: uuidv4 } = require('uuid');
 
 @Injectable()
 export class AppService {
-
+  private readonly logger = new Logger(AppService.name);
+  
   private flowOpts: FlowOpts = {
     queuesOptions: {
       'magic-clip': {
@@ -47,6 +49,9 @@ export class AppService {
 
     ( async () => {
 
+
+      const jobUUID = uuidv4();
+      this.logger.log(`New jobUUID : ${jobUUID}`);
       const job = await this.flowProducer.add({
         name: 'job-magic-clip',
         queueName: 'magic-clip',
@@ -58,18 +63,30 @@ export class AppService {
           {
             name: "step4",
             queueName: "step4",
+            data: {
+              jobUUID
+            },
             children: [
               {
                 name: "step3",
                 queueName: "step3",
+                data: {
+                  jobUUID
+                },
                 children: [
                   {
                     name: "step2",
                     queueName: 'step2',
+                    data: {
+                      jobUUID
+                    },
                     children: [
                       {
                         name: "step1",
-                        queueName: 'step1'
+                        queueName: 'step1',
+                        data: {
+                          jobUUID
+                        }
                       }
                     ]
                   }

@@ -1,0 +1,6907 @@
+{
+    "task": "transcribe",
+    "language": "french",
+    "duration": 359.989990234375,
+    "text": "« Est-ce qu'il faut se lever tôt pour être productif ? » C'est vrai que chaque député m'a demandé ça. Ça part pas en une minute en fait. « Est-ce qu'il faut se lever tôt pour être productif ? » Il y a ce mythe qu'il faut avoir de la méthode, de la discipline, des routines pour être productif. J'ai essayé les deux et il n'y a pas de doute que quand on a une vraie routine, qu'on se lève tôt, qu'on se couche tôt, qu'on dort bien, on est productif. Il n'y a aucun doute là-dessus. D'ailleurs, ce n'est pas pour rien qu'il y a un milliard de vidéos sur le sujet du développement personnel qui parlent de ça. Mais la question, elle est plus générale. Finalement, la question ce n'est pas « Est-ce qu'il faut se lever tôt pour être productif ? » C'est « Est-ce qu'être productif, c'est vraiment la chose la plus importante ? » Et finalement, c'est la question que peu de gens se posent. Alors, il y a des phases dans la vie. Il y a des phases de créativité, il y a des phases d'exploration, il y a des phases de, je ne sais jamais dire ce mot, « serendipity », comme on dit en français, « serendipité ». Et puis, il y a des phases de production où il ne faut pas être tout ça, il faut être extrêmement focus et extrêmement productif. Ce que je trouve triste, très souvent, c'est d'imaginer qu'il y a un seul mode de jeu dans le grand jeu vidéo de la vie. Non, il y a plusieurs modes et puis même au sein du même jeu, non seulement il y a plusieurs modes, mais il y a plusieurs tempos et puis il y a des niveaux qui requièrent d'autres modes. Et s'il y a une chose que la routine détruit, c'est la créativité. Je ne sais pas comment c'est possible d'être créatif lorsqu'on est rigide. Je ne vois pas comment c'est possible d'être créatif lorsque tout est organisé, tout est planifié, tout est millimétré, chaque décision, c'est vraiment un genre. Alors aujourd'hui, de 9h à 11h, je serai créatif. Putain, merde, je n'y arrive pas. Bon, tant pis, je n'ai pas été créatif. En fait, la source de la créativité, c'est quand même très souvent, tu fais autre chose, tu es en train de faire quelque chose où tu ne penses pas du tout à ton projet, pas du tout à ton idée et il y a quelque chose qui surgit, il y a une inspiration extrêmement profonde qui surgit et je pense que ça vient par le fait de se détendre, de s'amuser, d'aller faire d'autres choses et évidemment, si on n'est que créatif et qu'à aucun moment on n'arrive à transformer ses idées en quelque chose de concret, d'incarné, d'utilisable, ça ne sert à rien. Et c'est là, finalement, la vraie difficulté, c'est que tout le monde a envie d'être où alors que malheureusement, il faut être et. Ce n'est pas je suis discipliné ou créatif ce n'est pas je suis routinier ou chaotique, c'est quand est-ce que je dois être routinier quand est-ce que je dois être chaotique et finalement on en revient à quelque chose dont la plupart des entrepreneurs et surtout la plupart des gens qui regardent des vidéos sur Youtube toi, cher ami qui regarde cette vidéo il y a quelque chose d'assez dur à admettre c'est qu'à la fin de la journée, on est évalué pour son jugement. L'univers nous récompense pour notre capacité à faire les bons choix et avoir les bons jugements et avoir le bon jugement, c'est être subtil. S'il y avait une méthode simple pour avoir une vie heureuse, épanouie successfoule, s'il suffisait de manger des protéines, d'aller à la salle et de tous les jours faire la même chose comme un robot, ça se serait on le ferait tous. Mais la raison pour laquelle on ne le fait pas tous, c'est parce qu'on voit bien qu'en fait, c'est un peu plus compliqué que ça. Et finalement, l'époque moderne est en tension entre deux choses entre d'un côté la nécessité de faire des vues on a besoin d'audience, on a besoin d'impact et le meilleur moyen de faire des vues, c'est de dire des choses simples, que les gens peuvent répéter la meilleure façon de faire des vues c'est de cliver, c'est de surtout pas être subtil le mec subtil n'est pas viral mais cette nécessité économique ne doit pas nous faire perdre de vue la complexité de notre fort intérieur c'est en nourrissant la complexité de notre fort intérieur c'est en donnant à notre personne du paradoxe, des choses contradictoires qu'on arrive à",
+    "segments": [
+        {
+            "id": 0,
+            "seek": 0,
+            "start": 0.47999998927116394,
+            "end": 4,
+            "text": " « Est-ce qu'il faut se lever tôt pour être productif ? »",
+            "tokens": [
+                50364,
+                4657,
+                4410,
+                12,
+                384,
+                421,
+                6,
+                388,
+                8487,
+                369,
+                12451,
+                256,
+                8775,
+                2016,
+                7418,
+                1674,
+                351,
+                2506,
+                8793,
+                50564
+            ],
+            "temperature": 0,
+            "avg_logprob": -0.29360681772232056,
+            "compression_ratio": 1.6342856884002686,
+            "no_speech_prob": 0.22950756549835205
+        },
+        {
+            "id": 1,
+            "seek": 0,
+            "start": 4.920000076293945,
+            "end": 8.039999961853027,
+            "text": " C'est vrai que chaque député m'a demandé ça.",
+            "tokens": [
+                50564,
+                383,
+                6,
+                377,
+                17815,
+                631,
+                18920,
+                2795,
+                2582,
+                526,
+                275,
+                6,
+                64,
+                48468,
+                2788,
+                13,
+                50764
+            ],
+            "temperature": 0,
+            "avg_logprob": -0.29360681772232056,
+            "compression_ratio": 1.6342856884002686,
+            "no_speech_prob": 0.22950756549835205
+        },
+        {
+            "id": 2,
+            "seek": 0,
+            "start": 11.359999656677246,
+            "end": 12.699999809265137,
+            "text": " Ça part pas en une minute en fait.",
+            "tokens": [
+                50764,
+                11527,
+                644,
+                1736,
+                465,
+                2251,
+                3456,
+                465,
+                3887,
+                13,
+                50964
+            ],
+            "temperature": 0,
+            "avg_logprob": -0.29360681772232056,
+            "compression_ratio": 1.6342856884002686,
+            "no_speech_prob": 0.22950756549835205
+        },
+        {
+            "id": 3,
+            "seek": 0,
+            "start": 13.979999542236328,
+            "end": 17,
+            "text": " « Est-ce qu'il faut se lever tôt pour être productif ? »",
+            "tokens": [
+                50964,
+                4657,
+                4410,
+                12,
+                384,
+                421,
+                6,
+                388,
+                8487,
+                369,
+                12451,
+                256,
+                8775,
+                2016,
+                7418,
+                1674,
+                351,
+                2506,
+                8793,
+                51164
+            ],
+            "temperature": 0,
+            "avg_logprob": -0.29360681772232056,
+            "compression_ratio": 1.6342856884002686,
+            "no_speech_prob": 0.22950756549835205
+        },
+        {
+            "id": 4,
+            "seek": 0,
+            "start": 17,
+            "end": 20.860000610351562,
+            "text": " Il y a ce mythe",
+            "tokens": [
+                51164,
+                4416,
+                288,
+                257,
+                1769,
+                452,
+                3322,
+                51364
+            ],
+            "temperature": 0,
+            "avg_logprob": -0.29360681772232056,
+            "compression_ratio": 1.6342856884002686,
+            "no_speech_prob": 0.22950756549835205
+        },
+        {
+            "id": 5,
+            "seek": 0,
+            "start": 22.239999771118164,
+            "end": 24.040000915527344,
+            "text": " qu'il faut avoir de la méthode,",
+            "tokens": [
+                51364,
+                421,
+                6,
+                388,
+                8487,
+                10853,
+                368,
+                635,
+                45404,
+                1429,
+                11,
+                51564
+            ],
+            "temperature": 0,
+            "avg_logprob": -0.29360681772232056,
+            "compression_ratio": 1.6342856884002686,
+            "no_speech_prob": 0.22950756549835205
+        },
+        {
+            "id": 6,
+            "seek": 0,
+            "start": 24.81999969482422,
+            "end": 26.860000610351562,
+            "text": " de la discipline, des routines",
+            "tokens": [
+                51564,
+                368,
+                635,
+                13635,
+                11,
+                730,
+                33827,
+                51764
+            ],
+            "temperature": 0,
+            "avg_logprob": -0.29360681772232056,
+            "compression_ratio": 1.6342856884002686,
+            "no_speech_prob": 0.22950756549835205
+        },
+        {
+            "id": 7,
+            "seek": 2686,
+            "start": 27.780000686645508,
+            "end": 29.100000381469727,
+            "text": " pour être productif.",
+            "tokens": [
+                50364,
+                2016,
+                7418,
+                1674,
+                351,
+                13,
+                50564
+            ],
+            "temperature": 0,
+            "avg_logprob": -0.1151263564825058,
+            "compression_ratio": 1.5406697988510132,
+            "no_speech_prob": 0.019113881513476372
+        },
+        {
+            "id": 8,
+            "seek": 2686,
+            "start": 31.600000381469727,
+            "end": 34.41999816894531,
+            "text": " J'ai essayé les deux et il n'y a pas de doute",
+            "tokens": [
+                50564,
+                508,
+                6,
+                1301,
+                16238,
+                526,
+                1512,
+                8208,
+                1030,
+                1930,
+                297,
+                6,
+                88,
+                257,
+                1736,
+                368,
+                41984,
+                50764
+            ],
+            "temperature": 0,
+            "avg_logprob": -0.1151263564825058,
+            "compression_ratio": 1.5406697988510132,
+            "no_speech_prob": 0.019113881513476372
+        },
+        {
+            "id": 9,
+            "seek": 2686,
+            "start": 35.439998626708984,
+            "end": 38,
+            "text": " que quand on a une vraie routine, qu'on se lève tôt,",
+            "tokens": [
+                50764,
+                631,
+                6932,
+                322,
+                257,
+                2251,
+                6070,
+                414,
+                9927,
+                11,
+                421,
+                6,
+                266,
+                369,
+                287,
+                31397,
+                256,
+                8775,
+                11,
+                50964
+            ],
+            "temperature": 0,
+            "avg_logprob": -0.1151263564825058,
+            "compression_ratio": 1.5406697988510132,
+            "no_speech_prob": 0.019113881513476372
+        },
+        {
+            "id": 10,
+            "seek": 2686,
+            "start": 38.7400016784668,
+            "end": 41.099998474121094,
+            "text": " qu'on se couche tôt, qu'on dort bien,",
+            "tokens": [
+                50964,
+                421,
+                6,
+                266,
+                369,
+                1384,
+                1876,
+                256,
+                8775,
+                11,
+                421,
+                6,
+                266,
+                15775,
+                3610,
+                11,
+                51164
+            ],
+            "temperature": 0,
+            "avg_logprob": -0.1151263564825058,
+            "compression_ratio": 1.5406697988510132,
+            "no_speech_prob": 0.019113881513476372
+        },
+        {
+            "id": 11,
+            "seek": 2686,
+            "start": 43.63999938964844,
+            "end": 45.13999938964844,
+            "text": " on est productif.",
+            "tokens": [
+                51164,
+                322,
+                871,
+                1674,
+                351,
+                13,
+                51364
+            ],
+            "temperature": 0,
+            "avg_logprob": -0.1151263564825058,
+            "compression_ratio": 1.5406697988510132,
+            "no_speech_prob": 0.019113881513476372
+        },
+        {
+            "id": 12,
+            "seek": 2686,
+            "start": 46.220001220703125,
+            "end": 50.91999816894531,
+            "text": " Il n'y a aucun doute là-dessus. D'ailleurs, ce n'est pas pour rien",
+            "tokens": [
+                51364,
+                4416,
+                297,
+                6,
+                88,
+                257,
+                35361,
+                41984,
+                3684,
+                12,
+                42401,
+                13,
+                413,
+                6,
+                19400,
+                11,
+                1769,
+                297,
+                6,
+                377,
+                1736,
+                2016,
+                13355,
+                51564
+            ],
+            "temperature": 0,
+            "avg_logprob": -0.1151263564825058,
+            "compression_ratio": 1.5406697988510132,
+            "no_speech_prob": 0.019113881513476372
+        },
+        {
+            "id": 13,
+            "seek": 2686,
+            "start": 50.91999816894531,
+            "end": 55.15999984741211,
+            "text": " qu'il y a un milliard de vidéos sur le sujet du développement personnel",
+            "tokens": [
+                51564,
+                421,
+                6,
+                388,
+                288,
+                257,
+                517,
+                26176,
+                515,
+                368,
+                25417,
+                1022,
+                476,
+                23634,
+                1581,
+                45128,
+                14988,
+                51764
+            ],
+            "temperature": 0,
+            "avg_logprob": -0.1151263564825058,
+            "compression_ratio": 1.5406697988510132,
+            "no_speech_prob": 0.019113881513476372
+        },
+        {
+            "id": 14,
+            "seek": 5516,
+            "start": 55.15999984741211,
+            "end": 59.040000915527344,
+            "text": " qui parlent de ça. Mais la question,",
+            "tokens": [
+                50364,
+                1956,
+                13734,
+                317,
+                368,
+                2788,
+                13,
+                6313,
+                635,
+                1168,
+                11,
+                50564
+            ],
+            "temperature": 0,
+            "avg_logprob": -0.1630486696958542,
+            "compression_ratio": 1.712499976158142,
+            "no_speech_prob": 0.037854988127946854
+        },
+        {
+            "id": 15,
+            "seek": 5516,
+            "start": 59.36000061035156,
+            "end": 61.779998779296875,
+            "text": " elle est plus générale.",
+            "tokens": [
+                50564,
+                8404,
+                871,
+                1804,
+                45622,
+                1220,
+                13,
+                50764
+            ],
+            "temperature": 0,
+            "avg_logprob": -0.1630486696958542,
+            "compression_ratio": 1.712499976158142,
+            "no_speech_prob": 0.037854988127946854
+        },
+        {
+            "id": 16,
+            "seek": 5516,
+            "start": 63.52000045776367,
+            "end": 67.13999938964844,
+            "text": " Finalement, la question ce n'est pas « Est-ce qu'il faut se lever tôt",
+            "tokens": [
+                50764,
+                13443,
+                1712,
+                11,
+                635,
+                1168,
+                1769,
+                297,
+                6,
+                377,
+                1736,
+                4657,
+                4410,
+                12,
+                384,
+                421,
+                6,
+                388,
+                8487,
+                369,
+                12451,
+                256,
+                8775,
+                50964
+            ],
+            "temperature": 0,
+            "avg_logprob": -0.1630486696958542,
+            "compression_ratio": 1.712499976158142,
+            "no_speech_prob": 0.037854988127946854
+        },
+        {
+            "id": 17,
+            "seek": 5516,
+            "start": 67.13999938964844,
+            "end": 70.44000244140625,
+            "text": " pour être productif ? » C'est « Est-ce qu'être productif,",
+            "tokens": [
+                50964,
+                2016,
+                7418,
+                1674,
+                351,
+                2506,
+                8793,
+                383,
+                6,
+                377,
+                4657,
+                4410,
+                12,
+                384,
+                421,
+                6,
+                9498,
+                1674,
+                351,
+                11,
+                51164
+            ],
+            "temperature": 0,
+            "avg_logprob": -0.1630486696958542,
+            "compression_ratio": 1.712499976158142,
+            "no_speech_prob": 0.037854988127946854
+        },
+        {
+            "id": 18,
+            "seek": 5516,
+            "start": 71.36000061035156,
+            "end": 74.63999938964844,
+            "text": " c'est vraiment la chose la plus importante ? » Et finalement,",
+            "tokens": [
+                51164,
+                269,
+                6,
+                377,
+                8322,
+                635,
+                5111,
+                635,
+                1804,
+                9416,
+                2506,
+                8793,
+                3790,
+                28623,
+                11,
+                51364
+            ],
+            "temperature": 0,
+            "avg_logprob": -0.1630486696958542,
+            "compression_ratio": 1.712499976158142,
+            "no_speech_prob": 0.037854988127946854
+        },
+        {
+            "id": 19,
+            "seek": 5516,
+            "start": 74.77999877929688,
+            "end": 79.30000305175781,
+            "text": " c'est la question que peu de gens se posent. Alors, il y a des phases",
+            "tokens": [
+                51364,
+                269,
+                6,
+                377,
+                635,
+                1168,
+                631,
+                5604,
+                368,
+                10668,
+                369,
+                1366,
+                317,
+                13,
+                9946,
+                11,
+                1930,
+                288,
+                257,
+                730,
+                18764,
+                51564
+            ],
+            "temperature": 0,
+            "avg_logprob": -0.1630486696958542,
+            "compression_ratio": 1.712499976158142,
+            "no_speech_prob": 0.037854988127946854
+        },
+        {
+            "id": 20,
+            "seek": 5516,
+            "start": 79.30000305175781,
+            "end": 83.4000015258789,
+            "text": " dans la vie. Il y a des phases de créativité, il y a des phases d'exploration,",
+            "tokens": [
+                51564,
+                2680,
+                635,
+                4941,
+                13,
+                4416,
+                288,
+                257,
+                730,
+                18764,
+                368,
+                15609,
+                10662,
+                5066,
+                11,
+                1930,
+                288,
+                257,
+                730,
+                18764,
+                274,
+                6,
+                23040,
+                9357,
+                11,
+                51764
+            ],
+            "temperature": 0,
+            "avg_logprob": -0.1630486696958542,
+            "compression_ratio": 1.712499976158142,
+            "no_speech_prob": 0.037854988127946854
+        },
+        {
+            "id": 21,
+            "seek": 8340,
+            "start": 83.4000015258789,
+            "end": 88.04000091552734,
+            "text": " il y a des phases de, je ne sais jamais dire ce mot,",
+            "tokens": [
+                50364,
+                1930,
+                288,
+                257,
+                730,
+                18764,
+                368,
+                11,
+                1506,
+                408,
+                11757,
+                14540,
+                1264,
+                1769,
+                2184,
+                11,
+                50564
+            ],
+            "temperature": 0,
+            "avg_logprob": -0.23573185503482819,
+            "compression_ratio": 1.6009389162063599,
+            "no_speech_prob": 0.003073866479098797
+        },
+        {
+            "id": 22,
+            "seek": 8340,
+            "start": 89.18000030517578,
+            "end": 91.55999755859375,
+            "text": " « serendipity », comme on dit en français,",
+            "tokens": [
+                50564,
+                4657,
+                816,
+                521,
+                647,
+                507,
+                34319,
+                5173,
+                322,
+                6176,
+                465,
+                21425,
+                11,
+                50764
+            ],
+            "temperature": 0,
+            "avg_logprob": -0.23573185503482819,
+            "compression_ratio": 1.6009389162063599,
+            "no_speech_prob": 0.003073866479098797
+        },
+        {
+            "id": 23,
+            "seek": 8340,
+            "start": 91.72000122070312,
+            "end": 93.55999755859375,
+            "text": " « serendipité ».",
+            "tokens": [
+                50764,
+                4657,
+                816,
+                521,
+                647,
+                5066,
+                28082,
+                50964
+            ],
+            "temperature": 0,
+            "avg_logprob": -0.23573185503482819,
+            "compression_ratio": 1.6009389162063599,
+            "no_speech_prob": 0.003073866479098797
+        },
+        {
+            "id": 24,
+            "seek": 8340,
+            "start": 95.73999786376953,
+            "end": 98.9000015258789,
+            "text": " Et puis, il y a des phases de production où",
+            "tokens": [
+                50964,
+                3790,
+                9093,
+                11,
+                1930,
+                288,
+                257,
+                730,
+                18764,
+                368,
+                4265,
+                9068,
+                51164
+            ],
+            "temperature": 0,
+            "avg_logprob": -0.23573185503482819,
+            "compression_ratio": 1.6009389162063599,
+            "no_speech_prob": 0.003073866479098797
+        },
+        {
+            "id": 25,
+            "seek": 8340,
+            "start": 99.55999755859375,
+            "end": 103.5199966430664,
+            "text": " il ne faut pas être tout ça, il faut être extrêmement focus et extrêmement",
+            "tokens": [
+                51164,
+                1930,
+                408,
+                8487,
+                1736,
+                7418,
+                3486,
+                2788,
+                11,
+                1930,
+                8487,
+                7418,
+                38148,
+                1879,
+                1030,
+                38148,
+                51364
+            ],
+            "temperature": 0,
+            "avg_logprob": -0.23573185503482819,
+            "compression_ratio": 1.6009389162063599,
+            "no_speech_prob": 0.003073866479098797
+        },
+        {
+            "id": 26,
+            "seek": 8340,
+            "start": 103.54000091552734,
+            "end": 107.0199966430664,
+            "text": " productif. Ce que je trouve triste, très souvent,",
+            "tokens": [
+                51364,
+                1674,
+                351,
+                13,
+                8257,
+                631,
+                1506,
+                19359,
+                33526,
+                11,
+                5732,
+                20847,
+                11,
+                51564
+            ],
+            "temperature": 0,
+            "avg_logprob": -0.23573185503482819,
+            "compression_ratio": 1.6009389162063599,
+            "no_speech_prob": 0.003073866479098797
+        },
+        {
+            "id": 27,
+            "seek": 8340,
+            "start": 108.36000061035156,
+            "end": 111.18000030517578,
+            "text": " c'est d'imaginer qu'il y a un seul mode de jeu",
+            "tokens": [
+                51564,
+                269,
+                6,
+                377,
+                274,
+                6,
+                25228,
+                4564,
+                421,
+                6,
+                388,
+                288,
+                257,
+                517,
+                24448,
+                4391,
+                368,
+                16748,
+                51764
+            ],
+            "temperature": 0,
+            "avg_logprob": -0.23573185503482819,
+            "compression_ratio": 1.6009389162063599,
+            "no_speech_prob": 0.003073866479098797
+        },
+        {
+            "id": 28,
+            "seek": 11118,
+            "start": 111.18000030517578,
+            "end": 115.0199966430664,
+            "text": " dans le grand jeu vidéo de la vie. Non, il y a plusieurs modes",
+            "tokens": [
+                50364,
+                2680,
+                476,
+                2697,
+                16748,
+                11660,
+                368,
+                635,
+                4941,
+                13,
+                8774,
+                11,
+                1930,
+                288,
+                257,
+                20208,
+                14068,
+                50564
+            ],
+            "temperature": 0,
+            "avg_logprob": -0.11889204382896423,
+            "compression_ratio": 1.6666666269302368,
+            "no_speech_prob": 0.0016225820872932673
+        },
+        {
+            "id": 29,
+            "seek": 11118,
+            "start": 115.0199966430664,
+            "end": 119.05999755859375,
+            "text": " et puis même au sein du même jeu, non seulement",
+            "tokens": [
+                50564,
+                1030,
+                9093,
+                5698,
+                1609,
+                6195,
+                1581,
+                5698,
+                16748,
+                11,
+                2107,
+                27772,
+                50764
+            ],
+            "temperature": 0,
+            "avg_logprob": -0.11889204382896423,
+            "compression_ratio": 1.6666666269302368,
+            "no_speech_prob": 0.0016225820872932673
+        },
+        {
+            "id": 30,
+            "seek": 11118,
+            "start": 119.05999755859375,
+            "end": 123.30000305175781,
+            "text": " il y a plusieurs modes, mais il y a plusieurs tempos et puis il y a des niveaux",
+            "tokens": [
+                50764,
+                1930,
+                288,
+                257,
+                20208,
+                14068,
+                11,
+                2420,
+                1930,
+                288,
+                257,
+                20208,
+                18274,
+                329,
+                1030,
+                9093,
+                1930,
+                288,
+                257,
+                730,
+                11461,
+                7511,
+                50964
+            ],
+            "temperature": 0,
+            "avg_logprob": -0.11889204382896423,
+            "compression_ratio": 1.6666666269302368,
+            "no_speech_prob": 0.0016225820872932673
+        },
+        {
+            "id": 31,
+            "seek": 11118,
+            "start": 123.54000091552734,
+            "end": 126.16000366210938,
+            "text": " qui requièrent d'autres modes.",
+            "tokens": [
+                50964,
+                1956,
+                1724,
+                72,
+                1462,
+                1753,
+                274,
+                6,
+                16752,
+                14068,
+                13,
+                51164
+            ],
+            "temperature": 0,
+            "avg_logprob": -0.11889204382896423,
+            "compression_ratio": 1.6666666269302368,
+            "no_speech_prob": 0.0016225820872932673
+        },
+        {
+            "id": 32,
+            "seek": 11118,
+            "start": 127.22000122070312,
+            "end": 131.0399932861328,
+            "text": " Et s'il y a une chose que la routine détruit,",
+            "tokens": [
+                51164,
+                3790,
+                262,
+                6,
+                388,
+                288,
+                257,
+                2251,
+                5111,
+                631,
+                635,
+                9927,
+                22312,
+                18891,
+                11,
+                51364
+            ],
+            "temperature": 0,
+            "avg_logprob": -0.11889204382896423,
+            "compression_ratio": 1.6666666269302368,
+            "no_speech_prob": 0.0016225820872932673
+        },
+        {
+            "id": 33,
+            "seek": 11118,
+            "start": 132.17999267578125,
+            "end": 133.13999938964844,
+            "text": " c'est la créativité.",
+            "tokens": [
+                51364,
+                269,
+                6,
+                377,
+                635,
+                15609,
+                10662,
+                5066,
+                13,
+                51564
+            ],
+            "temperature": 0,
+            "avg_logprob": -0.11889204382896423,
+            "compression_ratio": 1.6666666269302368,
+            "no_speech_prob": 0.0016225820872932673
+        },
+        {
+            "id": 34,
+            "seek": 11118,
+            "start": 135.33999633789062,
+            "end": 138.32000732421875,
+            "text": " Je ne sais pas comment c'est possible d'être créatif",
+            "tokens": [
+                51564,
+                2588,
+                408,
+                11757,
+                1736,
+                2871,
+                269,
+                6,
+                377,
+                1944,
+                274,
+                6,
+                9498,
+                15609,
+                36850,
+                51764
+            ],
+            "temperature": 0,
+            "avg_logprob": -0.11889204382896423,
+            "compression_ratio": 1.6666666269302368,
+            "no_speech_prob": 0.0016225820872932673
+        },
+        {
+            "id": 35,
+            "seek": 13832,
+            "start": 139.75999450683594,
+            "end": 141.0800018310547,
+            "text": " lorsqu'on est rigide.",
+            "tokens": [
+                50364,
+                46581,
+                6,
+                266,
+                871,
+                8329,
+                482,
+                13,
+                50564
+            ],
+            "temperature": 0,
+            "avg_logprob": -0.1360294073820114,
+            "compression_ratio": 1.4477611780166626,
+            "no_speech_prob": 0.0030720820650458336
+        },
+        {
+            "id": 36,
+            "seek": 13832,
+            "start": 142.25999450683594,
+            "end": 146.63999938964844,
+            "text": " Je ne vois pas comment c'est possible d'être créatif",
+            "tokens": [
+                50564,
+                2588,
+                408,
+                18297,
+                1736,
+                2871,
+                269,
+                6,
+                377,
+                1944,
+                274,
+                6,
+                9498,
+                15609,
+                36850,
+                50764
+            ],
+            "temperature": 0,
+            "avg_logprob": -0.1360294073820114,
+            "compression_ratio": 1.4477611780166626,
+            "no_speech_prob": 0.0030720820650458336
+        },
+        {
+            "id": 37,
+            "seek": 13832,
+            "start": 147.66000366210938,
+            "end": 149.52000427246094,
+            "text": " lorsque tout est organisé,",
+            "tokens": [
+                50764,
+                40629,
+                3486,
+                871,
+                15223,
+                526,
+                11,
+                50964
+            ],
+            "temperature": 0,
+            "avg_logprob": -0.1360294073820114,
+            "compression_ratio": 1.4477611780166626,
+            "no_speech_prob": 0.0030720820650458336
+        },
+        {
+            "id": 38,
+            "seek": 13832,
+            "start": 150.77999877929688,
+            "end": 154.36000061035156,
+            "text": " tout est planifié, tout est millimétré,",
+            "tokens": [
+                50964,
+                3486,
+                871,
+                1393,
+                17638,
+                526,
+                11,
+                3486,
+                871,
+                1728,
+                332,
+                4051,
+                10521,
+                11,
+                51164
+            ],
+            "temperature": 0,
+            "avg_logprob": -0.1360294073820114,
+            "compression_ratio": 1.4477611780166626,
+            "no_speech_prob": 0.0030720820650458336
+        },
+        {
+            "id": 39,
+            "seek": 13832,
+            "start": 154.8800048828125,
+            "end": 158.0399932861328,
+            "text": " chaque décision, c'est vraiment un genre. Alors aujourd'hui,",
+            "tokens": [
+                51164,
+                18920,
+                9198,
+                1991,
+                11,
+                269,
+                6,
+                377,
+                8322,
+                517,
+                11022,
+                13,
+                9946,
+                14023,
+                6,
+                10556,
+                11,
+                51364
+            ],
+            "temperature": 0,
+            "avg_logprob": -0.1360294073820114,
+            "compression_ratio": 1.4477611780166626,
+            "no_speech_prob": 0.0030720820650458336
+        },
+        {
+            "id": 40,
+            "seek": 13832,
+            "start": 158.24000549316406,
+            "end": 161.3000030517578,
+            "text": " de 9h à 11h, je serai créatif.",
+            "tokens": [
+                51364,
+                368,
+                1722,
+                71,
+                1531,
+                2975,
+                71,
+                11,
+                1506,
+                816,
+                1301,
+                15609,
+                36850,
+                13,
+                51564
+            ],
+            "temperature": 0,
+            "avg_logprob": -0.1360294073820114,
+            "compression_ratio": 1.4477611780166626,
+            "no_speech_prob": 0.0030720820650458336
+        },
+        {
+            "id": 41,
+            "seek": 13832,
+            "start": 162.52000427246094,
+            "end": 166.02000427246094,
+            "text": " Putain, merde, je n'y arrive pas. Bon, tant pis,",
+            "tokens": [
+                51564,
+                4935,
+                491,
+                11,
+                45772,
+                11,
+                1506,
+                297,
+                6,
+                88,
+                8881,
+                1736,
+                13,
+                7368,
+                11,
+                12095,
+                26584,
+                11,
+                51764
+            ],
+            "temperature": 0,
+            "avg_logprob": -0.1360294073820114,
+            "compression_ratio": 1.4477611780166626,
+            "no_speech_prob": 0.0030720820650458336
+        },
+        {
+            "id": 42,
+            "seek": 16602,
+            "start": 166.02000427246094,
+            "end": 167.1999969482422,
+            "text": " je n'ai pas été créatif.",
+            "tokens": [
+                50364,
+                1506,
+                297,
+                6,
+                1301,
+                1736,
+                8862,
+                15609,
+                36850,
+                13,
+                50564
+            ],
+            "temperature": 0,
+            "avg_logprob": -0.14559659361839294,
+            "compression_ratio": 1.6696428060531616,
+            "no_speech_prob": 0.02884611487388611
+        },
+        {
+            "id": 43,
+            "seek": 16602,
+            "start": 168.27999877929688,
+            "end": 174.05999755859375,
+            "text": " En fait, la source de la créativité, c'est quand même",
+            "tokens": [
+                50564,
+                2193,
+                3887,
+                11,
+                635,
+                4009,
+                368,
+                635,
+                15609,
+                10662,
+                5066,
+                11,
+                269,
+                6,
+                377,
+                6932,
+                5698,
+                50764
+            ],
+            "temperature": 0,
+            "avg_logprob": -0.14559659361839294,
+            "compression_ratio": 1.6696428060531616,
+            "no_speech_prob": 0.02884611487388611
+        },
+        {
+            "id": 44,
+            "seek": 16602,
+            "start": 174.05999755859375,
+            "end": 178.02000427246094,
+            "text": " très souvent, tu fais autre chose, tu es en train de",
+            "tokens": [
+                50764,
+                5732,
+                20847,
+                11,
+                2604,
+                12153,
+                15081,
+                5111,
+                11,
+                2604,
+                785,
+                465,
+                3847,
+                368,
+                50964
+            ],
+            "temperature": 0,
+            "avg_logprob": -0.14559659361839294,
+            "compression_ratio": 1.6696428060531616,
+            "no_speech_prob": 0.02884611487388611
+        },
+        {
+            "id": 45,
+            "seek": 16602,
+            "start": 179.0399932861328,
+            "end": 181.77999877929688,
+            "text": " faire quelque chose où tu ne penses pas du tout à ton projet, pas du tout à ton idée",
+            "tokens": [
+                50964,
+                4865,
+                14448,
+                5111,
+                9068,
+                2604,
+                408,
+                6099,
+                279,
+                1736,
+                1581,
+                3486,
+                1531,
+                2952,
+                17929,
+                11,
+                1736,
+                1581,
+                3486,
+                1531,
+                2952,
+                34832,
+                51164
+            ],
+            "temperature": 0,
+            "avg_logprob": -0.14559659361839294,
+            "compression_ratio": 1.6696428060531616,
+            "no_speech_prob": 0.02884611487388611
+        },
+        {
+            "id": 46,
+            "seek": 16602,
+            "start": 181.83999633789062,
+            "end": 185.5,
+            "text": " et il y a quelque chose qui surgit, il y a une inspiration",
+            "tokens": [
+                51164,
+                1030,
+                1930,
+                288,
+                257,
+                14448,
+                5111,
+                1956,
+                19560,
+                270,
+                11,
+                1930,
+                288,
+                257,
+                2251,
+                10249,
+                51364
+            ],
+            "temperature": 0,
+            "avg_logprob": -0.14559659361839294,
+            "compression_ratio": 1.6696428060531616,
+            "no_speech_prob": 0.02884611487388611
+        },
+        {
+            "id": 47,
+            "seek": 16602,
+            "start": 187.5399932861328,
+            "end": 190.1199951171875,
+            "text": " extrêmement profonde qui surgit",
+            "tokens": [
+                51364,
+                38148,
+                1740,
+                7259,
+                1956,
+                19560,
+                270,
+                51564
+            ],
+            "temperature": 0,
+            "avg_logprob": -0.14559659361839294,
+            "compression_ratio": 1.6696428060531616,
+            "no_speech_prob": 0.02884611487388611
+        },
+        {
+            "id": 48,
+            "seek": 16602,
+            "start": 190.63999938964844,
+            "end": 194.0399932861328,
+            "text": " et je pense que ça vient par le fait de se détendre,",
+            "tokens": [
+                51564,
+                1030,
+                1506,
+                11209,
+                631,
+                2788,
+                22876,
+                971,
+                476,
+                3887,
+                368,
+                369,
+                22312,
+                37850,
+                11,
+                51764
+            ],
+            "temperature": 0,
+            "avg_logprob": -0.14559659361839294,
+            "compression_ratio": 1.6696428060531616,
+            "no_speech_prob": 0.02884611487388611
+        },
+        {
+            "id": 49,
+            "seek": 19404,
+            "start": 194.0399932861328,
+            "end": 198.10000610351562,
+            "text": " de s'amuser, d'aller faire d'autres choses",
+            "tokens": [
+                50364,
+                368,
+                262,
+                6,
+                335,
+                18088,
+                11,
+                274,
+                6,
+                22414,
+                4865,
+                274,
+                6,
+                16752,
+                14488,
+                50564
+            ],
+            "temperature": 0,
+            "avg_logprob": -0.12396816164255142,
+            "compression_ratio": 1.495192289352417,
+            "no_speech_prob": 0.013013066723942757
+        },
+        {
+            "id": 50,
+            "seek": 19404,
+            "start": 198.8000030517578,
+            "end": 199.32000732421875,
+            "text": " et",
+            "tokens": [
+                50564,
+                1030,
+                50764
+            ],
+            "temperature": 0,
+            "avg_logprob": -0.12396816164255142,
+            "compression_ratio": 1.495192289352417,
+            "no_speech_prob": 0.013013066723942757
+        },
+        {
+            "id": 51,
+            "seek": 19404,
+            "start": 202.9199981689453,
+            "end": 205.3800048828125,
+            "text": " évidemment, si on n'est que créatif",
+            "tokens": [
+                50764,
+                24724,
+                11,
+                1511,
+                322,
+                297,
+                6,
+                377,
+                631,
+                15609,
+                36850,
+                50964
+            ],
+            "temperature": 0,
+            "avg_logprob": -0.12396816164255142,
+            "compression_ratio": 1.495192289352417,
+            "no_speech_prob": 0.013013066723942757
+        },
+        {
+            "id": 52,
+            "seek": 19404,
+            "start": 206.05999755859375,
+            "end": 210.27999877929688,
+            "text": " et qu'à aucun moment on n'arrive à transformer ses idées en quelque chose",
+            "tokens": [
+                50964,
+                1030,
+                421,
+                6,
+                1467,
+                35361,
+                1623,
+                322,
+                297,
+                6,
+                47614,
+                1531,
+                31782,
+                5385,
+                4496,
+                6836,
+                465,
+                14448,
+                5111,
+                51164
+            ],
+            "temperature": 0,
+            "avg_logprob": -0.12396816164255142,
+            "compression_ratio": 1.495192289352417,
+            "no_speech_prob": 0.013013066723942757
+        },
+        {
+            "id": 53,
+            "seek": 19404,
+            "start": 210.27999877929688,
+            "end": 214,
+            "text": " de concret, d'incarné, d'utilisable, ça ne sert à rien.",
+            "tokens": [
+                51164,
+                368,
+                39481,
+                11,
+                274,
+                6,
+                41801,
+                526,
+                11,
+                274,
+                6,
+                20835,
+                271,
+                712,
+                11,
+                2788,
+                408,
+                38806,
+                1531,
+                13355,
+                13,
+                51364
+            ],
+            "temperature": 0,
+            "avg_logprob": -0.12396816164255142,
+            "compression_ratio": 1.495192289352417,
+            "no_speech_prob": 0.013013066723942757
+        },
+        {
+            "id": 54,
+            "seek": 19404,
+            "start": 215.17999267578125,
+            "end": 218.0399932861328,
+            "text": " Et c'est là, finalement, la vraie difficulté, c'est que",
+            "tokens": [
+                51364,
+                3790,
+                269,
+                6,
+                377,
+                3684,
+                11,
+                28623,
+                11,
+                635,
+                6070,
+                414,
+                2252,
+                526,
+                11,
+                269,
+                6,
+                377,
+                631,
+                51564
+            ],
+            "temperature": 0,
+            "avg_logprob": -0.12396816164255142,
+            "compression_ratio": 1.495192289352417,
+            "no_speech_prob": 0.013013066723942757
+        },
+        {
+            "id": 55,
+            "seek": 19404,
+            "start": 219.60000610351562,
+            "end": 221.25999450683594,
+            "text": " tout le monde a envie d'être où",
+            "tokens": [
+                51564,
+                3486,
+                476,
+                10431,
+                257,
+                24149,
+                274,
+                6,
+                9498,
+                9068,
+                51764
+            ],
+            "temperature": 0,
+            "avg_logprob": -0.12396816164255142,
+            "compression_ratio": 1.495192289352417,
+            "no_speech_prob": 0.013013066723942757
+        },
+        {
+            "id": 56,
+            "seek": 22126,
+            "start": 221.97999572753906,
+            "end": 225.13999938964844,
+            "text": " alors que malheureusement, il faut être et.",
+            "tokens": [
+                50364,
+                11246,
+                631,
+                2806,
+                23084,
+                21359,
+                11,
+                1930,
+                8487,
+                7418,
+                1030,
+                13,
+                50564
+            ],
+            "temperature": 0,
+            "avg_logprob": -0.14442172646522522,
+            "compression_ratio": 1.7619047164916992,
+            "no_speech_prob": 0.0051362342201173306
+        },
+        {
+            "id": 57,
+            "seek": 22126,
+            "start": 225.94000244140625,
+            "end": 229.4199981689453,
+            "text": " Ce n'est pas je suis discipliné ou créatif",
+            "tokens": [
+                50564,
+                8257,
+                297,
+                6,
+                377,
+                1736,
+                1506,
+                7624,
+                8644,
+                259,
+                526,
+                2820,
+                15609,
+                36850,
+                50764
+            ],
+            "temperature": 0,
+            "avg_logprob": -0.14442172646522522,
+            "compression_ratio": 1.7619047164916992,
+            "no_speech_prob": 0.0051362342201173306
+        },
+        {
+            "id": 58,
+            "seek": 22126,
+            "start": 230.05999755859375,
+            "end": 232.77999877929688,
+            "text": " ce n'est pas je suis routinier",
+            "tokens": [
+                50764,
+                1769,
+                297,
+                6,
+                377,
+                1736,
+                1506,
+                7624,
+                4020,
+                259,
+                811,
+                50964
+            ],
+            "temperature": 0,
+            "avg_logprob": -0.14442172646522522,
+            "compression_ratio": 1.7619047164916992,
+            "no_speech_prob": 0.0051362342201173306
+        },
+        {
+            "id": 59,
+            "seek": 22126,
+            "start": 233.10000610351562,
+            "end": 237.3800048828125,
+            "text": " ou chaotique, c'est quand est-ce que je dois être routinier",
+            "tokens": [
+                50964,
+                2820,
+                6294,
+                310,
+                1925,
+                11,
+                269,
+                6,
+                377,
+                6932,
+                871,
+                12,
+                384,
+                631,
+                1506,
+                11854,
+                7418,
+                4020,
+                259,
+                811,
+                51164
+            ],
+            "temperature": 0,
+            "avg_logprob": -0.14442172646522522,
+            "compression_ratio": 1.7619047164916992,
+            "no_speech_prob": 0.0051362342201173306
+        },
+        {
+            "id": 60,
+            "seek": 22126,
+            "start": 237.3800048828125,
+            "end": 240.36000061035156,
+            "text": " quand est-ce que je dois être chaotique et finalement",
+            "tokens": [
+                51164,
+                6932,
+                871,
+                12,
+                384,
+                631,
+                1506,
+                11854,
+                7418,
+                6294,
+                310,
+                1925,
+                1030,
+                28623,
+                51364
+            ],
+            "temperature": 0,
+            "avg_logprob": -0.14442172646522522,
+            "compression_ratio": 1.7619047164916992,
+            "no_speech_prob": 0.0051362342201173306
+        },
+        {
+            "id": 61,
+            "seek": 22126,
+            "start": 241.22000122070312,
+            "end": 245.13999938964844,
+            "text": " on en revient à quelque chose dont la plupart des entrepreneurs",
+            "tokens": [
+                51364,
+                322,
+                465,
+                3698,
+                1196,
+                1531,
+                14448,
+                5111,
+                9400,
+                635,
+                45403,
+                730,
+                12639,
+                51564
+            ],
+            "temperature": 0,
+            "avg_logprob": -0.14442172646522522,
+            "compression_ratio": 1.7619047164916992,
+            "no_speech_prob": 0.0051362342201173306
+        },
+        {
+            "id": 62,
+            "seek": 22126,
+            "start": 245.8800048828125,
+            "end": 249.4600067138672,
+            "text": " et surtout la plupart des gens qui regardent des vidéos sur Youtube",
+            "tokens": [
+                51564,
+                1030,
+                19903,
+                635,
+                45403,
+                730,
+                10668,
+                1956,
+                3843,
+                317,
+                730,
+                25417,
+                1022,
+                12132,
+                51764
+            ],
+            "temperature": 0,
+            "avg_logprob": -0.14442172646522522,
+            "compression_ratio": 1.7619047164916992,
+            "no_speech_prob": 0.0051362342201173306
+        },
+        {
+            "id": 63,
+            "seek": 24946,
+            "start": 250.6199951171875,
+            "end": 252.9600067138672,
+            "text": " toi, cher ami qui regarde cette vidéo",
+            "tokens": [
+                50364,
+                15648,
+                11,
+                12085,
+                33206,
+                1956,
+                33357,
+                5550,
+                11660,
+                50564
+            ],
+            "temperature": 0,
+            "avg_logprob": -0.1517857164144516,
+            "compression_ratio": 1.529953956604004,
+            "no_speech_prob": 0.03304988145828247
+        },
+        {
+            "id": 64,
+            "seek": 24946,
+            "start": 253.66000366210938,
+            "end": 257.9800109863281,
+            "text": " il y a quelque chose d'assez dur à admettre",
+            "tokens": [
+                50564,
+                1930,
+                288,
+                257,
+                14448,
+                5111,
+                274,
+                6,
+                8604,
+                89,
+                4861,
+                1531,
+                5910,
+                40681,
+                50764
+            ],
+            "temperature": 0,
+            "avg_logprob": -0.1517857164144516,
+            "compression_ratio": 1.529953956604004,
+            "no_speech_prob": 0.03304988145828247
+        },
+        {
+            "id": 65,
+            "seek": 24946,
+            "start": 258.5199890136719,
+            "end": 261.9800109863281,
+            "text": " c'est qu'à la fin de la journée, on est évalué",
+            "tokens": [
+                50764,
+                269,
+                6,
+                377,
+                421,
+                6,
+                1467,
+                635,
+                962,
+                368,
+                635,
+                34277,
+                11,
+                322,
+                871,
+                1136,
+                3337,
+                42423,
+                50964
+            ],
+            "temperature": 0,
+            "avg_logprob": -0.1517857164144516,
+            "compression_ratio": 1.529953956604004,
+            "no_speech_prob": 0.03304988145828247
+        },
+        {
+            "id": 66,
+            "seek": 24946,
+            "start": 261.9800109863281,
+            "end": 265.8999938964844,
+            "text": " pour son jugement. L'univers nous récompense",
+            "tokens": [
+                50964,
+                2016,
+                1872,
+                3649,
+                48122,
+                13,
+                441,
+                6,
+                41421,
+                4666,
+                3960,
+                21541,
+                1288,
+                51164
+            ],
+            "temperature": 0,
+            "avg_logprob": -0.1517857164144516,
+            "compression_ratio": 1.529953956604004,
+            "no_speech_prob": 0.03304988145828247
+        },
+        {
+            "id": 67,
+            "seek": 24946,
+            "start": 266.2200012207031,
+            "end": 269.9200134277344,
+            "text": " pour notre capacité à faire les bons choix et avoir les bons jugements",
+            "tokens": [
+                51164,
+                2016,
+                10349,
+                4637,
+                5066,
+                1531,
+                4865,
+                1512,
+                33922,
+                32688,
+                1030,
+                10853,
+                1512,
+                33922,
+                3649,
+                432,
+                1117,
+                51364
+            ],
+            "temperature": 0,
+            "avg_logprob": -0.1517857164144516,
+            "compression_ratio": 1.529953956604004,
+            "no_speech_prob": 0.03304988145828247
+        },
+        {
+            "id": 68,
+            "seek": 24946,
+            "start": 270.6400146484375,
+            "end": 273.5,
+            "text": " et avoir le bon jugement, c'est être",
+            "tokens": [
+                51364,
+                1030,
+                10853,
+                476,
+                4428,
+                3649,
+                48122,
+                11,
+                269,
+                6,
+                377,
+                7418,
+                51564
+            ],
+            "temperature": 0,
+            "avg_logprob": -0.1517857164144516,
+            "compression_ratio": 1.529953956604004,
+            "no_speech_prob": 0.03304988145828247
+        },
+        {
+            "id": 69,
+            "seek": 24946,
+            "start": 273.8599853515625,
+            "end": 277.1600036621094,
+            "text": " subtil. S'il y avait une méthode simple",
+            "tokens": [
+                51564,
+                7257,
+                388,
+                13,
+                318,
+                6,
+                388,
+                288,
+                11853,
+                2251,
+                45404,
+                1429,
+                2199,
+                51764
+            ],
+            "temperature": 0,
+            "avg_logprob": -0.1517857164144516,
+            "compression_ratio": 1.529953956604004,
+            "no_speech_prob": 0.03304988145828247
+        },
+        {
+            "id": 70,
+            "seek": 27716,
+            "start": 277.1600036621094,
+            "end": 280.4200134277344,
+            "text": " pour avoir une vie heureuse, épanouie",
+            "tokens": [
+                50364,
+                2016,
+                10853,
+                2251,
+                4941,
+                30027,
+                438,
+                11,
+                1136,
+                6040,
+                263,
+                414,
+                50564
+            ],
+            "temperature": 0,
+            "avg_logprob": -0.18802520632743835,
+            "compression_ratio": 1.5593219995498657,
+            "no_speech_prob": 0.00555321155115962
+        },
+        {
+            "id": 71,
+            "seek": 27716,
+            "start": 281.3800048828125,
+            "end": 285.260009765625,
+            "text": " successfoule, s'il suffisait de manger des protéines, d'aller à la salle",
+            "tokens": [
+                50564,
+                1965,
+                887,
+                82,
+                69,
+                26757,
+                11,
+                262,
+                6,
+                388,
+                3889,
+                271,
+                1001,
+                368,
+                34372,
+                730,
+                1742,
+                526,
+                1652,
+                11,
+                274,
+                6,
+                22414,
+                1531,
+                635,
+                262,
+                11780,
+                50764
+            ],
+            "temperature": 0,
+            "avg_logprob": -0.18802520632743835,
+            "compression_ratio": 1.5593219995498657,
+            "no_speech_prob": 0.00555321155115962
+        },
+        {
+            "id": 72,
+            "seek": 27716,
+            "start": 285.6400146484375,
+            "end": 288.8800048828125,
+            "text": " et de tous les jours faire la même chose",
+            "tokens": [
+                50764,
+                1030,
+                368,
+                8317,
+                1512,
+                20724,
+                4865,
+                635,
+                5698,
+                5111,
+                50964
+            ],
+            "temperature": 0,
+            "avg_logprob": -0.18802520632743835,
+            "compression_ratio": 1.5593219995498657,
+            "no_speech_prob": 0.00555321155115962
+        },
+        {
+            "id": 73,
+            "seek": 27716,
+            "start": 288.8800048828125,
+            "end": 291.8599853515625,
+            "text": " comme un robot, ça se serait",
+            "tokens": [
+                50964,
+                5173,
+                517,
+                7881,
+                11,
+                2788,
+                369,
+                23139,
+                51164
+            ],
+            "temperature": 0,
+            "avg_logprob": -0.18802520632743835,
+            "compression_ratio": 1.5593219995498657,
+            "no_speech_prob": 0.00555321155115962
+        },
+        {
+            "id": 74,
+            "seek": 27716,
+            "start": 292.67999267578125,
+            "end": 297.1600036621094,
+            "text": " on le ferait tous. Mais la raison pour laquelle on ne le fait pas tous, c'est parce qu'on voit bien",
+            "tokens": [
+                51164,
+                322,
+                476,
+                7202,
+                1001,
+                8317,
+                13,
+                6313,
+                635,
+                28402,
+                2016,
+                35668,
+                322,
+                408,
+                476,
+                3887,
+                1736,
+                8317,
+                11,
+                269,
+                6,
+                377,
+                6992,
+                421,
+                6,
+                266,
+                18164,
+                3610,
+                51364
+            ],
+            "temperature": 0,
+            "avg_logprob": -0.18802520632743835,
+            "compression_ratio": 1.5593219995498657,
+            "no_speech_prob": 0.00555321155115962
+        },
+        {
+            "id": 75,
+            "seek": 27716,
+            "start": 298.44000244140625,
+            "end": 301.17999267578125,
+            "text": " qu'en fait, c'est un peu plus compliqué",
+            "tokens": [
+                51364,
+                421,
+                6,
+                268,
+                3887,
+                11,
+                269,
+                6,
+                377,
+                517,
+                5604,
+                1804,
+                44290,
+                51564
+            ],
+            "temperature": 0,
+            "avg_logprob": -0.18802520632743835,
+            "compression_ratio": 1.5593219995498657,
+            "no_speech_prob": 0.00555321155115962
+        },
+        {
+            "id": 76,
+            "seek": 27716,
+            "start": 301.17999267578125,
+            "end": 305.6400146484375,
+            "text": " que ça. Et finalement, l'époque moderne",
+            "tokens": [
+                51564,
+                631,
+                2788,
+                13,
+                3790,
+                28623,
+                11,
+                287,
+                6,
+                35580,
+                10494,
+                716,
+                51764
+            ],
+            "temperature": 0,
+            "avg_logprob": -0.18802520632743835,
+            "compression_ratio": 1.5593219995498657,
+            "no_speech_prob": 0.00555321155115962
+        },
+        {
+            "id": 77,
+            "seek": 30564,
+            "start": 305.6400146484375,
+            "end": 308.4200134277344,
+            "text": " est en tension entre deux choses",
+            "tokens": [
+                50364,
+                871,
+                465,
+                8980,
+                3962,
+                8208,
+                14488,
+                50564
+            ],
+            "temperature": 0,
+            "avg_logprob": -0.15205439925193787,
+            "compression_ratio": 1.7835052013397217,
+            "no_speech_prob": 0.1292286068201065
+        },
+        {
+            "id": 78,
+            "seek": 30564,
+            "start": 309.4200134277344,
+            "end": 312.6000061035156,
+            "text": " entre d'un côté la nécessité de faire des vues",
+            "tokens": [
+                50564,
+                3962,
+                274,
+                6,
+                409,
+                18437,
+                635,
+                31956,
+                5066,
+                368,
+                4865,
+                730,
+                371,
+                1247,
+                50764
+            ],
+            "temperature": 0,
+            "avg_logprob": -0.15205439925193787,
+            "compression_ratio": 1.7835052013397217,
+            "no_speech_prob": 0.1292286068201065
+        },
+        {
+            "id": 79,
+            "seek": 30564,
+            "start": 313.239990234375,
+            "end": 316.55999755859375,
+            "text": " on a besoin d'audience, on a besoin d'impact",
+            "tokens": [
+                50764,
+                322,
+                257,
+                19207,
+                274,
+                6,
+                4834,
+                11,
+                322,
+                257,
+                19207,
+                274,
+                6,
+                8814,
+                578,
+                50964
+            ],
+            "temperature": 0,
+            "avg_logprob": -0.15205439925193787,
+            "compression_ratio": 1.7835052013397217,
+            "no_speech_prob": 0.1292286068201065
+        },
+        {
+            "id": 80,
+            "seek": 30564,
+            "start": 316.70001220703125,
+            "end": 321.9599914550781,
+            "text": " et le meilleur moyen de faire des vues, c'est de dire des choses simples, que les gens peuvent répéter",
+            "tokens": [
+                50964,
+                1030,
+                476,
+                41457,
+                42009,
+                368,
+                4865,
+                730,
+                371,
+                1247,
+                11,
+                269,
+                6,
+                377,
+                368,
+                1264,
+                730,
+                14488,
+                21730,
+                11,
+                631,
+                1512,
+                10668,
+                24335,
+                14243,
+                526,
+                391,
+                51164
+            ],
+            "temperature": 0,
+            "avg_logprob": -0.15205439925193787,
+            "compression_ratio": 1.7835052013397217,
+            "no_speech_prob": 0.1292286068201065
+        },
+        {
+            "id": 81,
+            "seek": 30564,
+            "start": 322.6400146484375,
+            "end": 324.44000244140625,
+            "text": " la meilleure façon de faire des vues",
+            "tokens": [
+                51164,
+                635,
+                25039,
+                540,
+                20725,
+                368,
+                4865,
+                730,
+                371,
+                1247,
+                51364
+            ],
+            "temperature": 0,
+            "avg_logprob": -0.15205439925193787,
+            "compression_ratio": 1.7835052013397217,
+            "no_speech_prob": 0.1292286068201065
+        },
+        {
+            "id": 82,
+            "seek": 30564,
+            "start": 326.0400085449219,
+            "end": 329.29998779296875,
+            "text": " c'est de cliver, c'est de surtout pas être subtil",
+            "tokens": [
+                51364,
+                269,
+                6,
+                377,
+                368,
+                596,
+                1837,
+                11,
+                269,
+                6,
+                377,
+                368,
+                19903,
+                1736,
+                7418,
+                7257,
+                388,
+                51564
+            ],
+            "temperature": 0,
+            "avg_logprob": -0.15205439925193787,
+            "compression_ratio": 1.7835052013397217,
+            "no_speech_prob": 0.1292286068201065
+        },
+        {
+            "id": 83,
+            "seek": 30564,
+            "start": 329.9800109863281,
+            "end": 333.0799865722656,
+            "text": " le mec subtil n'est pas",
+            "tokens": [
+                51564,
+                476,
+                25186,
+                7257,
+                388,
+                297,
+                6,
+                377,
+                1736,
+                51764
+            ],
+            "temperature": 0,
+            "avg_logprob": -0.15205439925193787,
+            "compression_ratio": 1.7835052013397217,
+            "no_speech_prob": 0.1292286068201065
+        },
+        {
+            "id": 84,
+            "seek": 33308,
+            "start": 335.3999938964844,
+            "end": 336.20001220703125,
+            "text": " viral",
+            "tokens": [
+                50364,
+                371,
+                35083,
+                50564
+            ],
+            "temperature": 0,
+            "avg_logprob": -0.17131392657756805,
+            "compression_ratio": 1.7133758068084717,
+            "no_speech_prob": 0.0010482748039066792
+        },
+        {
+            "id": 85,
+            "seek": 33308,
+            "start": 337.9599914550781,
+            "end": 341.5400085449219,
+            "text": " mais cette nécessité économique",
+            "tokens": [
+                50564,
+                2420,
+                5550,
+                31956,
+                5066,
+                49915,
+                50764
+            ],
+            "temperature": 0,
+            "avg_logprob": -0.17131392657756805,
+            "compression_ratio": 1.7133758068084717,
+            "no_speech_prob": 0.0010482748039066792
+        },
+        {
+            "id": 86,
+            "seek": 33308,
+            "start": 341.5400085449219,
+            "end": 345.55999755859375,
+            "text": " ne doit pas nous faire perdre de vue la complexité de notre fort intérieur",
+            "tokens": [
+                50764,
+                408,
+                19193,
+                1736,
+                4666,
+                4865,
+                46254,
+                368,
+                32859,
+                635,
+                3997,
+                5066,
+                368,
+                10349,
+                726,
+                17721,
+                560,
+                24608,
+                50964
+            ],
+            "temperature": 0,
+            "avg_logprob": -0.17131392657756805,
+            "compression_ratio": 1.7133758068084717,
+            "no_speech_prob": 0.0010482748039066792
+        },
+        {
+            "id": 87,
+            "seek": 33308,
+            "start": 346.260009765625,
+            "end": 349.55999755859375,
+            "text": " c'est en nourrissant la complexité de notre fort intérieur",
+            "tokens": [
+                50964,
+                269,
+                6,
+                377,
+                465,
+                22683,
+                81,
+                29492,
+                635,
+                3997,
+                5066,
+                368,
+                10349,
+                5009,
+                560,
+                24608,
+                51164
+            ],
+            "temperature": 0,
+            "avg_logprob": -0.17131392657756805,
+            "compression_ratio": 1.7133758068084717,
+            "no_speech_prob": 0.0010482748039066792
+        },
+        {
+            "id": 88,
+            "seek": 33308,
+            "start": 349.94000244140625,
+            "end": 353.0799865722656,
+            "text": " c'est en donnant à notre personne",
+            "tokens": [
+                51164,
+                269,
+                6,
+                377,
+                465,
+                500,
+                25928,
+                1531,
+                10349,
+                17219,
+                51364
+            ],
+            "temperature": 0,
+            "avg_logprob": -0.17131392657756805,
+            "compression_ratio": 1.7133758068084717,
+            "no_speech_prob": 0.0010482748039066792
+        },
+        {
+            "id": 89,
+            "seek": 33308,
+            "start": 354.5400085449219,
+            "end": 357.5400085449219,
+            "text": " du paradoxe, des choses contradictoires",
+            "tokens": [
+                51364,
+                1581,
+                26221,
+                68,
+                11,
+                730,
+                14488,
+                28900,
+                40483,
+                51564
+            ],
+            "temperature": 0,
+            "avg_logprob": -0.17131392657756805,
+            "compression_ratio": 1.7133758068084717,
+            "no_speech_prob": 0.0010482748039066792
+        },
+        {
+            "id": 90,
+            "seek": 33308,
+            "start": 357.7200012207031,
+            "end": 359.9599914550781,
+            "text": " qu'on arrive à",
+            "tokens": [
+                51564,
+                421,
+                6,
+                266,
+                8881,
+                1531,
+                51764
+            ],
+            "temperature": 0,
+            "avg_logprob": -0.17131392657756805,
+            "compression_ratio": 1.7133758068084717,
+            "no_speech_prob": 0.0010482748039066792
+        }
+    ],
+    "words": [
+        {
+            "word": "«",
+            "start": 0.47999998927116394,
+            "end": 0.9399999976158142
+        },
+        {
+            "word": "Est",
+            "start": 0.9399999976158142,
+            "end": 0.9599999785423279
+        },
+        {
+            "word": "ce",
+            "start": 0.9599999785423279,
+            "end": 0.9599999785423279
+        },
+        {
+            "word": "qu",
+            "start": 0.9599999785423279,
+            "end": 1.1399999856948853
+        },
+        {
+            "word": "il",
+            "start": 1.1399999856948853,
+            "end": 1.1399999856948853
+        },
+        {
+            "word": "faut",
+            "start": 1.1399999856948853,
+            "end": 1.2599999904632568
+        },
+        {
+            "word": "se",
+            "start": 1.2599999904632568,
+            "end": 1.5
+        },
+        {
+            "word": "lever",
+            "start": 1.5,
+            "end": 1.6399999856948853
+        },
+        {
+            "word": "tôt",
+            "start": 1.6399999856948853,
+            "end": 1.7999999523162842
+        },
+        {
+            "word": "pour",
+            "start": 1.7999999523162842,
+            "end": 2.0399999618530273
+        },
+        {
+            "word": "être",
+            "start": 2.0399999618530273,
+            "end": 2.1600000858306885
+        },
+        {
+            "word": "productif",
+            "start": 2.1600000858306885,
+            "end": 2.740000009536743
+        },
+        {
+            "word": "",
+            "start": 2.740000009536743,
+            "end": 3.180000066757202
+        },
+        {
+            "word": "»",
+            "start": 3.180000066757202,
+            "end": 4
+        },
+        {
+            "word": "C",
+            "start": 4.920000076293945,
+            "end": 5.139999866485596
+        },
+        {
+            "word": "est",
+            "start": 5.139999866485596,
+            "end": 5.139999866485596
+        },
+        {
+            "word": "vrai",
+            "start": 5.139999866485596,
+            "end": 5.28000020980835
+        },
+        {
+            "word": "que",
+            "start": 5.28000020980835,
+            "end": 5.380000114440918
+        },
+        {
+            "word": "chaque",
+            "start": 5.380000114440918,
+            "end": 5.559999942779541
+        },
+        {
+            "word": "député",
+            "start": 5.559999942779541,
+            "end": 5.900000095367432
+        },
+        {
+            "word": "m",
+            "start": 5.900000095367432,
+            "end": 6.099999904632568
+        },
+        {
+            "word": "a",
+            "start": 6.099999904632568,
+            "end": 6.099999904632568
+        },
+        {
+            "word": "demandé",
+            "start": 6.099999904632568,
+            "end": 6.380000114440918
+        },
+        {
+            "word": "ça",
+            "start": 6.380000114440918,
+            "end": 8.039999961853027
+        },
+        {
+            "word": "Ça",
+            "start": 11.359999656677246,
+            "end": 11.819999694824219
+        },
+        {
+            "word": "part",
+            "start": 11.819999694824219,
+            "end": 11.979999542236328
+        },
+        {
+            "word": "pas",
+            "start": 11.979999542236328,
+            "end": 12.140000343322754
+        },
+        {
+            "word": "en",
+            "start": 12.140000343322754,
+            "end": 12.199999809265137
+        },
+        {
+            "word": "une",
+            "start": 12.199999809265137,
+            "end": 12.300000190734863
+        },
+        {
+            "word": "minute",
+            "start": 12.300000190734863,
+            "end": 12.4399995803833
+        },
+        {
+            "word": "en",
+            "start": 12.4399995803833,
+            "end": 12.699999809265137
+        },
+        {
+            "word": "fait",
+            "start": 12.699999809265137,
+            "end": 12.699999809265137
+        },
+        {
+            "word": "«",
+            "start": 13.979999542236328,
+            "end": 14.260000228881836
+        },
+        {
+            "word": "Est",
+            "start": 14.260000228881836,
+            "end": 14.300000190734863
+        },
+        {
+            "word": "ce",
+            "start": 14.300000190734863,
+            "end": 14.300000190734863
+        },
+        {
+            "word": "qu",
+            "start": 14.300000190734863,
+            "end": 14.34000015258789
+        },
+        {
+            "word": "il",
+            "start": 14.34000015258789,
+            "end": 14.34000015258789
+        },
+        {
+            "word": "faut",
+            "start": 14.34000015258789,
+            "end": 14.34000015258789
+        },
+        {
+            "word": "se",
+            "start": 14.34000015258789,
+            "end": 14.779999732971191
+        },
+        {
+            "word": "lever",
+            "start": 14.779999732971191,
+            "end": 14.779999732971191
+        },
+        {
+            "word": "tôt",
+            "start": 14.779999732971191,
+            "end": 14.920000076293945
+        },
+        {
+            "word": "pour",
+            "start": 14.920000076293945,
+            "end": 15.15999984741211
+        },
+        {
+            "word": "être",
+            "start": 15.15999984741211,
+            "end": 15.239999771118164
+        },
+        {
+            "word": "productif",
+            "start": 15.239999771118164,
+            "end": 15.84000015258789
+        },
+        {
+            "word": "",
+            "start": 15.84000015258789,
+            "end": 16.440000534057617
+        },
+        {
+            "word": "»",
+            "start": 16.440000534057617,
+            "end": 17
+        },
+        {
+            "word": "Il",
+            "start": 17,
+            "end": 17.079999923706055
+        },
+        {
+            "word": "y",
+            "start": 17.079999923706055,
+            "end": 17.079999923706055
+        },
+        {
+            "word": "a",
+            "start": 17.079999923706055,
+            "end": 17.299999237060547
+        },
+        {
+            "word": "ce",
+            "start": 17.299999237060547,
+            "end": 20.6200008392334
+        },
+        {
+            "word": "mythe",
+            "start": 20.6200008392334,
+            "end": 20.860000610351562
+        },
+        {
+            "word": "qu",
+            "start": 22.239999771118164,
+            "end": 22.700000762939453
+        },
+        {
+            "word": "il",
+            "start": 22.700000762939453,
+            "end": 22.719999313354492
+        },
+        {
+            "word": "faut",
+            "start": 22.719999313354492,
+            "end": 22.84000015258789
+        },
+        {
+            "word": "avoir",
+            "start": 22.84000015258789,
+            "end": 23
+        },
+        {
+            "word": "de",
+            "start": 23,
+            "end": 23.15999984741211
+        },
+        {
+            "word": "la",
+            "start": 23.15999984741211,
+            "end": 23.3799991607666
+        },
+        {
+            "word": "méthode",
+            "start": 23.3799991607666,
+            "end": 24.040000915527344
+        },
+        {
+            "word": "de",
+            "start": 24.81999969482422,
+            "end": 24.959999084472656
+        },
+        {
+            "word": "la",
+            "start": 24.959999084472656,
+            "end": 25.399999618530273
+        },
+        {
+            "word": "discipline",
+            "start": 25.399999618530273,
+            "end": 25.799999237060547
+        },
+        {
+            "word": "des",
+            "start": 26.260000228881836,
+            "end": 26.260000228881836
+        },
+        {
+            "word": "routines",
+            "start": 26.260000228881836,
+            "end": 26.860000610351562
+        },
+        {
+            "word": "pour",
+            "start": 27.780000686645508,
+            "end": 28.299999237060547
+        },
+        {
+            "word": "être",
+            "start": 28.299999237060547,
+            "end": 28.459999084472656
+        },
+        {
+            "word": "productif",
+            "start": 28.459999084472656,
+            "end": 29.100000381469727
+        },
+        {
+            "word": "J",
+            "start": 31.600000381469727,
+            "end": 32.119998931884766
+        },
+        {
+            "word": "ai",
+            "start": 32.119998931884766,
+            "end": 32.15999984741211
+        },
+        {
+            "word": "essayé",
+            "start": 32.15999984741211,
+            "end": 32.52000045776367
+        },
+        {
+            "word": "les",
+            "start": 32.52000045776367,
+            "end": 32.7599983215332
+        },
+        {
+            "word": "deux",
+            "start": 32.7599983215332,
+            "end": 32.880001068115234
+        },
+        {
+            "word": "et",
+            "start": 32.880001068115234,
+            "end": 33.459999084472656
+        },
+        {
+            "word": "il",
+            "start": 33.459999084472656,
+            "end": 33.68000030517578
+        },
+        {
+            "word": "n",
+            "start": 33.68000030517578,
+            "end": 33.68000030517578
+        },
+        {
+            "word": "y",
+            "start": 33.68000030517578,
+            "end": 33.68000030517578
+        },
+        {
+            "word": "a",
+            "start": 33.68000030517578,
+            "end": 33.7599983215332
+        },
+        {
+            "word": "pas",
+            "start": 33.7599983215332,
+            "end": 33.91999816894531
+        },
+        {
+            "word": "de",
+            "start": 33.91999816894531,
+            "end": 34.41999816894531
+        },
+        {
+            "word": "doute",
+            "start": 34.41999816894531,
+            "end": 34.41999816894531
+        },
+        {
+            "word": "que",
+            "start": 35.439998626708984,
+            "end": 35.959999084472656
+        },
+        {
+            "word": "quand",
+            "start": 35.959999084472656,
+            "end": 36.02000045776367
+        },
+        {
+            "word": "on",
+            "start": 36.02000045776367,
+            "end": 36.15999984741211
+        },
+        {
+            "word": "a",
+            "start": 36.15999984741211,
+            "end": 36.2599983215332
+        },
+        {
+            "word": "une",
+            "start": 36.2599983215332,
+            "end": 36.31999969482422
+        },
+        {
+            "word": "vraie",
+            "start": 36.31999969482422,
+            "end": 36.619998931884766
+        },
+        {
+            "word": "routine",
+            "start": 36.619998931884766,
+            "end": 36.939998626708984
+        },
+        {
+            "word": "qu",
+            "start": 37.18000030517578,
+            "end": 37.220001220703125
+        },
+        {
+            "word": "on",
+            "start": 37.220001220703125,
+            "end": 37.220001220703125
+        },
+        {
+            "word": "se",
+            "start": 37.220001220703125,
+            "end": 37.540000915527344
+        },
+        {
+            "word": "lève",
+            "start": 37.540000915527344,
+            "end": 37.540000915527344
+        },
+        {
+            "word": "tôt",
+            "start": 37.540000915527344,
+            "end": 38
+        },
+        {
+            "word": "qu",
+            "start": 38.7400016784668,
+            "end": 39.2599983215332
+        },
+        {
+            "word": "on",
+            "start": 39.2599983215332,
+            "end": 39.2599983215332
+        },
+        {
+            "word": "se",
+            "start": 39.2599983215332,
+            "end": 39.540000915527344
+        },
+        {
+            "word": "couche",
+            "start": 39.540000915527344,
+            "end": 39.540000915527344
+        },
+        {
+            "word": "tôt",
+            "start": 39.540000915527344,
+            "end": 39.91999816894531
+        },
+        {
+            "word": "qu",
+            "start": 40.2400016784668,
+            "end": 40.47999954223633
+        },
+        {
+            "word": "on",
+            "start": 40.47999954223633,
+            "end": 40.47999954223633
+        },
+        {
+            "word": "dort",
+            "start": 40.47999954223633,
+            "end": 40.58000183105469
+        },
+        {
+            "word": "bien",
+            "start": 40.58000183105469,
+            "end": 41.099998474121094
+        },
+        {
+            "word": "on",
+            "start": 43.63999938964844,
+            "end": 44.15999984741211
+        },
+        {
+            "word": "est",
+            "start": 44.15999984741211,
+            "end": 44.29999923706055
+        },
+        {
+            "word": "productif",
+            "start": 44.29999923706055,
+            "end": 45.13999938964844
+        },
+        {
+            "word": "Il",
+            "start": 46.220001220703125,
+            "end": 46.7400016784668
+        },
+        {
+            "word": "n",
+            "start": 46.7400016784668,
+            "end": 46.7400016784668
+        },
+        {
+            "word": "y",
+            "start": 46.7400016784668,
+            "end": 46.7400016784668
+        },
+        {
+            "word": "a",
+            "start": 46.7400016784668,
+            "end": 47
+        },
+        {
+            "word": "aucun",
+            "start": 47,
+            "end": 47.099998474121094
+        },
+        {
+            "word": "doute",
+            "start": 47.099998474121094,
+            "end": 47.2400016784668
+        },
+        {
+            "word": "là",
+            "start": 47.2400016784668,
+            "end": 47.560001373291016
+        },
+        {
+            "word": "dessus",
+            "start": 47.560001373291016,
+            "end": 47.65999984741211
+        },
+        {
+            "word": "D",
+            "start": 48.779998779296875,
+            "end": 49.2599983215332
+        },
+        {
+            "word": "ailleurs",
+            "start": 49.2599983215332,
+            "end": 49.2599983215332
+        },
+        {
+            "word": "ce",
+            "start": 49.47999954223633,
+            "end": 49.540000915527344
+        },
+        {
+            "word": "n",
+            "start": 49.540000915527344,
+            "end": 49.540000915527344
+        },
+        {
+            "word": "est",
+            "start": 49.540000915527344,
+            "end": 49.540000915527344
+        },
+        {
+            "word": "pas",
+            "start": 49.540000915527344,
+            "end": 49.68000030517578
+        },
+        {
+            "word": "pour",
+            "start": 49.68000030517578,
+            "end": 50.84000015258789
+        },
+        {
+            "word": "rien",
+            "start": 50.84000015258789,
+            "end": 50.91999816894531
+        },
+        {
+            "word": "qu",
+            "start": 50.91999816894531,
+            "end": 51.099998474121094
+        },
+        {
+            "word": "il",
+            "start": 51.099998474121094,
+            "end": 51.099998474121094
+        },
+        {
+            "word": "y",
+            "start": 51.099998474121094,
+            "end": 51.119998931884766
+        },
+        {
+            "word": "a",
+            "start": 51.119998931884766,
+            "end": 51.15999984741211
+        },
+        {
+            "word": "un",
+            "start": 51.15999984741211,
+            "end": 51.34000015258789
+        },
+        {
+            "word": "milliard",
+            "start": 51.34000015258789,
+            "end": 51.58000183105469
+        },
+        {
+            "word": "de",
+            "start": 51.58000183105469,
+            "end": 52.2400016784668
+        },
+        {
+            "word": "vidéos",
+            "start": 52.2400016784668,
+            "end": 52.2400016784668
+        },
+        {
+            "word": "sur",
+            "start": 52.2400016784668,
+            "end": 53.63999938964844
+        },
+        {
+            "word": "le",
+            "start": 53.63999938964844,
+            "end": 53.81999969482422
+        },
+        {
+            "word": "sujet",
+            "start": 53.81999969482422,
+            "end": 54.02000045776367
+        },
+        {
+            "word": "du",
+            "start": 54.02000045776367,
+            "end": 54.279998779296875
+        },
+        {
+            "word": "développement",
+            "start": 54.279998779296875,
+            "end": 54.5
+        },
+        {
+            "word": "personnel",
+            "start": 54.5,
+            "end": 55.15999984741211
+        },
+        {
+            "word": "qui",
+            "start": 55.15999984741211,
+            "end": 55.52000045776367
+        },
+        {
+            "word": "parlent",
+            "start": 55.52000045776367,
+            "end": 55.79999923706055
+        },
+        {
+            "word": "de",
+            "start": 55.79999923706055,
+            "end": 55.939998626708984
+        },
+        {
+            "word": "ça",
+            "start": 55.939998626708984,
+            "end": 56.619998931884766
+        },
+        {
+            "word": "Mais",
+            "start": 57.65999984741211,
+            "end": 57.84000015258789
+        },
+        {
+            "word": "la",
+            "start": 57.84000015258789,
+            "end": 58.79999923706055
+        },
+        {
+            "word": "question",
+            "start": 58.79999923706055,
+            "end": 59.040000915527344
+        },
+        {
+            "word": "elle",
+            "start": 59.36000061035156,
+            "end": 59.36000061035156
+        },
+        {
+            "word": "est",
+            "start": 59.36000061035156,
+            "end": 59.36000061035156
+        },
+        {
+            "word": "plus",
+            "start": 59.36000061035156,
+            "end": 60.65999984741211
+        },
+        {
+            "word": "générale",
+            "start": 60.65999984741211,
+            "end": 61.779998779296875
+        },
+        {
+            "word": "Finalement",
+            "start": 63.52000045776367,
+            "end": 63.720001220703125
+        },
+        {
+            "word": "la",
+            "start": 63.779998779296875,
+            "end": 63.900001525878906
+        },
+        {
+            "word": "question",
+            "start": 63.900001525878906,
+            "end": 64.0999984741211
+        },
+        {
+            "word": "ce",
+            "start": 64.0999984741211,
+            "end": 64.30000305175781
+        },
+        {
+            "word": "n",
+            "start": 64.30000305175781,
+            "end": 64.30000305175781
+        },
+        {
+            "word": "est",
+            "start": 64.30000305175781,
+            "end": 64.30000305175781
+        },
+        {
+            "word": "pas",
+            "start": 64.30000305175781,
+            "end": 65.0999984741211
+        },
+        {
+            "word": "«",
+            "start": 65.0999984741211,
+            "end": 66.23999786376953
+        },
+        {
+            "word": "Est",
+            "start": 66.23999786376953,
+            "end": 66.23999786376953
+        },
+        {
+            "word": "ce",
+            "start": 66.23999786376953,
+            "end": 66.23999786376953
+        },
+        {
+            "word": "qu",
+            "start": 66.23999786376953,
+            "end": 66.44000244140625
+        },
+        {
+            "word": "il",
+            "start": 66.44000244140625,
+            "end": 66.45999908447266
+        },
+        {
+            "word": "faut",
+            "start": 66.45999908447266,
+            "end": 66.5999984741211
+        },
+        {
+            "word": "se",
+            "start": 66.5999984741211,
+            "end": 66.87999725341797
+        },
+        {
+            "word": "lever",
+            "start": 66.87999725341797,
+            "end": 67.0199966430664
+        },
+        {
+            "word": "tôt",
+            "start": 67.0199966430664,
+            "end": 67.13999938964844
+        },
+        {
+            "word": "pour",
+            "start": 67.13999938964844,
+            "end": 67.36000061035156
+        },
+        {
+            "word": "être",
+            "start": 67.36000061035156,
+            "end": 67.45999908447266
+        },
+        {
+            "word": "productif",
+            "start": 67.45999908447266,
+            "end": 68.05999755859375
+        },
+        {
+            "word": "",
+            "start": 68.05999755859375,
+            "end": 68.58000183105469
+        },
+        {
+            "word": "»",
+            "start": 68.58000183105469,
+            "end": 69.08000183105469
+        },
+        {
+            "word": "C",
+            "start": 69.08000183105469,
+            "end": 69.23999786376953
+        },
+        {
+            "word": "est",
+            "start": 69.23999786376953,
+            "end": 69.23999786376953
+        },
+        {
+            "word": "«",
+            "start": 69.23999786376953,
+            "end": 69.4800033569336
+        },
+        {
+            "word": "Est",
+            "start": 69.4800033569336,
+            "end": 69.4800033569336
+        },
+        {
+            "word": "ce",
+            "start": 69.4800033569336,
+            "end": 69.4800033569336
+        },
+        {
+            "word": "qu",
+            "start": 69.4800033569336,
+            "end": 69.69999694824219
+        },
+        {
+            "word": "être",
+            "start": 69.69999694824219,
+            "end": 69.69999694824219
+        },
+        {
+            "word": "productif",
+            "start": 69.69999694824219,
+            "end": 70.44000244140625
+        },
+        {
+            "word": "c",
+            "start": 71.36000061035156,
+            "end": 71.4800033569336
+        },
+        {
+            "word": "est",
+            "start": 71.4800033569336,
+            "end": 71.4800033569336
+        },
+        {
+            "word": "vraiment",
+            "start": 71.4800033569336,
+            "end": 71.76000213623047
+        },
+        {
+            "word": "la",
+            "start": 71.76000213623047,
+            "end": 72.08000183105469
+        },
+        {
+            "word": "chose",
+            "start": 72.08000183105469,
+            "end": 72.08000183105469
+        },
+        {
+            "word": "la",
+            "start": 72.08000183105469,
+            "end": 72.27999877929688
+        },
+        {
+            "word": "plus",
+            "start": 72.27999877929688,
+            "end": 72.36000061035156
+        },
+        {
+            "word": "importante",
+            "start": 72.36000061035156,
+            "end": 72.83999633789062
+        },
+        {
+            "word": "",
+            "start": 72.83999633789062,
+            "end": 73.76000213623047
+        },
+        {
+            "word": "»",
+            "start": 73.76000213623047,
+            "end": 74.18000030517578
+        },
+        {
+            "word": "Et",
+            "start": 74.18000030517578,
+            "end": 74.36000061035156
+        },
+        {
+            "word": "finalement",
+            "start": 74.36000061035156,
+            "end": 74.63999938964844
+        },
+        {
+            "word": "c",
+            "start": 74.77999877929688,
+            "end": 75.26000213623047
+        },
+        {
+            "word": "est",
+            "start": 75.26000213623047,
+            "end": 75.26000213623047
+        },
+        {
+            "word": "la",
+            "start": 75.26000213623047,
+            "end": 75.66000366210938
+        },
+        {
+            "word": "question",
+            "start": 75.66000366210938,
+            "end": 75.66000366210938
+        },
+        {
+            "word": "que",
+            "start": 75.66000366210938,
+            "end": 75.86000061035156
+        },
+        {
+            "word": "peu",
+            "start": 75.86000061035156,
+            "end": 75.9800033569336
+        },
+        {
+            "word": "de",
+            "start": 75.9800033569336,
+            "end": 76.16000366210938
+        },
+        {
+            "word": "gens",
+            "start": 76.16000366210938,
+            "end": 76.16000366210938
+        },
+        {
+            "word": "se",
+            "start": 76.16000366210938,
+            "end": 76.55999755859375
+        },
+        {
+            "word": "posent",
+            "start": 76.55999755859375,
+            "end": 76.5999984741211
+        },
+        {
+            "word": "Alors",
+            "start": 78.27999877929688,
+            "end": 78.76000213623047
+        },
+        {
+            "word": "il",
+            "start": 78.76000213623047,
+            "end": 78.83999633789062
+        },
+        {
+            "word": "y",
+            "start": 78.83999633789062,
+            "end": 78.83999633789062
+        },
+        {
+            "word": "a",
+            "start": 78.83999633789062,
+            "end": 78.9000015258789
+        },
+        {
+            "word": "des",
+            "start": 78.9000015258789,
+            "end": 79.0999984741211
+        },
+        {
+            "word": "phases",
+            "start": 79.0999984741211,
+            "end": 79.30000305175781
+        },
+        {
+            "word": "dans",
+            "start": 79.30000305175781,
+            "end": 79.5
+        },
+        {
+            "word": "la",
+            "start": 79.5,
+            "end": 79.73999786376953
+        },
+        {
+            "word": "vie",
+            "start": 79.73999786376953,
+            "end": 79.73999786376953
+        },
+        {
+            "word": "Il",
+            "start": 80.27999877929688,
+            "end": 80.27999877929688
+        },
+        {
+            "word": "y",
+            "start": 80.27999877929688,
+            "end": 80.27999877929688
+        },
+        {
+            "word": "a",
+            "start": 80.27999877929688,
+            "end": 80.27999877929688
+        },
+        {
+            "word": "des",
+            "start": 80.27999877929688,
+            "end": 80.27999877929688
+        },
+        {
+            "word": "phases",
+            "start": 80.27999877929688,
+            "end": 80.27999877929688
+        },
+        {
+            "word": "de",
+            "start": 80.27999877929688,
+            "end": 80.63999938964844
+        },
+        {
+            "word": "créativité",
+            "start": 80.63999938964844,
+            "end": 81.19999694824219
+        },
+        {
+            "word": "il",
+            "start": 81.9800033569336,
+            "end": 82.16000366210938
+        },
+        {
+            "word": "y",
+            "start": 82.16000366210938,
+            "end": 82.16000366210938
+        },
+        {
+            "word": "a",
+            "start": 82.16000366210938,
+            "end": 82.33999633789062
+        },
+        {
+            "word": "des",
+            "start": 82.33999633789062,
+            "end": 82.55999755859375
+        },
+        {
+            "word": "phases",
+            "start": 82.55999755859375,
+            "end": 82.63999938964844
+        },
+        {
+            "word": "d",
+            "start": 82.63999938964844,
+            "end": 83.05999755859375
+        },
+        {
+            "word": "exploration",
+            "start": 83.05999755859375,
+            "end": 83.4000015258789
+        },
+        {
+            "word": "il",
+            "start": 83.4000015258789,
+            "end": 84.26000213623047
+        },
+        {
+            "word": "y",
+            "start": 84.26000213623047,
+            "end": 84.73999786376953
+        },
+        {
+            "word": "a",
+            "start": 84.73999786376953,
+            "end": 84.83999633789062
+        },
+        {
+            "word": "des",
+            "start": 84.83999633789062,
+            "end": 84.9800033569336
+        },
+        {
+            "word": "phases",
+            "start": 84.9800033569336,
+            "end": 85.27999877929688
+        },
+        {
+            "word": "de",
+            "start": 85.27999877929688,
+            "end": 86.13999938964844
+        },
+        {
+            "word": "je",
+            "start": 86.41999816894531,
+            "end": 87.16000366210938
+        },
+        {
+            "word": "ne",
+            "start": 87.16000366210938,
+            "end": 87.23999786376953
+        },
+        {
+            "word": "sais",
+            "start": 87.23999786376953,
+            "end": 87.23999786376953
+        },
+        {
+            "word": "jamais",
+            "start": 87.23999786376953,
+            "end": 87.5199966430664
+        },
+        {
+            "word": "dire",
+            "start": 87.5199966430664,
+            "end": 87.66000366210938
+        },
+        {
+            "word": "ce",
+            "start": 87.66000366210938,
+            "end": 88.04000091552734
+        },
+        {
+            "word": "mot",
+            "start": 88.04000091552734,
+            "end": 88.04000091552734
+        },
+        {
+            "word": "«",
+            "start": 89.18000030517578,
+            "end": 89.18000030517578
+        },
+        {
+            "word": "serendipity",
+            "start": 89.18000030517578,
+            "end": 89.87999725341797
+        },
+        {
+            "word": "»",
+            "start": 89.87999725341797,
+            "end": 90.58000183105469
+        },
+        {
+            "word": "comme",
+            "start": 90.58000183105469,
+            "end": 90.9800033569336
+        },
+        {
+            "word": "on",
+            "start": 90.9800033569336,
+            "end": 91.18000030517578
+        },
+        {
+            "word": "dit",
+            "start": 91.18000030517578,
+            "end": 91.18000030517578
+        },
+        {
+            "word": "en",
+            "start": 91.18000030517578,
+            "end": 91.27999877929688
+        },
+        {
+            "word": "français",
+            "start": 91.27999877929688,
+            "end": 91.55999755859375
+        },
+        {
+            "word": "«",
+            "start": 91.72000122070312,
+            "end": 91.94000244140625
+        },
+        {
+            "word": "serendipité",
+            "start": 91.94000244140625,
+            "end": 92.5
+        },
+        {
+            "word": "»",
+            "start": 92.5,
+            "end": 93.55999755859375
+        },
+        {
+            "word": "Et",
+            "start": 95.73999786376953,
+            "end": 96.22000122070312
+        },
+        {
+            "word": "puis",
+            "start": 96.22000122070312,
+            "end": 96.36000061035156
+        },
+        {
+            "word": "il",
+            "start": 96.36000061035156,
+            "end": 96.41999816894531
+        },
+        {
+            "word": "y",
+            "start": 96.41999816894531,
+            "end": 96.41999816894531
+        },
+        {
+            "word": "a",
+            "start": 96.41999816894531,
+            "end": 96.55999755859375
+        },
+        {
+            "word": "des",
+            "start": 96.55999755859375,
+            "end": 96.5999984741211
+        },
+        {
+            "word": "phases",
+            "start": 96.5999984741211,
+            "end": 96.73999786376953
+        },
+        {
+            "word": "de",
+            "start": 96.73999786376953,
+            "end": 97.69999694824219
+        },
+        {
+            "word": "production",
+            "start": 97.69999694824219,
+            "end": 97.69999694824219
+        },
+        {
+            "word": "où",
+            "start": 97.69999694824219,
+            "end": 98.9000015258789
+        },
+        {
+            "word": "il",
+            "start": 99.55999755859375,
+            "end": 100.04000091552734
+        },
+        {
+            "word": "ne",
+            "start": 100.04000091552734,
+            "end": 100.04000091552734
+        },
+        {
+            "word": "faut",
+            "start": 100.04000091552734,
+            "end": 100.04000091552734
+        },
+        {
+            "word": "pas",
+            "start": 100.04000091552734,
+            "end": 100.22000122070312
+        },
+        {
+            "word": "être",
+            "start": 100.22000122070312,
+            "end": 100.33999633789062
+        },
+        {
+            "word": "tout",
+            "start": 100.33999633789062,
+            "end": 100.58000183105469
+        },
+        {
+            "word": "ça",
+            "start": 100.58000183105469,
+            "end": 100.76000213623047
+        },
+        {
+            "word": "il",
+            "start": 100.95999908447266,
+            "end": 101.12000274658203
+        },
+        {
+            "word": "faut",
+            "start": 101.12000274658203,
+            "end": 101.16000366210938
+        },
+        {
+            "word": "être",
+            "start": 101.16000366210938,
+            "end": 102
+        },
+        {
+            "word": "extrêmement",
+            "start": 102,
+            "end": 102.41999816894531
+        },
+        {
+            "word": "focus",
+            "start": 102.41999816894531,
+            "end": 102.9000015258789
+        },
+        {
+            "word": "et",
+            "start": 102.9000015258789,
+            "end": 103.0999984741211
+        },
+        {
+            "word": "extrêmement",
+            "start": 103.0999984741211,
+            "end": 103.5199966430664
+        },
+        {
+            "word": "productif",
+            "start": 103.54000091552734,
+            "end": 104.0199966430664
+        },
+        {
+            "word": "Ce",
+            "start": 104.62000274658203,
+            "end": 104.68000030517578
+        },
+        {
+            "word": "que",
+            "start": 104.68000030517578,
+            "end": 104.76000213623047
+        },
+        {
+            "word": "je",
+            "start": 104.76000213623047,
+            "end": 105.08000183105469
+        },
+        {
+            "word": "trouve",
+            "start": 105.08000183105469,
+            "end": 105.08000183105469
+        },
+        {
+            "word": "triste",
+            "start": 105.08000183105469,
+            "end": 105.66000366210938
+        },
+        {
+            "word": "très",
+            "start": 106.86000061035156,
+            "end": 106.87999725341797
+        },
+        {
+            "word": "souvent",
+            "start": 106.87999725341797,
+            "end": 107.0199966430664
+        },
+        {
+            "word": "c",
+            "start": 108.36000061035156,
+            "end": 108.45999908447266
+        },
+        {
+            "word": "est",
+            "start": 108.45999908447266,
+            "end": 108.45999908447266
+        },
+        {
+            "word": "d",
+            "start": 108.45999908447266,
+            "end": 108.94000244140625
+        },
+        {
+            "word": "imaginer",
+            "start": 108.94000244140625,
+            "end": 108.9800033569336
+        },
+        {
+            "word": "qu",
+            "start": 108.9800033569336,
+            "end": 109.19999694824219
+        },
+        {
+            "word": "il",
+            "start": 109.19999694824219,
+            "end": 109.19999694824219
+        },
+        {
+            "word": "y",
+            "start": 109.19999694824219,
+            "end": 109.22000122070312
+        },
+        {
+            "word": "a",
+            "start": 109.22000122070312,
+            "end": 109.33999633789062
+        },
+        {
+            "word": "un",
+            "start": 109.33999633789062,
+            "end": 109.5199966430664
+        },
+        {
+            "word": "seul",
+            "start": 109.5199966430664,
+            "end": 109.72000122070312
+        },
+        {
+            "word": "mode",
+            "start": 109.72000122070312,
+            "end": 109.91999816894531
+        },
+        {
+            "word": "de",
+            "start": 109.91999816894531,
+            "end": 110.45999908447266
+        },
+        {
+            "word": "jeu",
+            "start": 110.45999908447266,
+            "end": 111.18000030517578
+        },
+        {
+            "word": "dans",
+            "start": 111.18000030517578,
+            "end": 111.37999725341797
+        },
+        {
+            "word": "le",
+            "start": 111.37999725341797,
+            "end": 111.55999755859375
+        },
+        {
+            "word": "grand",
+            "start": 111.55999755859375,
+            "end": 111.73999786376953
+        },
+        {
+            "word": "jeu",
+            "start": 111.73999786376953,
+            "end": 111.87999725341797
+        },
+        {
+            "word": "vidéo",
+            "start": 111.87999725341797,
+            "end": 112.0999984741211
+        },
+        {
+            "word": "de",
+            "start": 112.0999984741211,
+            "end": 112.22000122070312
+        },
+        {
+            "word": "la",
+            "start": 112.22000122070312,
+            "end": 112.44000244140625
+        },
+        {
+            "word": "vie",
+            "start": 112.44000244140625,
+            "end": 112.5199966430664
+        },
+        {
+            "word": "Non",
+            "start": 113.91999816894531,
+            "end": 113.95999908447266
+        },
+        {
+            "word": "il",
+            "start": 113.95999908447266,
+            "end": 114
+        },
+        {
+            "word": "y",
+            "start": 114,
+            "end": 114
+        },
+        {
+            "word": "a",
+            "start": 114,
+            "end": 114.33999633789062
+        },
+        {
+            "word": "plusieurs",
+            "start": 114.33999633789062,
+            "end": 114.68000030517578
+        },
+        {
+            "word": "modes",
+            "start": 114.68000030517578,
+            "end": 115.0199966430664
+        },
+        {
+            "word": "et",
+            "start": 115.0199966430664,
+            "end": 115.22000122070312
+        },
+        {
+            "word": "puis",
+            "start": 115.22000122070312,
+            "end": 115.44000244140625
+        },
+        {
+            "word": "même",
+            "start": 115.44000244140625,
+            "end": 116.13999938964844
+        },
+        {
+            "word": "au",
+            "start": 116.13999938964844,
+            "end": 116.45999908447266
+        },
+        {
+            "word": "sein",
+            "start": 116.45999908447266,
+            "end": 116.66000366210938
+        },
+        {
+            "word": "du",
+            "start": 116.66000366210938,
+            "end": 116.9000015258789
+        },
+        {
+            "word": "même",
+            "start": 116.9000015258789,
+            "end": 117.22000122070312
+        },
+        {
+            "word": "jeu",
+            "start": 117.22000122070312,
+            "end": 117.4800033569336
+        },
+        {
+            "word": "non",
+            "start": 118.76000213623047,
+            "end": 118.86000061035156
+        },
+        {
+            "word": "seulement",
+            "start": 118.86000061035156,
+            "end": 119.05999755859375
+        },
+        {
+            "word": "il",
+            "start": 119.05999755859375,
+            "end": 119.19999694824219
+        },
+        {
+            "word": "y",
+            "start": 119.19999694824219,
+            "end": 119.19999694824219
+        },
+        {
+            "word": "a",
+            "start": 119.19999694824219,
+            "end": 119.5199966430664
+        },
+        {
+            "word": "plusieurs",
+            "start": 119.5199966430664,
+            "end": 119.5199966430664
+        },
+        {
+            "word": "modes",
+            "start": 119.5199966430664,
+            "end": 119.73999786376953
+        },
+        {
+            "word": "mais",
+            "start": 119.80000305175781,
+            "end": 119.91999816894531
+        },
+        {
+            "word": "il",
+            "start": 119.91999816894531,
+            "end": 120
+        },
+        {
+            "word": "y",
+            "start": 120,
+            "end": 120
+        },
+        {
+            "word": "a",
+            "start": 120,
+            "end": 120.4000015258789
+        },
+        {
+            "word": "plusieurs",
+            "start": 120.4000015258789,
+            "end": 120.4000015258789
+        },
+        {
+            "word": "tempos",
+            "start": 120.4000015258789,
+            "end": 121.0999984741211
+        },
+        {
+            "word": "et",
+            "start": 121.0999984741211,
+            "end": 122.0199966430664
+        },
+        {
+            "word": "puis",
+            "start": 122.0199966430664,
+            "end": 122.23999786376953
+        },
+        {
+            "word": "il",
+            "start": 122.23999786376953,
+            "end": 122.31999969482422
+        },
+        {
+            "word": "y",
+            "start": 122.31999969482422,
+            "end": 122.31999969482422
+        },
+        {
+            "word": "a",
+            "start": 122.31999969482422,
+            "end": 122.87999725341797
+        },
+        {
+            "word": "des",
+            "start": 122.87999725341797,
+            "end": 122.94000244140625
+        },
+        {
+            "word": "niveaux",
+            "start": 122.94000244140625,
+            "end": 123.30000305175781
+        },
+        {
+            "word": "qui",
+            "start": 123.54000091552734,
+            "end": 124.0199966430664
+        },
+        {
+            "word": "requièrent",
+            "start": 124.0199966430664,
+            "end": 124.5
+        },
+        {
+            "word": "d",
+            "start": 124.5,
+            "end": 125.87999725341797
+        },
+        {
+            "word": "autres",
+            "start": 125.87999725341797,
+            "end": 125.87999725341797
+        },
+        {
+            "word": "modes",
+            "start": 125.87999725341797,
+            "end": 126.16000366210938
+        },
+        {
+            "word": "Et",
+            "start": 127.22000122070312,
+            "end": 127.63999938964844
+        },
+        {
+            "word": "s",
+            "start": 127.63999938964844,
+            "end": 127.80000305175781
+        },
+        {
+            "word": "il",
+            "start": 127.80000305175781,
+            "end": 127.80000305175781
+        },
+        {
+            "word": "y",
+            "start": 127.80000305175781,
+            "end": 127.81999969482422
+        },
+        {
+            "word": "a",
+            "start": 127.81999969482422,
+            "end": 128.5399932861328
+        },
+        {
+            "word": "une",
+            "start": 128.5399932861328,
+            "end": 128.67999267578125
+        },
+        {
+            "word": "chose",
+            "start": 128.67999267578125,
+            "end": 129.05999755859375
+        },
+        {
+            "word": "que",
+            "start": 129.05999755859375,
+            "end": 130.16000366210938
+        },
+        {
+            "word": "la",
+            "start": 130.16000366210938,
+            "end": 130.39999389648438
+        },
+        {
+            "word": "routine",
+            "start": 130.39999389648438,
+            "end": 130.63999938964844
+        },
+        {
+            "word": "détruit",
+            "start": 130.63999938964844,
+            "end": 131.0399932861328
+        },
+        {
+            "word": "c",
+            "start": 132.17999267578125,
+            "end": 132.36000061035156
+        },
+        {
+            "word": "est",
+            "start": 132.36000061035156,
+            "end": 132.36000061035156
+        },
+        {
+            "word": "la",
+            "start": 132.36000061035156,
+            "end": 132.72000122070312
+        },
+        {
+            "word": "créativité",
+            "start": 132.72000122070312,
+            "end": 133.13999938964844
+        },
+        {
+            "word": "Je",
+            "start": 135.33999633789062,
+            "end": 135.82000732421875
+        },
+        {
+            "word": "ne",
+            "start": 135.82000732421875,
+            "end": 136.05999755859375
+        },
+        {
+            "word": "sais",
+            "start": 136.05999755859375,
+            "end": 136.1199951171875
+        },
+        {
+            "word": "pas",
+            "start": 136.1199951171875,
+            "end": 136.83999633789062
+        },
+        {
+            "word": "comment",
+            "start": 136.83999633789062,
+            "end": 136.97999572753906
+        },
+        {
+            "word": "c",
+            "start": 136.97999572753906,
+            "end": 137.1999969482422
+        },
+        {
+            "word": "est",
+            "start": 137.1999969482422,
+            "end": 137.1999969482422
+        },
+        {
+            "word": "possible",
+            "start": 137.1999969482422,
+            "end": 137.5
+        },
+        {
+            "word": "d",
+            "start": 137.5,
+            "end": 137.72000122070312
+        },
+        {
+            "word": "être",
+            "start": 137.72000122070312,
+            "end": 137.72000122070312
+        },
+        {
+            "word": "créatif",
+            "start": 137.72000122070312,
+            "end": 138.32000732421875
+        },
+        {
+            "word": "lorsqu",
+            "start": 139.75999450683594,
+            "end": 140.36000061035156
+        },
+        {
+            "word": "on",
+            "start": 140.36000061035156,
+            "end": 140.52000427246094
+        },
+        {
+            "word": "est",
+            "start": 140.52000427246094,
+            "end": 140.74000549316406
+        },
+        {
+            "word": "rigide",
+            "start": 140.74000549316406,
+            "end": 141.0800018310547
+        },
+        {
+            "word": "Je",
+            "start": 142.25999450683594,
+            "end": 142.25999450683594
+        },
+        {
+            "word": "ne",
+            "start": 142.25999450683594,
+            "end": 142.63999938964844
+        },
+        {
+            "word": "vois",
+            "start": 142.63999938964844,
+            "end": 142.72000122070312
+        },
+        {
+            "word": "pas",
+            "start": 142.72000122070312,
+            "end": 143.33999633789062
+        },
+        {
+            "word": "comment",
+            "start": 143.33999633789062,
+            "end": 143.44000244140625
+        },
+        {
+            "word": "c",
+            "start": 143.44000244140625,
+            "end": 143.63999938964844
+        },
+        {
+            "word": "est",
+            "start": 143.63999938964844,
+            "end": 143.63999938964844
+        },
+        {
+            "word": "possible",
+            "start": 143.63999938964844,
+            "end": 144.1199951171875
+        },
+        {
+            "word": "d",
+            "start": 144.1199951171875,
+            "end": 145.4600067138672
+        },
+        {
+            "word": "être",
+            "start": 145.4600067138672,
+            "end": 145.4600067138672
+        },
+        {
+            "word": "créatif",
+            "start": 145.4600067138672,
+            "end": 146.63999938964844
+        },
+        {
+            "word": "lorsque",
+            "start": 147.66000366210938,
+            "end": 148.25999450683594
+        },
+        {
+            "word": "tout",
+            "start": 148.25999450683594,
+            "end": 148.5399932861328
+        },
+        {
+            "word": "est",
+            "start": 148.5399932861328,
+            "end": 148.74000549316406
+        },
+        {
+            "word": "organisé",
+            "start": 148.74000549316406,
+            "end": 149.52000427246094
+        },
+        {
+            "word": "tout",
+            "start": 150.77999877929688,
+            "end": 150.9600067138672
+        },
+        {
+            "word": "est",
+            "start": 150.9600067138672,
+            "end": 151.75999450683594
+        },
+        {
+            "word": "planifié",
+            "start": 151.75999450683594,
+            "end": 152.74000549316406
+        },
+        {
+            "word": "tout",
+            "start": 153.66000366210938,
+            "end": 153.66000366210938
+        },
+        {
+            "word": "est",
+            "start": 153.66000366210938,
+            "end": 153.83999633789062
+        },
+        {
+            "word": "millimétré",
+            "start": 153.83999633789062,
+            "end": 154.36000061035156
+        },
+        {
+            "word": "chaque",
+            "start": 154.8800048828125,
+            "end": 154.9199981689453
+        },
+        {
+            "word": "décision",
+            "start": 154.9199981689453,
+            "end": 155.39999389648438
+        },
+        {
+            "word": "c",
+            "start": 156.1999969482422,
+            "end": 156.44000244140625
+        },
+        {
+            "word": "est",
+            "start": 156.44000244140625,
+            "end": 156.44000244140625
+        },
+        {
+            "word": "vraiment",
+            "start": 156.44000244140625,
+            "end": 156.66000366210938
+        },
+        {
+            "word": "un",
+            "start": 156.66000366210938,
+            "end": 157.0800018310547
+        },
+        {
+            "word": "genre",
+            "start": 157.0800018310547,
+            "end": 157.0800018310547
+        },
+        {
+            "word": "Alors",
+            "start": 157.33999633789062,
+            "end": 157.66000366210938
+        },
+        {
+            "word": "aujourd",
+            "start": 157.66000366210938,
+            "end": 157.9600067138672
+        },
+        {
+            "word": "hui",
+            "start": 157.9600067138672,
+            "end": 158.0399932861328
+        },
+        {
+            "word": "de",
+            "start": 158.24000549316406,
+            "end": 158.4199981689453
+        },
+        {
+            "word": "9h",
+            "start": 158.4199981689453,
+            "end": 158.75999450683594
+        },
+        {
+            "word": "à",
+            "start": 158.75999450683594,
+            "end": 158.94000244140625
+        },
+        {
+            "word": "11h",
+            "start": 158.94000244140625,
+            "end": 159.44000244140625
+        },
+        {
+            "word": "je",
+            "start": 160.4199981689453,
+            "end": 160.5
+        },
+        {
+            "word": "serai",
+            "start": 160.5,
+            "end": 160.67999267578125
+        },
+        {
+            "word": "créatif",
+            "start": 160.67999267578125,
+            "end": 161.3000030517578
+        },
+        {
+            "word": "Putain",
+            "start": 162.52000427246094,
+            "end": 162.83999633789062
+        },
+        {
+            "word": "merde",
+            "start": 163.0399932861328,
+            "end": 163.25999450683594
+        },
+        {
+            "word": "je",
+            "start": 163.4600067138672,
+            "end": 163.55999755859375
+        },
+        {
+            "word": "n",
+            "start": 163.55999755859375,
+            "end": 163.72000122070312
+        },
+        {
+            "word": "y",
+            "start": 163.72000122070312,
+            "end": 163.72000122070312
+        },
+        {
+            "word": "arrive",
+            "start": 163.72000122070312,
+            "end": 163.77999877929688
+        },
+        {
+            "word": "pas",
+            "start": 163.77999877929688,
+            "end": 164.0399932861328
+        },
+        {
+            "word": "Bon",
+            "start": 164.94000244140625,
+            "end": 165.17999267578125
+        },
+        {
+            "word": "tant",
+            "start": 165.44000244140625,
+            "end": 165.89999389648438
+        },
+        {
+            "word": "pis",
+            "start": 165.89999389648438,
+            "end": 166.02000427246094
+        },
+        {
+            "word": "je",
+            "start": 166.02000427246094,
+            "end": 166.3800048828125
+        },
+        {
+            "word": "n",
+            "start": 166.3800048828125,
+            "end": 166.47999572753906
+        },
+        {
+            "word": "ai",
+            "start": 166.47999572753906,
+            "end": 166.47999572753906
+        },
+        {
+            "word": "pas",
+            "start": 166.47999572753906,
+            "end": 166.60000610351562
+        },
+        {
+            "word": "été",
+            "start": 166.60000610351562,
+            "end": 166.77999877929688
+        },
+        {
+            "word": "créatif",
+            "start": 166.77999877929688,
+            "end": 167.1999969482422
+        },
+        {
+            "word": "En",
+            "start": 168.27999877929688,
+            "end": 168.5399932861328
+        },
+        {
+            "word": "fait",
+            "start": 168.5399932861328,
+            "end": 168.5399932861328
+        },
+        {
+            "word": "la",
+            "start": 169.47999572753906,
+            "end": 170.3800048828125
+        },
+        {
+            "word": "source",
+            "start": 170.3800048828125,
+            "end": 170.6199951171875
+        },
+        {
+            "word": "de",
+            "start": 170.6199951171875,
+            "end": 170.74000549316406
+        },
+        {
+            "word": "la",
+            "start": 170.74000549316406,
+            "end": 171.16000366210938
+        },
+        {
+            "word": "créativité",
+            "start": 171.16000366210938,
+            "end": 171.52000427246094
+        },
+        {
+            "word": "c",
+            "start": 173.67999267578125,
+            "end": 173.72000122070312
+        },
+        {
+            "word": "est",
+            "start": 173.72000122070312,
+            "end": 173.72000122070312
+        },
+        {
+            "word": "quand",
+            "start": 173.72000122070312,
+            "end": 173.89999389648438
+        },
+        {
+            "word": "même",
+            "start": 173.89999389648438,
+            "end": 174.05999755859375
+        },
+        {
+            "word": "très",
+            "start": 174.05999755859375,
+            "end": 174.5399932861328
+        },
+        {
+            "word": "souvent",
+            "start": 174.5399932861328,
+            "end": 174.67999267578125
+        },
+        {
+            "word": "tu",
+            "start": 176.39999389648438,
+            "end": 176.39999389648438
+        },
+        {
+            "word": "fais",
+            "start": 176.39999389648438,
+            "end": 176.52000427246094
+        },
+        {
+            "word": "autre",
+            "start": 176.52000427246094,
+            "end": 176.74000549316406
+        },
+        {
+            "word": "chose",
+            "start": 176.74000549316406,
+            "end": 177.02000427246094
+        },
+        {
+            "word": "tu",
+            "start": 177.47999572753906,
+            "end": 177.47999572753906
+        },
+        {
+            "word": "es",
+            "start": 177.47999572753906,
+            "end": 177.47999572753906
+        },
+        {
+            "word": "en",
+            "start": 177.47999572753906,
+            "end": 177.75999450683594
+        },
+        {
+            "word": "train",
+            "start": 177.75999450683594,
+            "end": 177.75999450683594
+        },
+        {
+            "word": "de",
+            "start": 177.75999450683594,
+            "end": 178.02000427246094
+        },
+        {
+            "word": "faire",
+            "start": 179.0399932861328,
+            "end": 179.0399932861328
+        },
+        {
+            "word": "quelque",
+            "start": 179.0399932861328,
+            "end": 179.3000030517578
+        },
+        {
+            "word": "chose",
+            "start": 179.3000030517578,
+            "end": 179.39999389648438
+        },
+        {
+            "word": "où",
+            "start": 179.39999389648438,
+            "end": 179.5399932861328
+        },
+        {
+            "word": "tu",
+            "start": 179.5399932861328,
+            "end": 179.66000366210938
+        },
+        {
+            "word": "ne",
+            "start": 179.66000366210938,
+            "end": 179.8000030517578
+        },
+        {
+            "word": "penses",
+            "start": 179.8000030517578,
+            "end": 179.82000732421875
+        },
+        {
+            "word": "pas",
+            "start": 179.82000732421875,
+            "end": 180.1199951171875
+        },
+        {
+            "word": "du",
+            "start": 180.1199951171875,
+            "end": 180.24000549316406
+        },
+        {
+            "word": "tout",
+            "start": 180.24000549316406,
+            "end": 180.24000549316406
+        },
+        {
+            "word": "à",
+            "start": 180.24000549316406,
+            "end": 180.33999633789062
+        },
+        {
+            "word": "ton",
+            "start": 180.33999633789062,
+            "end": 180.47999572753906
+        },
+        {
+            "word": "projet",
+            "start": 180.47999572753906,
+            "end": 180.77999877929688
+        },
+        {
+            "word": "pas",
+            "start": 181.02000427246094,
+            "end": 181.17999267578125
+        },
+        {
+            "word": "du",
+            "start": 181.17999267578125,
+            "end": 181.32000732421875
+        },
+        {
+            "word": "tout",
+            "start": 181.32000732421875,
+            "end": 181.36000061035156
+        },
+        {
+            "word": "à",
+            "start": 181.36000061035156,
+            "end": 181.5
+        },
+        {
+            "word": "ton",
+            "start": 181.5,
+            "end": 181.66000366210938
+        },
+        {
+            "word": "idée",
+            "start": 181.66000366210938,
+            "end": 181.77999877929688
+        },
+        {
+            "word": "et",
+            "start": 181.83999633789062,
+            "end": 182.32000732421875
+        },
+        {
+            "word": "il",
+            "start": 182.32000732421875,
+            "end": 182.60000610351562
+        },
+        {
+            "word": "y",
+            "start": 182.60000610351562,
+            "end": 182.60000610351562
+        },
+        {
+            "word": "a",
+            "start": 182.60000610351562,
+            "end": 182.72000122070312
+        },
+        {
+            "word": "quelque",
+            "start": 182.72000122070312,
+            "end": 182.89999389648438
+        },
+        {
+            "word": "chose",
+            "start": 182.89999389648438,
+            "end": 183.02000427246094
+        },
+        {
+            "word": "qui",
+            "start": 183.02000427246094,
+            "end": 183.27999877929688
+        },
+        {
+            "word": "surgit",
+            "start": 183.27999877929688,
+            "end": 183.55999755859375
+        },
+        {
+            "word": "il",
+            "start": 184.5800018310547,
+            "end": 184.66000366210938
+        },
+        {
+            "word": "y",
+            "start": 184.66000366210938,
+            "end": 184.66000366210938
+        },
+        {
+            "word": "a",
+            "start": 184.66000366210938,
+            "end": 184.72000122070312
+        },
+        {
+            "word": "une",
+            "start": 184.72000122070312,
+            "end": 184.82000732421875
+        },
+        {
+            "word": "inspiration",
+            "start": 184.82000732421875,
+            "end": 185.5
+        },
+        {
+            "word": "extrêmement",
+            "start": 187.5399932861328,
+            "end": 188.02000427246094
+        },
+        {
+            "word": "profonde",
+            "start": 188.02000427246094,
+            "end": 188.5
+        },
+        {
+            "word": "qui",
+            "start": 188.5,
+            "end": 189.6999969482422
+        },
+        {
+            "word": "surgit",
+            "start": 189.6999969482422,
+            "end": 190.1199951171875
+        },
+        {
+            "word": "et",
+            "start": 190.63999938964844,
+            "end": 191.1199951171875
+        },
+        {
+            "word": "je",
+            "start": 191.1199951171875,
+            "end": 191.33999633789062
+        },
+        {
+            "word": "pense",
+            "start": 191.33999633789062,
+            "end": 191.44000244140625
+        },
+        {
+            "word": "que",
+            "start": 191.44000244140625,
+            "end": 191.6199951171875
+        },
+        {
+            "word": "ça",
+            "start": 191.6199951171875,
+            "end": 191.8000030517578
+        },
+        {
+            "word": "vient",
+            "start": 191.8000030517578,
+            "end": 192.10000610351562
+        },
+        {
+            "word": "par",
+            "start": 192.10000610351562,
+            "end": 192.5399932861328
+        },
+        {
+            "word": "le",
+            "start": 192.5399932861328,
+            "end": 193.1199951171875
+        },
+        {
+            "word": "fait",
+            "start": 193.1199951171875,
+            "end": 193.1199951171875
+        },
+        {
+            "word": "de",
+            "start": 193.1199951171875,
+            "end": 193.3000030517578
+        },
+        {
+            "word": "se",
+            "start": 193.3000030517578,
+            "end": 193.6199951171875
+        },
+        {
+            "word": "détendre",
+            "start": 193.6199951171875,
+            "end": 194.0399932861328
+        },
+        {
+            "word": "de",
+            "start": 194.0399932861328,
+            "end": 194.8000030517578
+        },
+        {
+            "word": "s",
+            "start": 194.8000030517578,
+            "end": 194.97999572753906
+        },
+        {
+            "word": "amuser",
+            "start": 194.97999572753906,
+            "end": 195.4600067138672
+        },
+        {
+            "word": "d",
+            "start": 196.36000061035156,
+            "end": 196.89999389648438
+        },
+        {
+            "word": "aller",
+            "start": 196.89999389648438,
+            "end": 197
+        },
+        {
+            "word": "faire",
+            "start": 197,
+            "end": 197.24000549316406
+        },
+        {
+            "word": "d",
+            "start": 197.24000549316406,
+            "end": 197.72000122070312
+        },
+        {
+            "word": "autres",
+            "start": 197.72000122070312,
+            "end": 197.72000122070312
+        },
+        {
+            "word": "choses",
+            "start": 197.72000122070312,
+            "end": 198.10000610351562
+        },
+        {
+            "word": "et",
+            "start": 198.8000030517578,
+            "end": 199.32000732421875
+        },
+        {
+            "word": "évidemment",
+            "start": 202.9199981689453,
+            "end": 203.44000244140625
+        },
+        {
+            "word": "si",
+            "start": 204.05999755859375,
+            "end": 204.1999969482422
+        },
+        {
+            "word": "on",
+            "start": 204.1999969482422,
+            "end": 204.32000732421875
+        },
+        {
+            "word": "n",
+            "start": 204.32000732421875,
+            "end": 204.5399932861328
+        },
+        {
+            "word": "est",
+            "start": 204.5399932861328,
+            "end": 204.5399932861328
+        },
+        {
+            "word": "que",
+            "start": 204.5399932861328,
+            "end": 204.82000732421875
+        },
+        {
+            "word": "créatif",
+            "start": 204.82000732421875,
+            "end": 205.3800048828125
+        },
+        {
+            "word": "et",
+            "start": 206.05999755859375,
+            "end": 206.5800018310547
+        },
+        {
+            "word": "qu",
+            "start": 206.5800018310547,
+            "end": 206.82000732421875
+        },
+        {
+            "word": "à",
+            "start": 206.82000732421875,
+            "end": 206.83999633789062
+        },
+        {
+            "word": "aucun",
+            "start": 206.83999633789062,
+            "end": 206.97999572753906
+        },
+        {
+            "word": "moment",
+            "start": 206.97999572753906,
+            "end": 207.24000549316406
+        },
+        {
+            "word": "on",
+            "start": 207.24000549316406,
+            "end": 207.52000427246094
+        },
+        {
+            "word": "n",
+            "start": 207.52000427246094,
+            "end": 207.60000610351562
+        },
+        {
+            "word": "arrive",
+            "start": 207.60000610351562,
+            "end": 207.60000610351562
+        },
+        {
+            "word": "à",
+            "start": 207.60000610351562,
+            "end": 207.9199981689453
+        },
+        {
+            "word": "transformer",
+            "start": 207.9199981689453,
+            "end": 208.16000366210938
+        },
+        {
+            "word": "ses",
+            "start": 208.16000366210938,
+            "end": 208.55999755859375
+        },
+        {
+            "word": "idées",
+            "start": 208.55999755859375,
+            "end": 208.6999969482422
+        },
+        {
+            "word": "en",
+            "start": 208.6999969482422,
+            "end": 209.9600067138672
+        },
+        {
+            "word": "quelque",
+            "start": 209.9600067138672,
+            "end": 210.17999267578125
+        },
+        {
+            "word": "chose",
+            "start": 210.17999267578125,
+            "end": 210.27999877929688
+        },
+        {
+            "word": "de",
+            "start": 210.27999877929688,
+            "end": 210.6999969482422
+        },
+        {
+            "word": "concret",
+            "start": 210.6999969482422,
+            "end": 210.94000244140625
+        },
+        {
+            "word": "d",
+            "start": 211.10000610351562,
+            "end": 211.52000427246094
+        },
+        {
+            "word": "incarné",
+            "start": 211.52000427246094,
+            "end": 211.63999938964844
+        },
+        {
+            "word": "d",
+            "start": 212.52000427246094,
+            "end": 212.83999633789062
+        },
+        {
+            "word": "utilisable",
+            "start": 212.83999633789062,
+            "end": 213.13999938964844
+        },
+        {
+            "word": "ça",
+            "start": 213.4199981689453,
+            "end": 213.52000427246094
+        },
+        {
+            "word": "ne",
+            "start": 213.52000427246094,
+            "end": 213.66000366210938
+        },
+        {
+            "word": "sert",
+            "start": 213.66000366210938,
+            "end": 213.66000366210938
+        },
+        {
+            "word": "à",
+            "start": 213.66000366210938,
+            "end": 213.86000061035156
+        },
+        {
+            "word": "rien",
+            "start": 213.86000061035156,
+            "end": 214
+        },
+        {
+            "word": "Et",
+            "start": 215.17999267578125,
+            "end": 215.32000732421875
+        },
+        {
+            "word": "c",
+            "start": 215.32000732421875,
+            "end": 215.4600067138672
+        },
+        {
+            "word": "est",
+            "start": 215.4600067138672,
+            "end": 215.4600067138672
+        },
+        {
+            "word": "là",
+            "start": 215.4600067138672,
+            "end": 215.60000610351562
+        },
+        {
+            "word": "finalement",
+            "start": 215.94000244140625,
+            "end": 215.94000244140625
+        },
+        {
+            "word": "la",
+            "start": 215.97999572753906,
+            "end": 216.60000610351562
+        },
+        {
+            "word": "vraie",
+            "start": 216.60000610351562,
+            "end": 216.86000061035156
+        },
+        {
+            "word": "difficulté",
+            "start": 216.86000061035156,
+            "end": 217.32000732421875
+        },
+        {
+            "word": "c",
+            "start": 217.52000427246094,
+            "end": 217.5800018310547
+        },
+        {
+            "word": "est",
+            "start": 217.5800018310547,
+            "end": 217.5800018310547
+        },
+        {
+            "word": "que",
+            "start": 217.5800018310547,
+            "end": 218.0399932861328
+        },
+        {
+            "word": "tout",
+            "start": 219.60000610351562,
+            "end": 220.1199951171875
+        },
+        {
+            "word": "le",
+            "start": 220.1199951171875,
+            "end": 220.27999877929688
+        },
+        {
+            "word": "monde",
+            "start": 220.27999877929688,
+            "end": 220.27999877929688
+        },
+        {
+            "word": "a",
+            "start": 220.27999877929688,
+            "end": 220.52000427246094
+        },
+        {
+            "word": "envie",
+            "start": 220.52000427246094,
+            "end": 220.5800018310547
+        },
+        {
+            "word": "d",
+            "start": 220.5800018310547,
+            "end": 220.89999389648438
+        },
+        {
+            "word": "être",
+            "start": 220.89999389648438,
+            "end": 220.89999389648438
+        },
+        {
+            "word": "où",
+            "start": 220.89999389648438,
+            "end": 221.25999450683594
+        },
+        {
+            "word": "alors",
+            "start": 221.97999572753906,
+            "end": 222.67999267578125
+        },
+        {
+            "word": "que",
+            "start": 222.67999267578125,
+            "end": 223.22000122070312
+        },
+        {
+            "word": "malheureusement",
+            "start": 223.22000122070312,
+            "end": 223.72000122070312
+        },
+        {
+            "word": "il",
+            "start": 224.0800018310547,
+            "end": 224.0800018310547
+        },
+        {
+            "word": "faut",
+            "start": 224.0800018310547,
+            "end": 224.22000122070312
+        },
+        {
+            "word": "être",
+            "start": 224.22000122070312,
+            "end": 224.44000244140625
+        },
+        {
+            "word": "et",
+            "start": 224.44000244140625,
+            "end": 225.13999938964844
+        },
+        {
+            "word": "Ce",
+            "start": 225.94000244140625,
+            "end": 225.94000244140625
+        },
+        {
+            "word": "n",
+            "start": 225.94000244140625,
+            "end": 225.94000244140625
+        },
+        {
+            "word": "est",
+            "start": 225.94000244140625,
+            "end": 225.94000244140625
+        },
+        {
+            "word": "pas",
+            "start": 225.94000244140625,
+            "end": 226.17999267578125
+        },
+        {
+            "word": "je",
+            "start": 226.17999267578125,
+            "end": 226.60000610351562
+        },
+        {
+            "word": "suis",
+            "start": 226.60000610351562,
+            "end": 226.6999969482422
+        },
+        {
+            "word": "discipliné",
+            "start": 226.6999969482422,
+            "end": 227.5
+        },
+        {
+            "word": "ou",
+            "start": 227.5,
+            "end": 228.22000122070312
+        },
+        {
+            "word": "créatif",
+            "start": 228.22000122070312,
+            "end": 229.4199981689453
+        },
+        {
+            "word": "ce",
+            "start": 230.05999755859375,
+            "end": 230.75999450683594
+        },
+        {
+            "word": "n",
+            "start": 230.75999450683594,
+            "end": 230.75999450683594
+        },
+        {
+            "word": "est",
+            "start": 230.75999450683594,
+            "end": 230.75999450683594
+        },
+        {
+            "word": "pas",
+            "start": 230.75999450683594,
+            "end": 231.13999938964844
+        },
+        {
+            "word": "je",
+            "start": 231.13999938964844,
+            "end": 232.1999969482422
+        },
+        {
+            "word": "suis",
+            "start": 232.1999969482422,
+            "end": 232.1999969482422
+        },
+        {
+            "word": "routinier",
+            "start": 232.1999969482422,
+            "end": 232.77999877929688
+        },
+        {
+            "word": "ou",
+            "start": 233.10000610351562,
+            "end": 233.8000030517578
+        },
+        {
+            "word": "chaotique",
+            "start": 233.8000030517578,
+            "end": 234.39999389648438
+        },
+        {
+            "word": "c",
+            "start": 235.55999755859375,
+            "end": 235.8000030517578
+        },
+        {
+            "word": "est",
+            "start": 235.8000030517578,
+            "end": 235.8000030517578
+        },
+        {
+            "word": "quand",
+            "start": 235.8000030517578,
+            "end": 236.24000549316406
+        },
+        {
+            "word": "est",
+            "start": 236.24000549316406,
+            "end": 236.44000244140625
+        },
+        {
+            "word": "ce",
+            "start": 236.44000244140625,
+            "end": 236.44000244140625
+        },
+        {
+            "word": "que",
+            "start": 236.44000244140625,
+            "end": 236.5399932861328
+        },
+        {
+            "word": "je",
+            "start": 236.5399932861328,
+            "end": 236.67999267578125
+        },
+        {
+            "word": "dois",
+            "start": 236.67999267578125,
+            "end": 236.74000549316406
+        },
+        {
+            "word": "être",
+            "start": 236.74000549316406,
+            "end": 236.94000244140625
+        },
+        {
+            "word": "routinier",
+            "start": 236.94000244140625,
+            "end": 237.3800048828125
+        },
+        {
+            "word": "quand",
+            "start": 237.3800048828125,
+            "end": 237.77999877929688
+        },
+        {
+            "word": "est",
+            "start": 237.77999877929688,
+            "end": 237.94000244140625
+        },
+        {
+            "word": "ce",
+            "start": 237.94000244140625,
+            "end": 237.94000244140625
+        },
+        {
+            "word": "que",
+            "start": 237.94000244140625,
+            "end": 238.02000427246094
+        },
+        {
+            "word": "je",
+            "start": 238.02000427246094,
+            "end": 238.17999267578125
+        },
+        {
+            "word": "dois",
+            "start": 238.17999267578125,
+            "end": 238.1999969482422
+        },
+        {
+            "word": "être",
+            "start": 238.1999969482422,
+            "end": 238.39999389648438
+        },
+        {
+            "word": "chaotique",
+            "start": 238.39999389648438,
+            "end": 238.86000061035156
+        },
+        {
+            "word": "et",
+            "start": 238.86000061035156,
+            "end": 240.05999755859375
+        },
+        {
+            "word": "finalement",
+            "start": 240.05999755859375,
+            "end": 240.36000061035156
+        },
+        {
+            "word": "on",
+            "start": 241.22000122070312,
+            "end": 241.9199981689453
+        },
+        {
+            "word": "en",
+            "start": 241.9199981689453,
+            "end": 242.3000030517578
+        },
+        {
+            "word": "revient",
+            "start": 242.3000030517578,
+            "end": 242.4199981689453
+        },
+        {
+            "word": "à",
+            "start": 242.4199981689453,
+            "end": 243.4600067138672
+        },
+        {
+            "word": "quelque",
+            "start": 243.4600067138672,
+            "end": 243.67999267578125
+        },
+        {
+            "word": "chose",
+            "start": 243.67999267578125,
+            "end": 243.83999633789062
+        },
+        {
+            "word": "dont",
+            "start": 243.83999633789062,
+            "end": 244
+        },
+        {
+            "word": "la",
+            "start": 244,
+            "end": 244.22000122070312
+        },
+        {
+            "word": "plupart",
+            "start": 244.22000122070312,
+            "end": 244.3000030517578
+        },
+        {
+            "word": "des",
+            "start": 244.3000030517578,
+            "end": 244.60000610351562
+        },
+        {
+            "word": "entrepreneurs",
+            "start": 244.60000610351562,
+            "end": 245.13999938964844
+        },
+        {
+            "word": "et",
+            "start": 245.8800048828125,
+            "end": 246.5800018310547
+        },
+        {
+            "word": "surtout",
+            "start": 246.5800018310547,
+            "end": 246.72000122070312
+        },
+        {
+            "word": "la",
+            "start": 246.72000122070312,
+            "end": 247.5800018310547
+        },
+        {
+            "word": "plupart",
+            "start": 247.5800018310547,
+            "end": 247.5800018310547
+        },
+        {
+            "word": "des",
+            "start": 247.5800018310547,
+            "end": 247.66000366210938
+        },
+        {
+            "word": "gens",
+            "start": 247.66000366210938,
+            "end": 247.77999877929688
+        },
+        {
+            "word": "qui",
+            "start": 247.77999877929688,
+            "end": 248.02000427246094
+        },
+        {
+            "word": "regardent",
+            "start": 248.02000427246094,
+            "end": 248.3800048828125
+        },
+        {
+            "word": "des",
+            "start": 248.3800048828125,
+            "end": 248.72000122070312
+        },
+        {
+            "word": "vidéos",
+            "start": 248.72000122070312,
+            "end": 248.82000732421875
+        },
+        {
+            "word": "sur",
+            "start": 248.82000732421875,
+            "end": 249.10000610351562
+        },
+        {
+            "word": "Youtube",
+            "start": 249.10000610351562,
+            "end": 249.4600067138672
+        },
+        {
+            "word": "toi",
+            "start": 250.6199951171875,
+            "end": 251.16000366210938
+        },
+        {
+            "word": "cher",
+            "start": 251.3800048828125,
+            "end": 251.63999938964844
+        },
+        {
+            "word": "ami",
+            "start": 251.63999938964844,
+            "end": 251.86000061035156
+        },
+        {
+            "word": "qui",
+            "start": 251.86000061035156,
+            "end": 252.27999877929688
+        },
+        {
+            "word": "regarde",
+            "start": 252.27999877929688,
+            "end": 252.5399932861328
+        },
+        {
+            "word": "cette",
+            "start": 252.5399932861328,
+            "end": 252.74000549316406
+        },
+        {
+            "word": "vidéo",
+            "start": 252.74000549316406,
+            "end": 252.9600067138672
+        },
+        {
+            "word": "il",
+            "start": 253.66000366210938,
+            "end": 254.1999969482422
+        },
+        {
+            "word": "y",
+            "start": 254.1999969482422,
+            "end": 254.22000122070312
+        },
+        {
+            "word": "a",
+            "start": 254.22000122070312,
+            "end": 254.3000030517578
+        },
+        {
+            "word": "quelque",
+            "start": 254.3000030517578,
+            "end": 254.5
+        },
+        {
+            "word": "chose",
+            "start": 254.5,
+            "end": 254.74000549316406
+        },
+        {
+            "word": "d",
+            "start": 254.74000549316406,
+            "end": 256.8800048828125
+        },
+        {
+            "word": "assez",
+            "start": 256.8800048828125,
+            "end": 256.8999938964844
+        },
+        {
+            "word": "dur",
+            "start": 256.8999938964844,
+            "end": 257.1600036621094
+        },
+        {
+            "word": "à",
+            "start": 257.1600036621094,
+            "end": 257.9200134277344
+        },
+        {
+            "word": "admettre",
+            "start": 257.9200134277344,
+            "end": 257.9800109863281
+        },
+        {
+            "word": "c",
+            "start": 258.5199890136719,
+            "end": 259.05999755859375
+        },
+        {
+            "word": "est",
+            "start": 259.05999755859375,
+            "end": 259.05999755859375
+        },
+        {
+            "word": "qu",
+            "start": 259.05999755859375,
+            "end": 259.1600036621094
+        },
+        {
+            "word": "à",
+            "start": 259.1600036621094,
+            "end": 259.1600036621094
+        },
+        {
+            "word": "la",
+            "start": 259.1600036621094,
+            "end": 259.3999938964844
+        },
+        {
+            "word": "fin",
+            "start": 259.3999938964844,
+            "end": 259.3999938964844
+        },
+        {
+            "word": "de",
+            "start": 259.3999938964844,
+            "end": 260.0199890136719
+        },
+        {
+            "word": "la",
+            "start": 260.0199890136719,
+            "end": 260.0199890136719
+        },
+        {
+            "word": "journée",
+            "start": 260.0199890136719,
+            "end": 260.0199890136719
+        },
+        {
+            "word": "on",
+            "start": 261.239990234375,
+            "end": 261.32000732421875
+        },
+        {
+            "word": "est",
+            "start": 261.32000732421875,
+            "end": 261.6000061035156
+        },
+        {
+            "word": "évalué",
+            "start": 261.6000061035156,
+            "end": 261.9800109863281
+        },
+        {
+            "word": "pour",
+            "start": 261.9800109863281,
+            "end": 262.4200134277344
+        },
+        {
+            "word": "son",
+            "start": 262.4200134277344,
+            "end": 262.6400146484375
+        },
+        {
+            "word": "jugement",
+            "start": 262.6400146484375,
+            "end": 263
+        },
+        {
+            "word": "L",
+            "start": 264.239990234375,
+            "end": 264.3399963378906
+        },
+        {
+            "word": "univers",
+            "start": 264.3399963378906,
+            "end": 264.6400146484375
+        },
+        {
+            "word": "nous",
+            "start": 264.6400146484375,
+            "end": 265.2799987792969
+        },
+        {
+            "word": "récompense",
+            "start": 265.2799987792969,
+            "end": 265.8999938964844
+        },
+        {
+            "word": "pour",
+            "start": 266.2200012207031,
+            "end": 266.760009765625
+        },
+        {
+            "word": "notre",
+            "start": 266.760009765625,
+            "end": 266.9200134277344
+        },
+        {
+            "word": "capacité",
+            "start": 266.9200134277344,
+            "end": 267.5400085449219
+        },
+        {
+            "word": "à",
+            "start": 267.5400085449219,
+            "end": 268.0199890136719
+        },
+        {
+            "word": "faire",
+            "start": 268.0199890136719,
+            "end": 268.0799865722656
+        },
+        {
+            "word": "les",
+            "start": 268.0799865722656,
+            "end": 268.29998779296875
+        },
+        {
+            "word": "bons",
+            "start": 268.29998779296875,
+            "end": 268.44000244140625
+        },
+        {
+            "word": "choix",
+            "start": 268.44000244140625,
+            "end": 268.7200012207031
+        },
+        {
+            "word": "et",
+            "start": 268.7200012207031,
+            "end": 269.0799865722656
+        },
+        {
+            "word": "avoir",
+            "start": 269.0799865722656,
+            "end": 269.260009765625
+        },
+        {
+            "word": "les",
+            "start": 269.260009765625,
+            "end": 269.4800109863281
+        },
+        {
+            "word": "bons",
+            "start": 269.4800109863281,
+            "end": 269.6199951171875
+        },
+        {
+            "word": "jugements",
+            "start": 269.6199951171875,
+            "end": 269.9200134277344
+        },
+        {
+            "word": "et",
+            "start": 270.6400146484375,
+            "end": 271.17999267578125
+        },
+        {
+            "word": "avoir",
+            "start": 271.17999267578125,
+            "end": 271.3599853515625
+        },
+        {
+            "word": "le",
+            "start": 271.3599853515625,
+            "end": 271.67999267578125
+        },
+        {
+            "word": "bon",
+            "start": 271.67999267578125,
+            "end": 271.7799987792969
+        },
+        {
+            "word": "jugement",
+            "start": 271.7799987792969,
+            "end": 272.1199951171875
+        },
+        {
+            "word": "c",
+            "start": 273.05999755859375,
+            "end": 273.1400146484375
+        },
+        {
+            "word": "est",
+            "start": 273.1400146484375,
+            "end": 273.1400146484375
+        },
+        {
+            "word": "être",
+            "start": 273.1400146484375,
+            "end": 273.5
+        },
+        {
+            "word": "subtil",
+            "start": 273.8599853515625,
+            "end": 274.3999938964844
+        },
+        {
+            "word": "S",
+            "start": 275.5400085449219,
+            "end": 275.5400085449219
+        },
+        {
+            "word": "il",
+            "start": 275.5400085449219,
+            "end": 275.5400085449219
+        },
+        {
+            "word": "y",
+            "start": 275.5400085449219,
+            "end": 275.739990234375
+        },
+        {
+            "word": "avait",
+            "start": 275.739990234375,
+            "end": 275.7799987792969
+        },
+        {
+            "word": "une",
+            "start": 275.7799987792969,
+            "end": 276.3800048828125
+        },
+        {
+            "word": "méthode",
+            "start": 276.3800048828125,
+            "end": 276.6000061035156
+        },
+        {
+            "word": "simple",
+            "start": 276.6000061035156,
+            "end": 277.1600036621094
+        },
+        {
+            "word": "pour",
+            "start": 277.1600036621094,
+            "end": 278.20001220703125
+        },
+        {
+            "word": "avoir",
+            "start": 278.20001220703125,
+            "end": 278.5
+        },
+        {
+            "word": "une",
+            "start": 278.5,
+            "end": 278.70001220703125
+        },
+        {
+            "word": "vie",
+            "start": 278.70001220703125,
+            "end": 278.8800048828125
+        },
+        {
+            "word": "heureuse",
+            "start": 278.8800048828125,
+            "end": 279.3599853515625
+        },
+        {
+            "word": "épanouie",
+            "start": 279.8999938964844,
+            "end": 280.4200134277344
+        },
+        {
+            "word": "successfoule",
+            "start": 281.3800048828125,
+            "end": 281.94000244140625
+        },
+        {
+            "word": "s",
+            "start": 283.0199890136719,
+            "end": 283.0199890136719
+        },
+        {
+            "word": "il",
+            "start": 283.0199890136719,
+            "end": 283.0400085449219
+        },
+        {
+            "word": "suffisait",
+            "start": 283.0400085449219,
+            "end": 283.3399963378906
+        },
+        {
+            "word": "de",
+            "start": 283.3399963378906,
+            "end": 283.55999755859375
+        },
+        {
+            "word": "manger",
+            "start": 283.55999755859375,
+            "end": 283.6600036621094
+        },
+        {
+            "word": "des",
+            "start": 283.6600036621094,
+            "end": 283.8999938964844
+        },
+        {
+            "word": "protéines",
+            "start": 283.8999938964844,
+            "end": 284.32000732421875
+        },
+        {
+            "word": "d",
+            "start": 284.67999267578125,
+            "end": 284.67999267578125
+        },
+        {
+            "word": "aller",
+            "start": 284.67999267578125,
+            "end": 284.67999267578125
+        },
+        {
+            "word": "à",
+            "start": 284.67999267578125,
+            "end": 284.7799987792969
+        },
+        {
+            "word": "la",
+            "start": 284.7799987792969,
+            "end": 285.260009765625
+        },
+        {
+            "word": "salle",
+            "start": 285.260009765625,
+            "end": 285.260009765625
+        },
+        {
+            "word": "et",
+            "start": 285.6400146484375,
+            "end": 286.20001220703125
+        },
+        {
+            "word": "de",
+            "start": 286.20001220703125,
+            "end": 286.4200134277344
+        },
+        {
+            "word": "tous",
+            "start": 286.4200134277344,
+            "end": 286.5
+        },
+        {
+            "word": "les",
+            "start": 286.5,
+            "end": 286.7200012207031
+        },
+        {
+            "word": "jours",
+            "start": 286.7200012207031,
+            "end": 286.94000244140625
+        },
+        {
+            "word": "faire",
+            "start": 286.94000244140625,
+            "end": 288.1199951171875
+        },
+        {
+            "word": "la",
+            "start": 288.1199951171875,
+            "end": 288.4599914550781
+        },
+        {
+            "word": "même",
+            "start": 288.4599914550781,
+            "end": 288.4800109863281
+        },
+        {
+            "word": "chose",
+            "start": 288.4800109863281,
+            "end": 288.8800048828125
+        },
+        {
+            "word": "comme",
+            "start": 288.8800048828125,
+            "end": 289.239990234375
+        },
+        {
+            "word": "un",
+            "start": 289.239990234375,
+            "end": 289.6600036621094
+        },
+        {
+            "word": "robot",
+            "start": 289.6600036621094,
+            "end": 289.6600036621094
+        },
+        {
+            "word": "ça",
+            "start": 291.4599914550781,
+            "end": 291.4800109863281
+        },
+        {
+            "word": "se",
+            "start": 291.4800109863281,
+            "end": 291.760009765625
+        },
+        {
+            "word": "serait",
+            "start": 291.760009765625,
+            "end": 291.8599853515625
+        },
+        {
+            "word": "on",
+            "start": 292.67999267578125,
+            "end": 293.239990234375
+        },
+        {
+            "word": "le",
+            "start": 293.239990234375,
+            "end": 293.4599914550781
+        },
+        {
+            "word": "ferait",
+            "start": 293.4599914550781,
+            "end": 293.4599914550781
+        },
+        {
+            "word": "tous",
+            "start": 293.4599914550781,
+            "end": 293.8999938964844
+        },
+        {
+            "word": "Mais",
+            "start": 294.9200134277344,
+            "end": 295
+        },
+        {
+            "word": "la",
+            "start": 295,
+            "end": 295.3399963378906
+        },
+        {
+            "word": "raison",
+            "start": 295.3399963378906,
+            "end": 295.3399963378906
+        },
+        {
+            "word": "pour",
+            "start": 295.3399963378906,
+            "end": 295.5400085449219
+        },
+        {
+            "word": "laquelle",
+            "start": 295.5400085449219,
+            "end": 295.739990234375
+        },
+        {
+            "word": "on",
+            "start": 295.739990234375,
+            "end": 295.8999938964844
+        },
+        {
+            "word": "ne",
+            "start": 295.8999938964844,
+            "end": 296.0199890136719
+        },
+        {
+            "word": "le",
+            "start": 296.0199890136719,
+            "end": 296.0199890136719
+        },
+        {
+            "word": "fait",
+            "start": 296.0199890136719,
+            "end": 296.0199890136719
+        },
+        {
+            "word": "pas",
+            "start": 296.0199890136719,
+            "end": 296.29998779296875
+        },
+        {
+            "word": "tous",
+            "start": 296.29998779296875,
+            "end": 296.3999938964844
+        },
+        {
+            "word": "c",
+            "start": 296.6000061035156,
+            "end": 296.6400146484375
+        },
+        {
+            "word": "est",
+            "start": 296.6400146484375,
+            "end": 296.6400146484375
+        },
+        {
+            "word": "parce",
+            "start": 296.6400146484375,
+            "end": 296.739990234375
+        },
+        {
+            "word": "qu",
+            "start": 296.739990234375,
+            "end": 296.82000732421875
+        },
+        {
+            "word": "on",
+            "start": 296.82000732421875,
+            "end": 296.82000732421875
+        },
+        {
+            "word": "voit",
+            "start": 296.82000732421875,
+            "end": 297.05999755859375
+        },
+        {
+            "word": "bien",
+            "start": 297.05999755859375,
+            "end": 297.3399963378906
+        },
+        {
+            "word": "qu",
+            "start": 298.44000244140625,
+            "end": 299
+        },
+        {
+            "word": "en",
+            "start": 299,
+            "end": 299.0799865722656
+        },
+        {
+            "word": "fait",
+            "start": 299.0799865722656,
+            "end": 299.29998779296875
+        },
+        {
+            "word": "c",
+            "start": 299.8599853515625,
+            "end": 300.3599853515625
+        },
+        {
+            "word": "est",
+            "start": 300.3599853515625,
+            "end": 300.3599853515625
+        },
+        {
+            "word": "un",
+            "start": 300.3599853515625,
+            "end": 300.7200012207031
+        },
+        {
+            "word": "peu",
+            "start": 300.7200012207031,
+            "end": 300.7200012207031
+        },
+        {
+            "word": "plus",
+            "start": 300.7200012207031,
+            "end": 300.9200134277344
+        },
+        {
+            "word": "compliqué",
+            "start": 300.9200134277344,
+            "end": 301.17999267578125
+        },
+        {
+            "word": "que",
+            "start": 301.17999267578125,
+            "end": 301.3800048828125
+        },
+        {
+            "word": "ça",
+            "start": 301.3800048828125,
+            "end": 301.79998779296875
+        },
+        {
+            "word": "Et",
+            "start": 302.82000732421875,
+            "end": 303.3800048828125
+        },
+        {
+            "word": "finalement",
+            "start": 303.3800048828125,
+            "end": 303.739990234375
+        },
+        {
+            "word": "l",
+            "start": 303.94000244140625,
+            "end": 305.1000061035156
+        },
+        {
+            "word": "époque",
+            "start": 305.1000061035156,
+            "end": 305.1000061035156
+        },
+        {
+            "word": "moderne",
+            "start": 305.1000061035156,
+            "end": 305.6400146484375
+        },
+        {
+            "word": "est",
+            "start": 305.6400146484375,
+            "end": 306.4599914550781
+        },
+        {
+            "word": "en",
+            "start": 306.4599914550781,
+            "end": 307.05999755859375
+        },
+        {
+            "word": "tension",
+            "start": 307.05999755859375,
+            "end": 307.5199890136719
+        },
+        {
+            "word": "entre",
+            "start": 307.5199890136719,
+            "end": 307.760009765625
+        },
+        {
+            "word": "deux",
+            "start": 307.760009765625,
+            "end": 308.05999755859375
+        },
+        {
+            "word": "choses",
+            "start": 308.05999755859375,
+            "end": 308.4200134277344
+        },
+        {
+            "word": "entre",
+            "start": 309.4200134277344,
+            "end": 310.0199890136719
+        },
+        {
+            "word": "d",
+            "start": 310.0199890136719,
+            "end": 310.6199951171875
+        },
+        {
+            "word": "un",
+            "start": 310.6199951171875,
+            "end": 310.6199951171875
+        },
+        {
+            "word": "côté",
+            "start": 310.6199951171875,
+            "end": 310.6199951171875
+        },
+        {
+            "word": "la",
+            "start": 310.6199951171875,
+            "end": 311.5199890136719
+        },
+        {
+            "word": "nécessité",
+            "start": 311.5199890136719,
+            "end": 311.9599914550781
+        },
+        {
+            "word": "de",
+            "start": 311.9599914550781,
+            "end": 312.260009765625
+        },
+        {
+            "word": "faire",
+            "start": 312.260009765625,
+            "end": 312.260009765625
+        },
+        {
+            "word": "des",
+            "start": 312.260009765625,
+            "end": 312.5400085449219
+        },
+        {
+            "word": "vues",
+            "start": 312.5400085449219,
+            "end": 312.6000061035156
+        },
+        {
+            "word": "on",
+            "start": 313.239990234375,
+            "end": 313.8399963378906
+        },
+        {
+            "word": "a",
+            "start": 313.8399963378906,
+            "end": 314.260009765625
+        },
+        {
+            "word": "besoin",
+            "start": 314.260009765625,
+            "end": 314.5400085449219
+        },
+        {
+            "word": "d",
+            "start": 314.5400085449219,
+            "end": 315.260009765625
+        },
+        {
+            "word": "audience",
+            "start": 315.260009765625,
+            "end": 315.260009765625
+        },
+        {
+            "word": "on",
+            "start": 315.5199890136719,
+            "end": 315.5199890136719
+        },
+        {
+            "word": "a",
+            "start": 315.5199890136719,
+            "end": 315.8399963378906
+        },
+        {
+            "word": "besoin",
+            "start": 315.8399963378906,
+            "end": 315.8399963378906
+        },
+        {
+            "word": "d",
+            "start": 315.8399963378906,
+            "end": 316.55999755859375
+        },
+        {
+            "word": "impact",
+            "start": 316.55999755859375,
+            "end": 316.55999755859375
+        },
+        {
+            "word": "et",
+            "start": 316.70001220703125,
+            "end": 317.29998779296875
+        },
+        {
+            "word": "le",
+            "start": 317.29998779296875,
+            "end": 317.5799865722656
+        },
+        {
+            "word": "meilleur",
+            "start": 317.5799865722656,
+            "end": 317.5799865722656
+        },
+        {
+            "word": "moyen",
+            "start": 317.5799865722656,
+            "end": 317.8800048828125
+        },
+        {
+            "word": "de",
+            "start": 317.8800048828125,
+            "end": 318.1000061035156
+        },
+        {
+            "word": "faire",
+            "start": 318.1000061035156,
+            "end": 318.1000061035156
+        },
+        {
+            "word": "des",
+            "start": 318.1000061035156,
+            "end": 318.3399963378906
+        },
+        {
+            "word": "vues",
+            "start": 318.3399963378906,
+            "end": 318.3599853515625
+        },
+        {
+            "word": "c",
+            "start": 318.55999755859375,
+            "end": 318.55999755859375
+        },
+        {
+            "word": "est",
+            "start": 318.55999755859375,
+            "end": 318.55999755859375
+        },
+        {
+            "word": "de",
+            "start": 318.55999755859375,
+            "end": 318.7200012207031
+        },
+        {
+            "word": "dire",
+            "start": 318.7200012207031,
+            "end": 318.7200012207031
+        },
+        {
+            "word": "des",
+            "start": 318.7200012207031,
+            "end": 319.239990234375
+        },
+        {
+            "word": "choses",
+            "start": 319.239990234375,
+            "end": 319.239990234375
+        },
+        {
+            "word": "simples",
+            "start": 319.239990234375,
+            "end": 320.17999267578125
+        },
+        {
+            "word": "que",
+            "start": 320.2200012207031,
+            "end": 320.8999938964844
+        },
+        {
+            "word": "les",
+            "start": 320.8999938964844,
+            "end": 321.05999755859375
+        },
+        {
+            "word": "gens",
+            "start": 321.05999755859375,
+            "end": 321.17999267578125
+        },
+        {
+            "word": "peuvent",
+            "start": 321.17999267578125,
+            "end": 321.4599914550781
+        },
+        {
+            "word": "répéter",
+            "start": 321.4599914550781,
+            "end": 321.9599914550781
+        },
+        {
+            "word": "la",
+            "start": 322.6400146484375,
+            "end": 323.239990234375
+        },
+        {
+            "word": "meilleure",
+            "start": 323.239990234375,
+            "end": 323.3999938964844
+        },
+        {
+            "word": "façon",
+            "start": 323.3999938964844,
+            "end": 323.6400146484375
+        },
+        {
+            "word": "de",
+            "start": 323.6400146484375,
+            "end": 324
+        },
+        {
+            "word": "faire",
+            "start": 324,
+            "end": 324
+        },
+        {
+            "word": "des",
+            "start": 324,
+            "end": 324.260009765625
+        },
+        {
+            "word": "vues",
+            "start": 324.260009765625,
+            "end": 324.44000244140625
+        },
+        {
+            "word": "c",
+            "start": 326.0400085449219,
+            "end": 326.6400146484375
+        },
+        {
+            "word": "est",
+            "start": 326.6400146484375,
+            "end": 326.6400146484375
+        },
+        {
+            "word": "de",
+            "start": 326.6400146484375,
+            "end": 326.94000244140625
+        },
+        {
+            "word": "cliver",
+            "start": 326.94000244140625,
+            "end": 327.17999267578125
+        },
+        {
+            "word": "c",
+            "start": 328.05999755859375,
+            "end": 328.1400146484375
+        },
+        {
+            "word": "est",
+            "start": 328.1400146484375,
+            "end": 328.1400146484375
+        },
+        {
+            "word": "de",
+            "start": 328.1400146484375,
+            "end": 328.4599914550781
+        },
+        {
+            "word": "surtout",
+            "start": 328.4599914550781,
+            "end": 328.55999755859375
+        },
+        {
+            "word": "pas",
+            "start": 328.55999755859375,
+            "end": 328.7799987792969
+        },
+        {
+            "word": "être",
+            "start": 328.7799987792969,
+            "end": 328.94000244140625
+        },
+        {
+            "word": "subtil",
+            "start": 328.94000244140625,
+            "end": 329.29998779296875
+        },
+        {
+            "word": "le",
+            "start": 329.9800109863281,
+            "end": 330.5799865722656
+        },
+        {
+            "word": "mec",
+            "start": 330.5799865722656,
+            "end": 330.760009765625
+        },
+        {
+            "word": "subtil",
+            "start": 330.760009765625,
+            "end": 331.32000732421875
+        },
+        {
+            "word": "n",
+            "start": 331.32000732421875,
+            "end": 332.6199951171875
+        },
+        {
+            "word": "est",
+            "start": 332.6199951171875,
+            "end": 332.6199951171875
+        },
+        {
+            "word": "pas",
+            "start": 332.6199951171875,
+            "end": 333.0799865722656
+        },
+        {
+            "word": "viral",
+            "start": 335.3999938964844,
+            "end": 336.20001220703125
+        },
+        {
+            "word": "mais",
+            "start": 337.9599914550781,
+            "end": 338.760009765625
+        },
+        {
+            "word": "cette",
+            "start": 338.760009765625,
+            "end": 339.55999755859375
+        },
+        {
+            "word": "nécessité",
+            "start": 339.55999755859375,
+            "end": 340.67999267578125
+        },
+        {
+            "word": "économique",
+            "start": 340.67999267578125,
+            "end": 341.5400085449219
+        },
+        {
+            "word": "ne",
+            "start": 341.5400085449219,
+            "end": 341.7799987792969
+        },
+        {
+            "word": "doit",
+            "start": 341.7799987792969,
+            "end": 341.7799987792969
+        },
+        {
+            "word": "pas",
+            "start": 341.7799987792969,
+            "end": 341.9599914550781
+        },
+        {
+            "word": "nous",
+            "start": 341.9599914550781,
+            "end": 342.1600036621094
+        },
+        {
+            "word": "faire",
+            "start": 342.1600036621094,
+            "end": 342.260009765625
+        },
+        {
+            "word": "perdre",
+            "start": 342.260009765625,
+            "end": 342.4800109863281
+        },
+        {
+            "word": "de",
+            "start": 342.4800109863281,
+            "end": 342.8399963378906
+        },
+        {
+            "word": "vue",
+            "start": 342.8399963378906,
+            "end": 342.9599914550781
+        },
+        {
+            "word": "la",
+            "start": 342.9599914550781,
+            "end": 344.0799865722656
+        },
+        {
+            "word": "complexité",
+            "start": 344.0799865722656,
+            "end": 344.6600036621094
+        },
+        {
+            "word": "de",
+            "start": 344.6600036621094,
+            "end": 344.9800109863281
+        },
+        {
+            "word": "notre",
+            "start": 344.9800109863281,
+            "end": 344.9800109863281
+        },
+        {
+            "word": "fort",
+            "start": 344.9800109863281,
+            "end": 345.1600036621094
+        },
+        {
+            "word": "intérieur",
+            "start": 345.1600036621094,
+            "end": 345.55999755859375
+        },
+        {
+            "word": "c",
+            "start": 346.260009765625,
+            "end": 347.05999755859375
+        },
+        {
+            "word": "est",
+            "start": 347.05999755859375,
+            "end": 347.05999755859375
+        },
+        {
+            "word": "en",
+            "start": 347.05999755859375,
+            "end": 347.20001220703125
+        },
+        {
+            "word": "nourrissant",
+            "start": 347.20001220703125,
+            "end": 347.760009765625
+        },
+        {
+            "word": "la",
+            "start": 347.760009765625,
+            "end": 348.260009765625
+        },
+        {
+            "word": "complexité",
+            "start": 348.260009765625,
+            "end": 348.67999267578125
+        },
+        {
+            "word": "de",
+            "start": 348.67999267578125,
+            "end": 348.8800048828125
+        },
+        {
+            "word": "notre",
+            "start": 348.8800048828125,
+            "end": 349
+        },
+        {
+            "word": "fort",
+            "start": 349,
+            "end": 349.260009765625
+        },
+        {
+            "word": "intérieur",
+            "start": 349.260009765625,
+            "end": 349.55999755859375
+        },
+        {
+            "word": "c",
+            "start": 349.94000244140625,
+            "end": 350.739990234375
+        },
+        {
+            "word": "est",
+            "start": 350.739990234375,
+            "end": 350.739990234375
+        },
+        {
+            "word": "en",
+            "start": 350.739990234375,
+            "end": 351.1000061035156
+        },
+        {
+            "word": "donnant",
+            "start": 351.1000061035156,
+            "end": 351.8599853515625
+        },
+        {
+            "word": "à",
+            "start": 351.8599853515625,
+            "end": 352.6600036621094
+        },
+        {
+            "word": "notre",
+            "start": 352.6600036621094,
+            "end": 353.05999755859375
+        },
+        {
+            "word": "personne",
+            "start": 353.05999755859375,
+            "end": 353.4599914550781
+        },
+        {
+            "word": "du",
+            "start": 354.5400085449219,
+            "end": 355.3399963378906
+        },
+        {
+            "word": "paradoxe",
+            "start": 355.3399963378906,
+            "end": 356.1400146484375
+        },
+        {
+            "word": "des",
+            "start": 356.29998779296875,
+            "end": 356.6199951171875
+        },
+        {
+            "word": "choses",
+            "start": 356.6199951171875,
+            "end": 356.6199951171875
+        },
+        {
+            "word": "contradictoires",
+            "start": 356.6199951171875,
+            "end": 357.5400085449219
+        },
+        {
+            "word": "qu",
+            "start": 357.7200012207031,
+            "end": 358.5199890136719
+        },
+        {
+            "word": "on",
+            "start": 358.5199890136719,
+            "end": 358.6199951171875
+        },
+        {
+            "word": "arrive",
+            "start": 358.6199951171875,
+            "end": 358.94000244140625
+        },
+        {
+            "word": "à",
+            "start": 358.94000244140625,
+            "end": 359.9599914550781
+        }
+    ]
+}
