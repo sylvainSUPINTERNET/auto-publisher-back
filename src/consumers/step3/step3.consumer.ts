@@ -2,7 +2,7 @@ import { Processor, WorkerHost } from "@nestjs/bullmq";
 import { Inject, Logger } from "@nestjs/common";
 import { Job } from "bullmq";
 import { STEPS } from "../constant";
-import Groq from 'groq-sdk';
+// import Groq from 'groq-sdk';
 
 
 @Processor('step3')
@@ -21,13 +21,11 @@ export class Step3Consumer extends WorkerHost {
 
         try {
             
-            const client = new Groq({
-                apiKey: process.env['GROQ_TOKEN']
-            });
+            // const client = new Groq({
+            //     apiKey: process.env['GROQ_TOKEN']
+            // });
 
             const {segments, words}:Record<string, any> = JSON.parse(await this.redisClient.getdel(`${job.data.jobUUID}-${this.STEP2.REDIS_KEY_RESULT}`));
-            
-
             
             if ( process.env.WITH_COMPLETION as string === "false" ) {
                 this.logger.log(`${this.STEP2.LOG_PREFIX} (jobId :${job.id} - jobUUID:${job.data.jobUUID}) Completion simulated used ( NO GROQ )`);
