@@ -4,6 +4,31 @@
 
 ```` bash
 
+0:v → Vidéo de la première entrée (0).
+1:v → Vidéo de la deuxième entrée (1) (ex: une image superposée).
+0:a → Audio de la première entrée (0).
+1:a → Audio de la deuxième entrée (1).
+
+ffmpeg -f lavfi -i color=c=white:s=1280x720:d=10 -i alien_emoji.png -filter_complex "
+[0:v]
+drawtext=fontfile='C\:/Workspace/\perso/\auto-publisher-back/\assets/\the_bold_font.ttf': text='SUPER': fontcolor=white: fontsize=80: x=(w-text_w)/2: y=h-text_h-200: enable='between(t,1,3)': box=1: boxcolor=black@1: boxborderw=10[super];
+[super]drawtext=fontfile='C\:/Workspace/\perso/\auto-publisher-back/\assets/\the_bold_font.ttf': text='SUPER': fontcolor=black: fontsize=80: x=(w-text_w)/2: y=h-text_h-200: enable='between(t,3,5)': box=1: boxcolor=orange@1: boxborderw=10;" -t 5 -y output.mp4
+
+# recommended ( complex filter )
+ffmpeg -f lavfi -i color=c=white:s=1280x720:d=10 -i alien_emoji.png -filter_complex "
+[0:v]
+drawtext=fontfile='C\:/Windows/\Fonts/\seguiemj.ttf': text='🔥 SUPER': fontcolor=white: fontsize=80: x=(w-text_w)/2: y=h-text_h-200: enable='between(t,1,3)': box=1: boxcolor=black@1: boxborderw=10[super];
+[super]drawtext=fontfile='C\:/Windows/\Fonts/\seguiemj.ttf': text='🔥 Kekw': fontcolor=yellow: fontsize=80: x=(w-text_w)/2: y=h-text_h-200: enable='between(t,3,5)': box=1: boxcolor=red@1: boxborderw=10[kekw];
+[kekw][1:v] overlay=x=(W-w)/4:y=600:enable='between(t,4,4)'[final]" -map "[final]" -t 5 -y output.mp4
+
+
+
+# debug 
+ffmpeg -f lavfi -i color=c=white:s=1280x720:d=10 -i alien_emoji.png -vf "
+drawtext=fontfile='C\:/\Windows/\Fonts/\seguiemj.ttf': text='🔥 Super': fontcolor=yellow: fontsize=80: x=(w-text_w)/2: y=h-text_h-100: enable='between(t,1,3)': box=1: boxcolor=black@0.6: boxborderw=10,
+drawtext=fontfile='C\:/\Windows/\Fonts/\seguiemj.ttf': text='🔥 Kekw': fontcolor=yellow: fontsize=80: x=(w-text_w)/2: y=h-text_h-100: enable='between(t,3,5)': box=1: boxcolor=red@1: boxborderw=10" -t 5 -y output.mp4
+
+
 # zoom in ease : fontsize=20+60*sin(3.14*t/2)
 
 
