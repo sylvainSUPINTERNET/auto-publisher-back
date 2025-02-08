@@ -7,8 +7,8 @@ import { STEPS } from "../constant";
 export class Step4Consumer extends WorkerHost {
     private readonly logger = new Logger(Step4Consumer.name);
     
-    private readonly STEP2 = STEPS["3"];
-    private readonly STEP3 = STEPS["4"];
+    private readonly STEP3 = STEPS["3"];
+    private readonly STEP4 = STEPS["4"];
 
     constructor(@Inject("REDIS_CLIENT") private redisClient) {
         super();
@@ -17,7 +17,7 @@ export class Step4Consumer extends WorkerHost {
     async process(job: Job, token?: string): Promise<any> {
 
         try {
-            const rawCompletion = JSON.parse(await this.redisClient.getdel(`${job.data.jobUUID}-${this.STEP2.REDIS_KEY_RESULT}`));
+            const rawCompletion = JSON.parse(await this.redisClient.getdel(`${job.data.jobUUID}-${this.STEP3.REDIS_KEY_RESULT}`));
             
             console.log(JSON.stringify(rawCompletion));
 

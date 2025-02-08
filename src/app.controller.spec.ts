@@ -9,33 +9,50 @@ describe('AppController', () => {
 
   it('step4.consumer', async() => {
     
-    const fixtureCompletion = fs.readFileSync(path.resolve(process.cwd(), "fixtures", "completion.json"), 'utf8');
-    const fixtureCompletionParsed = JSON.parse(fixtureCompletion);
+    const translationSegments = JSON.parse(fs.readFileSync(path.resolve(process.cwd(), "fixtures", "Se lever tôt ne te rendra pas meilleur (et c'est tant mieux).json"), 'utf8'));
+    const fixtureCompletion = JSON.parse(fs.readFileSync(path.resolve(process.cwd(), "fixtures", "completion.json"), 'utf8'));
 
-    for ( let clipObj of fixtureCompletionParsed ) {
+    let clipsAsWords = {};
+    let ptr = 0;
+    let c = 0;
+    for ( let clipObj of fixtureCompletion ) {
       const { clips } = clipObj;
-      for ( let clip of clips ) {
-        const { id, start, end, text } = clip;
-        console.log(id, start, end, text)
+      
+      const startClip = clips[0]['start'];
+      const endClip = clips[clips.length-1]['end'];
+
+      // console.log("Clip ", c, "start", startClip, "end", endClip);
+
+      for ( let i = ptr; i < translationSegments.words.length; i++ ) {
+
+        if ( c !== 0 ) {
+          if ( translationSegments.words[i].end > endClip ) {
+            ptr = i;
+            c+=1;
+            break;
+          }
+        }
+
+        
+        if ( translationSegments.words[i].start >= startClip) {
+          if ( !clipsAsWords[`clip${c}`] ) {
+            clipsAsWords[`clip${c}`] = [];
+          }
+          clipsAsWords[`clip${c}`].push(translationSegments.words[i].word);
+        }
+
+        if ( c === 0 ) {
+          if ( translationSegments.words[i].end > endClip ) {
+            ptr = i;
+            c+=1;
+            break;
+          }
+        }
+
       }
+
     }
-    
-    
+  
   });
-  // let appController: AppController;
-
-  // beforeEach(async () => {
-  //   const app: TestingModule = await Test.createTestingModule({
-  //     controllers: [AppController],
-  //     providers: [AppService],
-  //   }).compile();
-
-  //   appController = app.get<AppController>(AppController);
-  // });
-
-  // describe('root', () => {
-  //   it('should return "Hello World!"', () => {
-  //     expect(appController.getHello()).toBe('Hello World!');
-  //   });
-  // });
+  
 });
