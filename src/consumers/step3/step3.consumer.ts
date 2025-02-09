@@ -139,7 +139,7 @@ export class Step3Consumer extends WorkerHost {
             }
 
             const completionResultJSON = await completionResult.json();            
-            console.log(completionResultJSON.choices[0].message.content);
+
             await this.redisClient.set(`${job.data.jobUUID}-${this.STEP3.REDIS_KEY_RESULT}`, JSON.stringify(completionResultJSON.choices[0].message.content));
 
             await job.updateProgress(100/STEPS.TOTAL);

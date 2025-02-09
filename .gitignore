@@ -1,5 +1,7 @@
 downloads/*.*
 
+fixtures/*.webm
+
 # compiled output
 /dist
 /node_modules
