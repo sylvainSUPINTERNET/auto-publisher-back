@@ -12,12 +12,14 @@ export class Step1Consumer extends WorkerHost {
         super();
     }
 
+    
+
     async process(job: Job, token?: string): Promise<any> {
         this.logger.log(`${this.STEP1.LOG_PREFIX} (jobId :${job.id} - jobUUID:${job.data.jobUUID}) - started`);
         // TODO ( video download with python etc .. 
         const ytbVideoName:string = "Se lever tôt ne te rendra pas meilleur (et c'est tant mieux).webm";
         //TODO
-        
+    
         try {
             await this.redisClient.set(`${job.data.jobUUID}-${this.STEP1.REDIS_KEY_RESULT}`, "Se lever tôt ne te rendra pas meilleur (et c'est tant mieux).webm");
             this.logger.log(`${this.STEP1.LOG_PREFIX} (jobId :${job.id} - jobUUID:${job.data.jobUUID}) - ${ytbVideoName} - redis ${this.STEP1.REDIS_KEY_RESULT} key created - Download OK`);

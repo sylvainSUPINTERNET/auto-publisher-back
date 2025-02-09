@@ -9,48 +9,67 @@ const os = require('os');
 
 
 
-function generateClip(complexFilter:Array<Record<any, any>>, clipName:string): Promise<any> {
+function generateClip(complexFilter:Array<Record<any, any>>, clipName:string, start:string, end:string): Promise<any> {
   // TODO : 
   // Manage extension ! for input/output
   return new Promise((resolve, reject) => {
     ffmpeg(path.resolve(process.cwd(), "fixtures", "Se lever tôt ne te rendra pas meilleur (et c'est tant mieux).webm"))
-    .setStartTime("00:00:00") // TODO => pas bon il faut utiliser complex filter
-    .setDuration("00:00:10")
-    // .complexFilter(complexFilter)
-    .complexFilter([
-        {
-          filter: 'drawtext',
-          options: {
-            fontfile: "D\\\\:/Dev/workspace/autopublisher-backend/assets/the_bold_font.ttf",
-            text: "SUPER",
-            fontsize: 80,
-            fontcolor: 'white',
-            x: '(w-text_w)/2',
-            y: 'h-text_h-200',
-            enable: 'between(t,1,3)',
-            box: 1,
-            boxcolor: 'black@1',
-            boxborderw: 10
-          },
-          outputs: 'filter1' // [0:v] => filter1
-        },
-        {
-          inputs: 'filter1',
-          filter: 'drawtext',
-          options: {
-            fontfile: "D\\\\:/Dev/workspace/autopublisher-backend/assets/the_bold_font.ttf",
-            text: "OKAY",
-            fontsize: 80,
-            fontcolor: 'white',
-            x: '(w-text_w)/2',
-            y: 'h-text_h-200',
-            enable: 'between(t,3,4)',
-            box: 1,
-            boxcolor: 'black@1',
-            boxborderw: 10
-          }
-        }
-    ])
+    .setStartTime(`${start}`)
+    .setDuration( `${end}`)
+    .complexFilter(complexFilter)
+
+    // .complexFilter([
+    //     {
+    //       filter: 'drawtext',
+    //       options: {
+    //         fontfile: "D\\\\:/Dev/workspace/autopublisher-backend/assets/the_bold_font.ttf",
+    //         text: "SUPER",
+    //         fontsize: 80,
+    //         fontcolor: 'white',
+    //         x: '(w-text_w)/2',
+    //         y: 'h-text_h-200',
+    //         enable: 'between(t,0.9399999976158142, 2.939999997615814)',
+    //         box: 1,
+    //         boxcolor: 'black@1',
+    //         boxborderw: 10
+    //       },
+    //       outputs: 'filter1' // [0:v] => filter1
+    //     },
+    //     {
+    //       inputs: 'filter1',
+    //       filter: 'drawtext',
+    //       options: {
+    //         fontfile: "D\\\\:/Dev/workspace/autopublisher-backend/assets/the_bold_font.ttf",
+    //         text: "OKAY",
+    //         fontsize: 80,
+    //         fontcolor: 'white',
+    //         x: '(w-text_w)/2',
+    //         y: 'h-text_h-200',
+    //         enable: 'between(t,3,4)',
+    //         box: 1,
+    //         boxcolor: 'black@1',
+    //         boxborderw: 10
+    //       },
+    //       outputs: "filter2"
+    //     },
+    //     {
+    //       inputs: 'filter2',
+    //       filter: 'drawtext',
+    //       options: {
+    //         fontfile: "D\\\\:/Dev/workspace/autopublisher-backend/assets/the_bold_font.ttf",
+    //         text: "OKAY 232",
+    //         fontsize: 140,
+    //         fontcolor: 'white',
+    //         x: '(w-text_w)/2',
+    //         y: 'h-text_h-200',
+    //         enable: 'between(t,5,7)',
+    //         box: 1,
+    //         boxcolor: 'black@1',
+    //         boxborderw: 10
+    //       }
+    //   }
+    // ])
+
     // .on('progress', function(progress) {
     //   console.log('Processing: ' + progress.percent);
     // })
@@ -71,7 +90,6 @@ function generateClip(complexFilter:Array<Record<any, any>>, clipName:string): P
 describe('AppController', () => {
 
   it('step4.consumer', async() => {
-    
     const translationSegments = JSON.parse(fs.readFileSync(path.resolve(process.cwd(), "fixtures", "Se lever tôt ne te rendra pas meilleur (et c'est tant mieux).json"), 'utf8'));
     const fixtureCompletion = JSON.parse(fs.readFileSync(path.resolve(process.cwd(), "fixtures", "completion.json"), 'utf8'));
 
@@ -118,16 +136,27 @@ describe('AppController', () => {
 
     }
     
-
     let complexFilter:Array<Record<any,any>> = [];
     for ( let clip in clipsAsWords ) {
       let words = clipsAsWords[clip];
       
+      let i = 0;
       for ( let word in words ) {
         let wordObj = words[word];
-        complexFilter = [...complexFilter, {
+      
+        let filter = {
           filter: 'drawtext',
-          options: {
+        }
+        if ( i === 0 ) {
+          filter["outputs"] = `filter${i}`;
+        } else if ( i === words.length-1 ) {
+          filter["inputs"] = `filter${i-1}`;
+        } else {
+          filter["inputs"] = `filter${i-1}`;
+          filter["outputs"] = `filter${i}`;
+        }
+
+        let options = {
             fontfile: "D\\\\:/Dev/workspace/autopublisher-backend/assets/the_bold_font.ttf",
             text: wordObj.word,
             fontsize: 80,
@@ -138,19 +167,21 @@ describe('AppController', () => {
             box: 1,
             boxcolor: 'black@1',
             boxborderw: 10
-          }
-        }];
+        }
+        filter["options"] = options;
+
+
+        complexFilter = [...complexFilter, filter];
+
+        i+=1;
       }
       
       if ( clip === "clip0" ) { // TOXO
-        await generateClip(complexFilter, clip);
+        await generateClip(complexFilter, clip, clipsAsWords[clip][0].start, clipsAsWords[clip][clipsAsWords[clip].length-1].end);
         console.log("Clip generated for : ", clip)
       }
 
     }
-
-  
-  
-  }, 30000);
+  }, 300000);
   
 });
