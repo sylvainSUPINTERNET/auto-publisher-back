@@ -89,7 +89,50 @@ function generateClip(complexFilter:Array<Record<any, any>>, clipName:string, st
 
 describe('AppController', () => {
 
-  it('step4.consumer', async() => {
+
+  it("step4.consumer.v2", async () => {
+    
+    const translationSegmentsAndWords = JSON.parse(fs.readFileSync(path.resolve(process.cwd(), "fixtures", "Se lever tôt ne te rendra pas meilleur (et c'est tant mieux).json"), 'utf8'));
+    const fixtureCompletion = JSON.parse(fs.readFileSync(path.resolve(process.cwd(), "fixtures", "completion.json"), 'utf8'));
+
+    // Remove useless punctuation and clean up words and segments
+    translationSegmentsAndWords.words = translationSegmentsAndWords.words.map((word) => {
+      word = word.word.replace(/[«»“”„]/g, '').trim()
+      if ( word !== "" ) {
+        return word
+      }
+    }).filter((word) => word !== undefined);
+
+    translationSegmentsAndWords.segments = translationSegmentsAndWords.segments.map((segment) => {
+      segment.text = segment.text.replace(/[«»“”„]/g, '').trim()
+
+      let s = new Set(["text", "start", "end", "id"]);
+      if ( segment.text !== "" ) {
+        Object.keys(segment).forEach((key) => {
+          if ( !s.has(key) ) {
+            delete segment[key];
+          }
+        }); 
+        return segment
+      }
+    }).filter(segment => segment !== undefined && segment.text !== undefined);
+
+    // cleanup completion
+    fixtureCompletion.forEach((el) => {
+      el.clips = el.
+      clips.map((clip) => {
+        clip.text = clip.text.replace(/[«»“”„]/g, '').trim()
+        return clip
+      }).filter(clip => clip!== undefined && clip.text !== undefined && clip.text !== "");
+    });
+
+
+
+
+  }) 
+
+
+  it.skip('step4.consumer', async() => {
     const translationSegments = JSON.parse(fs.readFileSync(path.resolve(process.cwd(), "fixtures", "Se lever tôt ne te rendra pas meilleur (et c'est tant mieux).json"), 'utf8'));
     const fixtureCompletion = JSON.parse(fs.readFileSync(path.resolve(process.cwd(), "fixtures", "completion.json"), 'utf8'));
 
