@@ -29,6 +29,7 @@
     "@remotion/captions": "4.0.258",
     "autopublisher-backend": "file:",
     "bullmq": "^5.39.1",
+    "compromise": "^14.14.4",
     "fluent-ffmpeg": "^2.1.3",
     "groq-sdk": "^0.14.0",
     "ioredis": "^5.4.2",

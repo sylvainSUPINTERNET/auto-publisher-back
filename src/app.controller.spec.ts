@@ -6,6 +6,7 @@ const fs = require('fs');
 const path = require('path');
 const ffmpeg = require('fluent-ffmpeg');
 const os = require('os');
+const nlp = require('compromise');
 
 
 
@@ -105,7 +106,6 @@ describe('AppController', () => {
 
     translationSegmentsAndWords.segments = translationSegmentsAndWords.segments.map((segment) => {
       segment.text = segment.text.replace(/[«»“”„]/g, '').trim()
-
       let s = new Set(["text", "start", "end", "id"]);
       if ( segment.text !== "" ) {
         Object.keys(segment).forEach((key) => {
@@ -127,10 +127,22 @@ describe('AppController', () => {
     });
 
 
-
-
+    console.log("ok");
+    
   }) 
 
+
+  it('xd', async() => {
+    let text = "Est-ce qu'il faut se lever tôt pour être productif ? Oui, mais cela dépend de chacun.";
+    let doc = nlp(text)
+    doc.sentences().out('array').map((sentence) => {
+      let words = sentence.split(" ");
+      for (let i = 0; i < words.length; i += 4) {
+        let segment = words.slice(i, i + 4).join(" ");
+        console.log(segment);
+      }
+    })
+  })
 
   it.skip('step4.consumer', async() => {
     const translationSegments = JSON.parse(fs.readFileSync(path.resolve(process.cwd(), "fixtures", "Se lever tôt ne te rendra pas meilleur (et c'est tant mieux).json"), 'utf8'));
@@ -227,4 +239,7 @@ describe('AppController', () => {
     }
   }, 300000);
   
+
+
+
 });
