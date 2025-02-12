@@ -26,7 +26,7 @@ export class Step3Consumer extends WorkerHost {
             // });
 
             const {segments, words}:Record<string, any> = JSON.parse(await this.redisClient.getdel(`${job.data.jobUUID}-${this.STEP2.REDIS_KEY_RESULT}`));
-            
+
             if ( process.env.WITH_COMPLETION as string === "false" ) {
                 this.logger.log(`${this.STEP2.LOG_PREFIX} (jobId :${job.id} - jobUUID:${job.data.jobUUID}) Completion simulated used ( NO GROQ )`);
 
@@ -37,7 +37,6 @@ export class Step3Consumer extends WorkerHost {
                 return Promise.resolve();
             }
 
-
             // Remove useless field 
             const uselessFields = ["tokens", "seek","temperature","avg_logprob","compression_ratio","no_speech_prob" ];
             segments.forEach((segment:Record<string, any>) => {
@@ -46,6 +45,7 @@ export class Step3Consumer extends WorkerHost {
                 });
             });
 
+                        
             const prompt = `
             Tu es un éditeur vidéo spécialisé dans la création de clips courts optimisés pour YouTube Shorts et TikTok.  
 
@@ -88,22 +88,19 @@ export class Step3Consumer extends WorkerHost {
             Format de sortie JSON attendu : 
             La sortie doit être une **liste JSON propre**, contenant au maximum **3 clips**, avec le format suivant :  
             \`\`\`json
-            [
-                {
-                    "clips": [
+
+            {
+                "clip_0": [
                         { "id": 1, "start": 0, "end": 10, "text": "..." },
                         { "id": 2, "start": 10, "end": 25, "text": "..." }
-                    ]
-                },
-                {
-                    "clips": [
+                    ],
+                "clip_1": [
                         { "id": 3, "start": 30, "end": 45, "text": "..." },
                         { "id": 4, "start": 45, "end": 60, "text": "..." }
                     ]
-                }
-
                 ...
-            ]
+            }
+
             \`\`\`
 
             ---
