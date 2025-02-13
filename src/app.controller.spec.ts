@@ -2,6 +2,8 @@
 // import { AppController } from './app.controller';
 // import { AppService } from './app.service';
 
+import { filter } from "rxjs";
+
 const fs = require('fs');
 const path = require('path');
 const ffmpeg = require('fluent-ffmpeg');
@@ -204,8 +206,92 @@ describe('AppController', () => {
       }).filter(seg => seg!== undefined && seg.text !== undefined && seg.text !== "");
     }
 
+    
+    // Complex filter ffmpeg
+    let complexFilter:Array<Record<any,any>> = [];
+    for ( let clip in fixtureCompletion ) {
+      let lastIdx = fixtureCompletion[clip].length - 1;
+
+      for ( let p in fixtureCompletion[clip]) {
+        let filter = {
+          filter: 'drawtext'
+        }
+        let i:number = parseInt(p, 10);
+        if ( i === 0 ) {
+          filter["outputs"] = `filter${i}`;
+        } else if ( i === lastIdx ) {
+          filter["inputs"] = `filter${i-1}`;
+        } else {
+          filter["inputs"] = `filter${i-1}`;
+          filter["outputs"] = `filter${i}`;
+        }
+  
+
+        let options = {
+            fontfile: "D\\\\:/Dev/workspace/autopublisher-backend/assets/the_bold_font.ttf",
+            text: fixtureCompletion[clip][p].text,
+            fontsize: 80,
+            fontcolor: 'white',
+            x: '(w-text_w)/2',
+            y: 'h-text_h-200',
+            enable: `between(t,${fixtureCompletion[clip][p].start},${fixtureCompletion[clip][p].end})`,
+            box: 1,
+            boxcolor: 'black@1',
+            boxborderw: 10
+        }
+        filter["options"] = options;
+
+        complexFilter = [...complexFilter, filter];
+      }
+    }
 
 
+
+  //   for ( let clip in clipsAsWords ) {
+  //     let words = clipsAsWords[clip];
+      
+  //     let i = 0;
+  //     for ( let word in words ) {
+  //       let wordObj = words[word];
+      
+  //       let filter = {
+  //         filter: 'drawtext',
+  //       }
+  //       if ( i === 0 ) {
+  //         filter["outputs"] = `filter${i}`;
+  //       } else if ( i === words.length-1 ) {
+  //         filter["inputs"] = `filter${i-1}`;
+  //       } else {
+  //         filter["inputs"] = `filter${i-1}`;
+  //         filter["outputs"] = `filter${i}`;
+  //       }
+
+  //       let options = {
+  //           fontfile: "D\\\\:/Dev/workspace/autopublisher-backend/assets/the_bold_font.ttf",
+  //           text: wordObj.word,
+  //           fontsize: 80,
+  //           fontcolor: 'white',
+  //           x: '(w-text_w)/2',
+  //           y: 'h-text_h-200',
+  //           enable: `between(t,${wordObj.start},${wordObj.end})`,
+  //           box: 1,
+  //           boxcolor: 'black@1',
+  //           boxborderw: 10
+  //       }
+  //       filter["options"] = options;
+
+
+  //       complexFilter = [...complexFilter, filter];
+
+  //       i+=1;
+  //     }
+      
+  //     if ( clip === "clip0" ) { // TOXO
+  //       await generateClip(complexFilter, clip, clipsAsWords[clip][0].start, clipsAsWords[clip][clipsAsWords[clip].length-1].end);
+  //       console.log("Clip generated for : ", clip)
+  //     }
+
+  //   }
 
 
 
