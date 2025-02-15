@@ -4,6 +4,7 @@
 
 ```` bash
 
+
 0:v → Vidéo de la première entrée (0).
 1:v → Vidéo de la deuxième entrée (1) (ex: une image superposée).
 0:a → Audio de la première entrée (0).
