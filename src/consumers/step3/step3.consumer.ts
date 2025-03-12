@@ -46,6 +46,7 @@ export class Step3Consumer extends WorkerHost {
             });
 
                         
+            
             const prompt = `
             Tu es un éditeur vidéo spécialisé dans la création de clips courts optimisés pour YouTube Shorts et TikTok.  
 
