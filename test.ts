@@ -22,3 +22,5 @@ for ( let c = 0; c < cleanedTextArray.length; c++ ) {
 let punctuationWithoutSpaceText = cleanedTextArray.join('');
 const total = data[0].end - data[0].start
 
+console.log(punctuationWithoutSpaceText)
+
