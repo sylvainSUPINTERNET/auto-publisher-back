@@ -24,7 +24,7 @@ export class Step4Consumer extends WorkerHost {
             await job.updateProgress(100/STEPS.TOTAL);
             return Promise.resolve();
         } catch ( error ) {
-            this.logger.error(`${this.STEP3.LOG_PREFIX} (jobId :${job.id} - jobUUID:${job.data.jobUUID}) - ${error}`);
+            this.logger.error(`${this.STEP4.LOG_PREFIX} (jobId :${job.id} - jobUUID:${job.data.jobUUID}) - ${error}`);
             //await job.moveToFailed({ message: e.message }, true);
             return Promise.reject();
         }
