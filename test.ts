@@ -1,3 +1,8 @@
+const fs = require('fs');
+const path = require('path');
+const ffmpeg = require('fluent-ffmpeg');
+const os = require('os');
+
 const data = [
     {
         "id": 0,
@@ -19,9 +24,41 @@ for ( let c = 0; c < cleanedTextArray.length; c++ ) {
         }
     }
 }
-let punctuationWithoutSpaceText = cleanedTextArray.join('');
+let punctuationWithoutSpaceText = cleanedTextArray.join('').split(" ");
 const total = data[0].end - data[0].start
-
+const wordWeight = total / punctuationWithoutSpaceText.length
 
 console.log(punctuationWithoutSpaceText)
+console.log(wordWeight)
 
+ffmpeg(path.resolve(process.cwd(),"fixtures", "Se lever tôt ne te rendra pas meilleur (et c'est tant mieux).webm"))
+    .setStartTime(0)
+    .setDuration(4)
+    .complexFilter([
+        {
+          filter: 'drawtext',
+          options: {
+            fontfile: "D\\\\:/Dev/workspace/autopublisher-backend/assets/the_bold_font.ttf",
+            text: "SUPER",
+            fontsize: 80,
+            fontcolor: 'white',
+            x: '(w-text_w)/2',
+            y: 'h-text_h-200',
+            enable: 'between(t,0.9399999976158142, 2.939999997615814)',
+            box: 1,
+            boxcolor: 'black@1',
+            boxborderw: 10
+          },
+        //   outputs: 'filter1' // [0:v] => filter1
+        }
+    ])
+    .on('end', function() {
+        console.log('Finished processing');
+        // resolve(true);
+    })
+    .on('error', function(err) {
+        console.log('an error happened: ' + err.message);
+        // reject(err);
+    })
+    .output(path.resolve(process.cwd(), "fixtures", `TEST.webm`))
+    .run();
