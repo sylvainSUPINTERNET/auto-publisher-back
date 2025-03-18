@@ -85,24 +85,36 @@ ffmpeg(path.resolve(process.cwd(),"fixtures", "Se lever tôt ne te rendra pas me
     .setStartTime(0)
     .setDuration(4)
     .complexFilter(
-    //     [
-    //     {
-    //       filter: 'drawtext',
-    //       options: {
-    //         fontfile: "D\\\\:/Dev/workspace/autopublisher-backend/assets/the_bold_font.ttf",
-    //         text: "SUPER",
-    //         fontsize: 80,
-    //         fontcolor: 'white',
-    //         x: '(w-text_w)/2',
-    //         y: 'h-text_h-200',
-    //         enable: 'between(t,0.9399999976158142, 2.939999997615814)',
-    //         box: 1,
-    //         boxcolor: 'black@1',
-    //         boxborderw: 10
-    //       },
-    //     //   outputs: 'filter1' // [0:v] => filter1
-    //     }
-    // ]
+        [
+            {
+                filter: 'crop',
+                options: {
+                  out_w: 'ih*9/16',
+                  out_h: 'ih',
+                  x: '(iw - out_w) / 2',
+                  y: 0
+                },
+                outputs: 'filter1' // [0:v] => filter1
+              },
+        {
+            inputs: 'filter1',
+          filter: 'drawtext',
+          options: {
+            fontfile: "D\\\\:/Dev/workspace/autopublisher-backend/assets/the_bold_font.ttf",
+            text: "SUPER",
+            fontsize: 80,
+            fontcolor: 'white',
+            x: '(w-text_w)/2',
+            y: 'h-text_h-200',
+            enable: 'between(t,0.9399999976158142, 2.939999997615814)',
+            box: 1,
+            boxcolor: 'black@1',
+            boxborderw: 10
+          },
+        //   outputs: 'filter1' // [0:v] => filter1
+        }
+    ]
+
 
 )
     .on('end', function() {
