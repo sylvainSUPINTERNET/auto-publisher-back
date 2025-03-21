@@ -12,13 +12,19 @@ const data = [
     },
 ];
 
-function escapeFFmpegText(text) {
+
+/**
+ * Note : 3 levels interpretation : shell + node + ffmpeg so to escape ' => \\\\\\'
+ * @param text 
+ * @returns 
+ */
+function escapeFFmpegText(text:string):string {
     return text
-        .replace(/\\/g, "\\\\")  // \ becomes \\\\ (4 backslashes to deliver \\ to FFmpeg)
-        .replace(/"/g, '""')        // " becomes "" to escape double quotes
-        .replace(/'/g, "''")        // ' becomes '' to escape single quotes
-        .replace(/%/g, "\\%")     // % becomes \% to escape percent sign
-        .replace(/:/g, "\\:");    // : becomes \: to escape colon
+        .replace(/\\/g, "\\\\\\")
+        .replace(/'/g, "\\\\\\'")
+        .replace(/"/g, '\\\\\\"')
+        .replace(/%/g, "\\\\\\%")
+        .replace(/:/g, "\\\\\\:");
 }
 
 let cleanedText = data[0].text.replace(/[«»]/g, '').trim();
@@ -103,40 +109,41 @@ ffmpeg(path.resolve(process.cwd(),"fixtures", "Se lever tôt ne te rendra pas me
     .setStartTime(0)
     .setDuration(duration)
     
-    // TODO real call
-    // .complexFilter(complexFilter)
+    // TODO real call0
+    .complexFilter(complexFilter)
 
     // TODO test
-    .complexFilter(
-        [
-            {
-                filter: 'crop',
-                options: {
-                  out_w: 'ih*9/16',
-                  out_h: 'ih',
-                  x: '(iw - out_w) / 2',
-                  y: 0
-                },
-                outputs: 'filter1' // [0:v] => filter1
-              },
-        {
-            inputs: 'filter1',
-          filter: 'drawtext',
-          options: {
-            fontfile: "D\\\\:/Dev/workspace/autopublisher-backend/assets/anton.ttf",
-            text: "qu\\\\\''il faut se  ?",//escapeFFmpegText("qu'il faut se  ?"),
-            fontsize: 80,
-            fontcolor: 'white',
-            x: '(w-text_w)/2',
-            y: 'h-text_h-200',
-            enable: 'between(t,0,1.1733333333333333)',
-            box: 1,
-            boxcolor: 'black@1',
-            boxborderw: 10
-          },
-        //   outputs: 'filter1' // [0:v] => filter1
-        }
-    ])
+    // .complexFilter(
+    //     [
+    //         {
+    //             filter: 'crop',
+    //             options: {
+    //               out_w: 'ih*9/16',
+    //               out_h: 'ih',
+    //               x: '(iw - out_w) / 2',
+    //               y: 0
+    //             },
+    //             outputs: 'filter1' // [0:v] => filter1
+    //           },
+    //     {
+    //         inputs: 'filter1',
+    //       filter: 'drawtext',
+    //       options: {
+    //         fontfile: "D\\\\:/Dev/workspace/autopublisher-backend/assets/anton.ttf",
+    //         //text: "nb \\\\\\'xd xx",//escapeFFmpegText("qu'il faut se  ?"),
+    //         text: escapeFFmpegText(`xxxx 'xd "/ ne xx  ?`),
+    //         fontsize: 80,
+    //         fontcolor: 'white',
+    //         x: '(w-text_w)/2',
+    //         y: 'h-text_h-200',
+    //         enable: 'between(t,0,1.1733333333333333)',
+    //         box: 1,
+    //         boxcolor: 'black@1',
+    //         boxborderw: 10
+    //       },
+    //     //   outputs: 'filter1' // [0:v] => filter1
+    //     }
+    // ])
     .on('end', function() {
         console.log('Finished processing');
         // resolve(true);
