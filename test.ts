@@ -13,6 +13,81 @@ const data = [
 ];
 
 
+const dataWords =  [
+            {
+                "word": "«",
+                "start": 0.47999998927116394,
+                "end": 0.9399999976158142
+            },
+            {
+                "word": "Est",
+                "start": 0.9399999976158142,
+                "end": 0.9599999785423279
+            },
+            {
+                "word": "ce",
+                "start": 0.9599999785423279,
+                "end": 0.9599999785423279
+            },
+            {
+                "word": "qu",
+                "start": 0.9599999785423279,
+                "end": 1.1399999856948853
+            },
+            {
+                "word": "il",
+                "start": 1.1399999856948853,
+                "end": 1.1399999856948853
+            },
+            {
+                "word": "faut",
+                "start": 1.1399999856948853,
+                "end": 1.2599999904632568
+            },
+            {
+                "word": "se",
+                "start": 1.2599999904632568,
+                "end": 1.5
+            },
+            {
+                "word": "lever",
+                "start": 1.5,
+                "end": 1.6399999856948853
+            },
+            {
+                "word": "tôt",
+                "start": 1.6399999856948853,
+                "end": 1.7999999523162842
+            },
+            {
+                "word": "pour",
+                "start": 1.7999999523162842,
+                "end": 2.0399999618530273
+            },
+            {
+                "word": "être",
+                "start": 2.0399999618530273,
+                "end": 2.1600000858306885
+            },
+            {
+                "word": "productif",
+                "start": 2.1600000858306885,
+                "end": 2.740000009536743
+            },
+            {
+                "word": "",
+                "start": 2.740000009536743,
+                "end": 3.180000066757202
+            },
+            {
+                "word": "»",
+                "start": 3.180000066757202,
+                "end": 4
+            }
+];
+
+
+
 /**
  * Note : 3 levels interpretation : shell + node + ffmpeg so to escape ' => \\\\\\'
  * @param text 
@@ -61,9 +136,9 @@ punctuationWithoutSpaceText.forEach((word, index) => {
 
 let duration = 0;
 let complexFilter:Record<string,any>[] = partitions.map(( partition, index) => {
+
     const text:string = partition.join(" ");
     let partitionWeight = partition.length * wordWeight;
-
     let endDuration = duration + partitionWeight;
     
     let options = {
