@@ -140,7 +140,7 @@ let complexFilter:Record<string,any>[] = partitions.map(( partition, index) => {
     const text:string = partition.join(" ");
     let partitionWeight = partition.length * wordWeight;
     let endDuration = duration + partitionWeight;
-    
+
     let options = {
         fontfile: "D\\\\:/Dev/workspace/autopublisher-backend/assets/anton.ttf",
         text: escapeFFmpegText(text),
