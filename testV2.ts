@@ -1,7 +1,22 @@
 const transcription = require("./fixtures/Se lever tôt ne te rendra pas meilleur (et c'est tant mieux).json");
 const clips = require('./fixtures/completion.json');
 
-buildWordTimeMap(transcription);
+
+
+transcription.segments.forEach( segment => {
+    segment.start = Math.round(segment.start * 100) / 100;
+    segment.end = Math.round(segment.end * 100) / 100;    
+});
+
+transcription.words.forEach( word => {
+    word.start = Math.round(word.start * 100) / 100;
+    word.end = Math.round(word.end * 100) / 100;    
+});
+
+
+console.log(transcription)
+
+
 
 
 for ( let clipName in clips ) {
@@ -15,18 +30,17 @@ for ( let clipName in clips ) {
     
     for ( let cData of clipData ) {
         let { id, start, end, text } = cData
-        const textNoPunctuation = keepWords(text);
+        
+        const textNoPunctuation = text; //keepWords(text);
+
+        console.log("START : ", start);
         textNoPunctuation.split(" ").forEach( word => {
             console.log(word);
-        })
+        });
+        console.log("END : ", end);
         
     }
 
-}
-
-
-function buildWordTimeMap (transcription: Record<any, any>) {
-    // TODO 
 }
 
 
@@ -39,6 +53,10 @@ function getClipDurationInterval (clipData:Array<Record<string, any>>) : Record<
 
 function keepWords(sentence:string):string {
     return sentence.replace(/[^\p{L}\p{N}\s]/gu, " ").trim();
+}
+
+function roundTime() {
+
 }
 
 
