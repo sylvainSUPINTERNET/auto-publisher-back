@@ -15,21 +15,28 @@ for ( let clipName in clips ) {
 
     let clipData = clips[clipName];
     const {startAt, endAt} = getClipDurationInterval(clipData);
-    
+
+    console.log("CLIP => ", clipName, startAt, endAt);
+
+    let sentences: Array<Record<string, any>> = [];
     for ( let cData of clipData ) {
         const { id, start:clipStart, end:clipEnd, text:clipText } = cData
-        const noPunctuation = keepWords(clipText);
-    
-        console.log(clipStart, clipEnd, " | ", clipText, " | " ,noPunctuation);
 
+        // TODO : count char by char ( ignore punctuation ) to have exact timestamp end/start per word in sentence (not just weird word)
+
+        const clipTextAsList: string[] = clipText.split(" ").filter(c => c.trim() !== "")
+        console.log(clipStart, clipEnd, " | ", clipText, " | " , clipTextAsList);
+
+        let sentence: Record<string, any> = {};
         transcription.words.forEach( (word, i) => {
-            const { start:wordStart, end:wordEnd, text:wordText } = word;
+            const { start:wordStart, end:wordEnd, word:wordText } = word;
+            if ( wordStart >= clipStart && wordEnd <= clipEnd ) {      
+                console.log(  wordStart, wordEnd, wordText );      
 
-            if ( wordStart >= clipStart && wordEnd <= clipEnd ) {
-                console.log(word);
             }
-
         })
+
+        console.log(sentence);
 
         console.log("   ");
     }
@@ -65,6 +72,18 @@ function preProcessingTranscription(transcription:Record<string, any>) {
 }
 
 
-// "text": " « Est-ce qu'il faut se lever tôt pour être productif ? »"
+/*
 
-// Est-ce qu'il
+let partitions: Array<Array<string>> = [];
+let tmp: string[] = [];
+clipTextNoPunctuation.split(" ").forEach((word, index) => {
+    tmp.push(word); // Ajoute le mot au groupe actuel
+    
+    if (index % 3 === 2 || index === clipTextNoPunctuation.length - 1) {
+        partitions.push(tmp); // Ajoute tmp à partitions
+        tmp = []; // Réinitialise tmp pour un nouveau groupe
+    }
+});
+
+console.log(partitions); 
+ */
