@@ -2,20 +2,8 @@ const transcription = require("./fixtures/Se lever tôt ne te rendra pas meilleu
 const clips = require('./fixtures/completion.json');
 
 
-
-transcription.segments.forEach( segment => {
-    segment.start = Math.round(segment.start * 100) / 100;
-    segment.end = Math.round(segment.end * 100) / 100;    
-});
-
-transcription.words.forEach( word => {
-    word.start = Math.round(word.start * 100) / 100;
-    word.end = Math.round(word.end * 100) / 100;    
-});
-
-
-console.log(transcription)
-
+// Pre processing
+preProcessingTranscription(transcription);
 
 
 
@@ -29,17 +17,23 @@ for ( let clipName in clips ) {
     const {startAt, endAt} = getClipDurationInterval(clipData);
     
     for ( let cData of clipData ) {
-        let { id, start, end, text } = cData
-        
-        const textNoPunctuation = text; //keepWords(text);
+        const { id, start:clipStart, end:clipEnd, text:clipText } = cData
+        const noPunctuation = keepWords(clipText);
+    
+        console.log(clipStart, clipEnd, " | ", clipText, " | " ,noPunctuation);
 
-        console.log("START : ", start);
-        textNoPunctuation.split(" ").forEach( word => {
-            console.log(word);
-        });
-        console.log("END : ", end);
-        
+        transcription.words.forEach( (word, i) => {
+            const { start:wordStart, end:wordEnd, text:wordText } = word;
+
+            if ( wordStart >= clipStart && wordEnd <= clipEnd ) {
+                console.log(word);
+            }
+
+        })
+
+        console.log("   ");
     }
+
 
 }
 
@@ -55,8 +49,19 @@ function keepWords(sentence:string):string {
     return sentence.replace(/[^\p{L}\p{N}\s]/gu, " ").trim();
 }
 
-function roundTime() {
+function preProcessingTranscription(transcription:Record<string, any>) {
+    // round to decimal
+    transcription.segments.forEach( segment => {
+        segment.start = Math.round(segment.start * 100) / 100;
+        segment.end = Math.round(segment.end * 100) / 100;    
+    });
+    
+    transcription.words.forEach( word => {
+        word.start = Math.round(word.start * 100) / 100;
+        word.end = Math.round(word.end * 100) / 100;    
+    });
 
+    return transcription;
 }
 
 
