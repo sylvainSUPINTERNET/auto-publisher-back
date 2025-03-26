@@ -21,9 +21,13 @@ for ( let clipName in clips ) {
     let sentences: Array<Record<string, any>> = [];
 
     clipData.forEach( (cData, idx) => {
+
+        // TODO debug
+        if ( idx !== 0 ) return;
+        // TODO debug
+
         const { id, start:clipStart, end:clipEnd, text:clipText } = cData
 
-        // TODO : count char by char ( ignore punctuation ) to have exact timestamp end/start per word in sentence (not just weird word)
 
         const clipTextAsList: string[] = clipText.split(" ").filter(c => c.trim() !== "")
         console.log(clipStart, clipEnd, " | ", clipText, " | " , clipTextAsList);
@@ -47,19 +51,22 @@ for ( let clipName in clips ) {
 
 
         const wordsFullWithDetail = [];
+        const tmp: Array<Record<string, any>> = [];
         clipText.split("").forEach( (c, i) => {
-
-
-            console.log(c);
-
-            // if ( c === " " && i !== 0 ) {
-            //     console.log("CUT");
-            // } 
             
-            // if ( c !== " " && wordsDetailMap.get(c) ) {
-            //     console.log("WORD", c);
-            //     // TODO shift 
-            // }
+            // TODO : read value with shift()
+            if ( c === " " && i !== 0 ) {
+                // cut 
+            
+                console.log("---------")
+            } else {
+                console.log(c);
+                // wordsDetailMap.get(c)?.forEach( (entry:Record<string, any>, idx) => {
+                //     console.log("   ", entry.wordStart, entry.wordEnd);
+                // })
+            }
+
+
         })
 
         console.log("   ");
