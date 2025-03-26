@@ -27,16 +27,34 @@ for ( let clipName in clips ) {
         const clipTextAsList: string[] = clipText.split(" ").filter(c => c.trim() !== "")
         console.log(clipStart, clipEnd, " | ", clipText, " | " , clipTextAsList);
 
-        let sentence: Record<string, any> = {};
+
+        let wordsDetailMap: Map<string, Array<any>> = new Map();
         transcription.words.forEach( (word, i) => {
             const { start:wordStart, end:wordEnd, word:wordText } = word;
             if ( wordStart >= clipStart && wordEnd <= clipEnd ) {      
-                console.log(  wordStart, wordEnd, wordText );      
+                const entries = wordsDetailMap.get(wordText);
+                if ( entries ) {
+                    entries.push({ wordStart, wordEnd });
+                } else {
+                    wordsDetailMap.set(wordText, [{ wordStart, wordEnd }]);
+                }
 
             }
         })
+        console.log("WORDS DETAIL" ,wordsDetailMap);
 
-        console.log(sentence);
+
+        const wordsFullWithDetail = [];
+        clipText.split("").forEach( (c, i) => {
+            if ( c === " " && i !== 0 ) {
+                console.log("CUT");
+            } 
+            
+            if ( c !== " " && wordsDetailMap.get(c) ) {
+                console.log("WORD", c);
+                // TODO work with it THEN delete it ( to manage duplicate)
+            }
+        })
 
         console.log("   ");
     }
