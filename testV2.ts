@@ -51,19 +51,40 @@ for ( let clipName in clips ) {
 
 
         const wordsFullWithDetail = [];
-        const tmp: Array<Record<string, any>> = [];
-        clipText.split("").forEach( (c, i) => {
+        
+        let tmpFull: string[] = [];
+        let tmp: string[]= [];
+        let tmpTimers: Record<string, any>[] = [];
+        clipText.split("").forEach( (c:string, i) => {
+  
+            console.log(tmp, " | tmpFull : ", tmpFull);
+            if ( tmp.length !== 0 ) {
+                let word = tmp.join("");
+                console.log("test : ", word);
+                if ( wordsDetailMap.has(word) ) {
+                    const f = wordsDetailMap.get(word)?.shift(); // don't forget to remove the element proceed due to potential duplicated word
+                    tmpTimers.push({ start: f?.wordStart, end:f?.wordEnd, word });
+                    tmp = [];
+                    console.log(tmpTimers);
+                }
+            }
+            
+
             
             // TODO : read value with shift()
             if ( c === " " && i !== 0 ) {
                 // cut 
-            
+                // use "tmpFull" to get the full word and use tmpTimers to get exact end and exact start
                 console.log("---------")
             } else {
-                console.log(c);
-                // wordsDetailMap.get(c)?.forEach( (entry:Record<string, any>, idx) => {
-                //     console.log("   ", entry.wordStart, entry.wordEnd);
-                // })
+
+                if ( !wordsDetailMap.has(c) && c !== " " && isNotComposeChar(c)) {
+                    tmp.push(c);
+                }
+                if ( !wordsDetailMap.has(c) && c !== " ") {
+                    tmpFull.push(c);
+                }
+   
             }
 
 
@@ -101,19 +122,7 @@ function preProcessingTranscription(transcription:Record<string, any>) {
     return transcription;
 }
 
+function isNotComposeChar(sentence:string): boolean {
+    return !/['-]/.test(sentence);
+}
 
-/*
-
-let partitions: Array<Array<string>> = [];
-let tmp: string[] = [];
-clipTextNoPunctuation.split(" ").forEach((word, index) => {
-    tmp.push(word); // Ajoute le mot au groupe actuel
-    
-    if (index % 3 === 2 || index === clipTextNoPunctuation.length - 1) {
-        partitions.push(tmp); // Ajoute tmp à partitions
-        tmp = []; // Réinitialise tmp pour un nouveau groupe
-    }
-});
-
-console.log(partitions); 
- */
