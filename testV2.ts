@@ -7,18 +7,20 @@ preProcessingTranscription(transcription);
 
 
 
+
+let clipDetails = {};
 for ( let clipName in clips ) {
 
     // TODO debug
     if ( clipName !== "clip_0") continue;
     // TODO debug
 
+    clipDetails[clipName] = [];
+
     let clipData = clips[clipName];
     const {startAt, endAt} = getClipDurationInterval(clipData);
 
     console.log("CLIP => ", clipName, startAt, endAt);
-
-    let sentences: Array<Record<string, any>> = [];
 
     clipData.forEach( (cData, idx) => {
 
@@ -48,10 +50,7 @@ for ( let clipName in clips ) {
         })
 
         console.log("WORDS DETAIL" ,wordsDetailMap);
-
-
-        const wordsFullWithDetail = [];
-        
+                
         let tmpFull: string[] = [];
         let tmp: string[]= [];
         let tmpTimers: Record<string, any>[] = [];
@@ -60,7 +59,7 @@ for ( let clipName in clips ) {
             console.log(tmp, " | tmpFull : ", tmpFull);
             if ( tmp.length !== 0 ) {
                 let word = tmp.join("");
-                console.log("test : ", word);
+
                 if ( wordsDetailMap.has(word) ) {
                     const f = wordsDetailMap.get(word)?.shift(); // don't forget to remove the element proceed due to potential duplicated word
                     tmpTimers.push({ start: f?.wordStart, end:f?.wordEnd, word });
@@ -75,6 +74,23 @@ for ( let clipName in clips ) {
             if ( c === " " && i !== 0 ) {
                 // cut 
                 // use "tmpFull" to get the full word and use tmpTimers to get exact end and exact start
+
+                if ( tmpTimers.length !== 0 ) { 
+                    let fullWord = tmpFull.join("")
+                    if ( clipTextAsList.filter(c => c === fullWord).length !== 0 ) {
+                        console.log(fullWord); // TODO delete full word ?
+                        console.log("OK ", tmpTimers, fullWord);
+                        const { end, start} = mapFullWordWithExactTime(tmpTimers);
+                        clipDetails[clipName].push({
+                            start,
+                            end, 
+                            fullWord
+                        })
+                    }    
+                }
+
+                tmpFull = [];
+                tmpTimers = [];
                 console.log("---------")
             } else {
 
@@ -92,6 +108,8 @@ for ( let clipName in clips ) {
 
         console.log("   ");
     });
+
+    console.log("CLIP DETAILS => ", clipDetails);
 
 }
 
@@ -126,3 +144,9 @@ function isNotComposeChar(sentence:string): boolean {
     return !/['-]/.test(sentence);
 }
 
+function mapFullWordWithExactTime(tmpTimers:Record<string, any>[]): Record<string, any> {
+    return {
+        start: tmpTimers[0].start,
+        end: tmpTimers[tmpTimers.length - 1].end,    
+    }
+}
