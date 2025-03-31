@@ -12,7 +12,7 @@ let clipDetails = {};
 for ( let clipName in clips ) {
 
     // TODO debug
-    if ( clipName !== "clip_0") continue;
+     if ( clipName !== "clip_1") continue;
     // TODO debug
 
     clipDetails[clipName] = [];
@@ -38,6 +38,7 @@ for ( let clipName in clips ) {
         let wordsDetailMap: Map<string, Array<any>> = new Map();
         transcription.words.forEach( (word, i) => {
             const { start:wordStart, end:wordEnd, word:wordText } = word;
+            console.log("WORD",word);
             if ( wordStart >= clipStart && wordEnd <= clipEnd ) {      
                 const entries = wordsDetailMap.get(wordText);
                 if ( entries ) {
@@ -54,7 +55,10 @@ for ( let clipName in clips ) {
         let tmpFull: string[] = [];
         let tmp: string[]= [];
         let tmpTimers: Record<string, any>[] = [];
-        clipText.split("").forEach( (c:string, i) => {
+        
+        // Add padding to the clipText to get the last word take into account
+        let clipTextWithPadding = clipText + " ";
+        clipTextWithPadding.split("").forEach( (c:string, i) => {
                         
             console.log("tmp ", tmp, " | tmpFull : ", tmpFull);
             if ( tmp.length !== 0 ) {
@@ -62,16 +66,17 @@ for ( let clipName in clips ) {
 
                 if ( wordsDetailMap.has(word) ) {
                     const f = wordsDetailMap.get(word)?.shift(); // don't forget to remove the element proceed due to potential duplicated word
+                    console.log("F", f, word);
                     tmpTimers.push({ start: f?.wordStart, end:f?.wordEnd, word });
                     tmp = [];
-                    console.log(tmpTimers);
+                    console.log("T M P TIMERS", tmpTimers);
                 }
             }
-            
+        
 
-            
             // TODO : read value with shift()
-            if ( c === " " && i !== 0 ) {
+            if ( (c === " " && i !== 0) ) {
+                
                 // cut 
                 // use "tmpFull" to get the full word and use tmpTimers to get exact end and exact start
 
@@ -86,14 +91,19 @@ for ( let clipName in clips ) {
                             end, 
                             fullWord
                         })
-                    }    
+                    }
                 }
-
+                
                 tmpFull = [];
                 tmpTimers = [];
+
+                if ( tmp.length !== 0 ) {
+                    console.log("Not found skipped (not in map details) : ", tmp);
+
+                    tmp = [];
+                }
                 console.log("---------")
             } else {
-
 
                 if ( !wordsDetailMap.has(c) && c !== " " && isNotComposeChar(c)) {
                     tmp.push(c);
@@ -103,7 +113,7 @@ for ( let clipName in clips ) {
                     tmp.push(c);
                 }
 
-                if ( !wordsDetailMap.has(c) && c !== " ") {
+                if ( !wordsDetailMap.has(c) && c !== " " || wordsDetailMap.has(c) && c !== " ") {
                     tmpFull.push(c);
                 }
 
