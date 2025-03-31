@@ -56,7 +56,7 @@ for ( let clipName in clips ) {
         let tmpTimers: Record<string, any>[] = [];
         clipText.split("").forEach( (c:string, i) => {
                         
-            console.log(tmp, " | tmpFull : ", tmpFull);
+            console.log("tmp ", tmp, " | tmpFull : ", tmpFull);
             if ( tmp.length !== 0 ) {
                 let word = tmp.join("");
 
@@ -94,9 +94,15 @@ for ( let clipName in clips ) {
                 console.log("---------")
             } else {
 
+
                 if ( !wordsDetailMap.has(c) && c !== " " && isNotComposeChar(c)) {
                     tmp.push(c);
                 }
+
+                if ( wordsDetailMap.has(c) && c !== " " ) {
+                    tmp.push(c);
+                }
+
                 if ( !wordsDetailMap.has(c) && c !== " ") {
                     tmpFull.push(c);
                 }
