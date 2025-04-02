@@ -59,7 +59,9 @@ for ( let clipName in clips ) {
         // Add padding to the clipText to get the last word take into account
         let clipTextWithPadding = clipText + " ";
         clipTextWithPadding.split("").forEach( (c:string, i) => {
+            
 
+            console.log("melass", clipTextWithPadding.split("")[i+1])
             // TODO problem
             // soit on bouge ça dans le if en dessous et on dois revoir la logique 
             // soit on check position / avant si possible et on regarde si ça match pour eviter le truck du genre "j'ai" qui dit quand il passe sur a qu'il trouvé un "a" qui n'a rien avoir ( alors que c'est ai)
