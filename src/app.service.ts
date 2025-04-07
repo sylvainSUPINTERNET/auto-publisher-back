@@ -53,8 +53,6 @@ export class AppService {
     ) 
     {
 
-    this.jobService.test();
-
 
     // ( async () => {
 

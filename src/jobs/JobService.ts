@@ -9,7 +9,7 @@ export class JobService {
   private readonly logger = new Logger(JobService.name);
 
     constructor(@InjectModel(Job.name) private jobModel: Model<Job>) { }
-    
+
     public async test() {
       const resp = await new this.jobModel({
           jobId: uuidv4(),
@@ -20,7 +20,6 @@ export class JobService {
         }).save();
   
         this.logger.log(`Job created -> ${resp}`);
-  
     }
 
 }
