@@ -13,6 +13,8 @@ import { Step3EventListener } from './consumers/step3/step3.event-listener';
 import { Step4EventListener } from './consumers/step4/step4.event-listener';
 import { Step3Consumer } from './consumers/step3/step3.consumer';
 import { Step4Consumer } from './consumers/step4/step4.consumer';
+import { MongooseModule } from '@nestjs/mongoose';
+import { JobsModule } from './jobs/jobs.module';
 
 @Module({
   imports: [
@@ -34,10 +36,13 @@ import { Step4Consumer } from './consumers/step4/step4.consumer';
     // }),
     BullModule.registerFlowProducer({
       name: "flow-producer-auto-clip",
-    })
+    }),
+    MongooseModule.forRoot(process.env.MONGODB_CONNECTION_STRING as string),
+    JobsModule
   ],
   controllers: [AppController],
-  providers: [AppService, ConsumerMagicClip,
+  providers: [AppService, 
+    ConsumerMagicClip,
     Step1Consumer,
     Step2Consumer,
     Step3Consumer,
@@ -46,6 +51,6 @@ import { Step4Consumer } from './consumers/step4/step4.consumer';
     Step2EventListener,
     Step3EventListener,
     Step4EventListener
-  ]
+  ],
 })
 export class AppModule {}

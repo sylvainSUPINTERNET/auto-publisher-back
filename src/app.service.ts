@@ -1,6 +1,10 @@
 import { InjectFlowProducer } from '@nestjs/bullmq';
-import { Injectable, Logger } from '@nestjs/common';
+import { Inject, Injectable, Logger } from '@nestjs/common';
+import { InjectModel } from '@nestjs/mongoose';
 import { FlowOpts, FlowProducer } from 'bullmq';
+import { Model } from 'mongoose';
+import { Job } from './jobs/schemas/job.schema';
+import { JobService } from './jobs/JobService';
 const { v4: uuidv4 } = require('uuid');
 
 @Injectable()
@@ -44,8 +48,13 @@ export class AppService {
   
   constructor(
     // @InjectQueue("magic-clip") private autoClipQueue: Queue, 
-    @InjectFlowProducer("flow-producer-auto-clip") private flowProducer: FlowProducer) 
+    @InjectFlowProducer("flow-producer-auto-clip") private flowProducer: FlowProducer,
+    private jobService: JobService,
+    ) 
     {
+
+    this.jobService.test();
+
 
     // ( async () => {
 
