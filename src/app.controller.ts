@@ -1,4 +1,4 @@
-import { Body, Controller, Get, HttpStatus, Logger, Post, Res } from '@nestjs/common';
+import { Body, Controller, HttpStatus, Logger, Post, Res } from '@nestjs/common';
 import { AppService } from './app.service';
 import { createJobDto } from './jobs/dto/createJobDto';
 import { JobService } from './jobs/JobService';
@@ -36,7 +36,7 @@ export class AppController {
         jobId: job.jobId,
         message: "Job created and added to queue"
       })
-      
+
     } catch ( e ) {
       this.logger.error("Error creating job", e);
       return res.status(HttpStatus.INTERNAL_SERVER_ERROR).json({
@@ -44,13 +44,6 @@ export class AppController {
       })
     }
 
-    
-  
-    return {
-      "ok": "wait"
-    }
-
-    //  return this.jobService.create(createJobDto);
   }
 
 }

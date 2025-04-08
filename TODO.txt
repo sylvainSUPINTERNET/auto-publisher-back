@@ -1,0 +1,2 @@
+=> update status for each steps ( use updateStatus from JobService.ts ) 
+=> use data from the job on each steps ( find by jobId ? )

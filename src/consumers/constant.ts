@@ -1,5 +1,9 @@
 export const STEPS = {
     TOTAL: 4,
+    "0": { // INIT ( when we create a new job )
+        LOG_PREFIX: "STEP 0",
+        REDIS_KEY_RESULT : "step0-video",
+    },
     "1" : {
         LOG_PREFIX: "STEP 1",
         REDIS_KEY_RESULT : "step1-video",

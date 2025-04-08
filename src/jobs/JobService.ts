@@ -4,8 +4,8 @@ import { Connection, Model } from "mongoose";
 import { Job } from "./schemas/job.schema";
 import { v4 as uuidv4 } from 'uuid';
 import { createJobDto } from "./dto/createJobDto";
-import { InjectFlowProducer } from "@nestjs/bullmq";
-import { FlowOpts, FlowProducer } from "bullmq";
+import { STEPS } from "src/consumers/constant";
+
 
 @Injectable()
 export class JobService {
@@ -26,7 +26,7 @@ export class JobService {
         const newJob = new this.jobModel({
           jobId,
           sub: job.sub,
-          status: job.status,
+          status: STEPS["0"],
           youtubeUrl: job.youtubeUrl,
           gcpBucketKey: job.youtubeUrl,
         });
@@ -41,6 +41,19 @@ export class JobService {
         throw error;
       } finally {
         session.endSession();
+      }
+    }
+
+    public async updateStatus(jobId: string, step:number) {
+      try {
+        const stepStatus:string = STEPS[step].REDIS_KEY_RESULT;
+        this.jobModel.updateOne(
+          { jobId },
+          { $set: { status: stepStatus } }
+        )
+        this.logger.log(`Update job ${jobId} status to ${stepStatus}`);
+      } catch ( e ) {
+        this.logger.error(`Error updating job status: ${e}`);        
       }
     }
 
