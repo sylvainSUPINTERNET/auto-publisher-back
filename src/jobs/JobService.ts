@@ -26,7 +26,7 @@ export class JobService {
         const newJob = new this.jobModel({
           jobId,
           sub: job.sub,
-          status: STEPS["0"],
+          status: STEPS["0"].REDIS_KEY_RESULT,
           youtubeUrl: job.youtubeUrl,
           gcpBucketKey: job.youtubeUrl,
         });

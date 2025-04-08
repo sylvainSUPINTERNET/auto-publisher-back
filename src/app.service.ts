@@ -127,28 +127,32 @@ export class AppService {
           name: "step4",
           queueName: "step4",
           data: {
-            jobUUID
+            jobUUID,
+            newJob
           },
           children: [
             {
               name: "step3",
               queueName: "step3",
               data: {
-                jobUUID
+                jobUUID,
+                newJob
               },
               children: [
                 {
                   name: "step2",
                   queueName: 'step2',
                   data: {
-                    jobUUID
+                    jobUUID,
+                    newJob
                   },
                   children: [
                     {
                       name: "step1",
                       queueName: 'step1',
                       data: {
-                        jobUUID
+                        jobUUID,
+                        newJob
                       }
                     }
                   ]
@@ -215,5 +219,5 @@ export class AppService {
     this.flowOpts);
   }
 
-  
+
 }

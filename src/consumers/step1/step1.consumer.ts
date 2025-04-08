@@ -15,7 +15,12 @@ export class Step1Consumer extends WorkerHost {
     
 
     async process(job: Job, token?: string): Promise<any> {
-        this.logger.log(`${this.STEP1.LOG_PREFIX} (jobId :${job.id} - jobUUID:${job.data.jobUUID}) - started`);
+
+        const {newJob: jobRecord, jobUUID} = job.data;
+
+        console.log("Start with newJob : ", jobRecord);
+     
+        this.logger.log(`${this.STEP1.LOG_PREFIX} (jobUUID:${job.data.jobUUID} - queue jobId ${job.id}) - started`);
         // TODO ( video download with python etc .. 
         const ytbVideoName:string = "Se lever tôt ne te rendra pas meilleur (et c'est tant mieux).webm";
         //TODO
