@@ -16,15 +16,18 @@ export class Step4Consumer extends WorkerHost {
 
     async process(job: Job, token?: string): Promise<any> {
 
+        const {newJob: jobRecord} = job.data;
+        const jobUUID = jobRecord.jobId;
+
         try {
-            const rawCompletion = JSON.parse(await this.redisClient.getdel(`${job.data.jobUUID}-${this.STEP3.REDIS_KEY_RESULT}`));
+            const rawCompletion = JSON.parse(await this.redisClient.getdel(`${jobUUID}-${this.STEP3.REDIS_KEY_RESULT}`));
             
             console.log(JSON.stringify(rawCompletion));
 
             await job.updateProgress(100/STEPS.TOTAL);
             return Promise.resolve();
         } catch ( error ) {
-            this.logger.error(`${this.STEP4.LOG_PREFIX} (jobId :${job.id} - jobUUID:${job.data.jobUUID}) - ${error}`);
+            this.logger.error(`${this.STEP4.LOG_PREFIX} (jobId :${job.id} - jobUUID:${jobUUID}) - ${error}`);
             //await job.moveToFailed({ message: e.message }, true);
             return Promise.reject();
         }

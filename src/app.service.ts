@@ -112,9 +112,8 @@ export class AppService {
 
 
   public async produceJob(newJob: Job) {  
-    const jobUUID:string = newJob.jobId;    
-
-    this.logger.log(`New jobUUID : ${jobUUID}`);
+    this.logger.log(`New jobUUID : ${newJob.jobId}`);
+    
     const job = await this.flowProducer.add({
       name: 'job-magic-clip',
       queueName: 'magic-clip',
@@ -127,7 +126,6 @@ export class AppService {
           name: "step4",
           queueName: "step4",
           data: {
-            jobUUID,
             newJob
           },
           children: [
@@ -135,7 +133,6 @@ export class AppService {
               name: "step3",
               queueName: "step3",
               data: {
-                jobUUID,
                 newJob
               },
               children: [
@@ -143,7 +140,6 @@ export class AppService {
                   name: "step2",
                   queueName: 'step2',
                   data: {
-                    jobUUID,
                     newJob
                   },
                   children: [
@@ -151,7 +147,6 @@ export class AppService {
                       name: "step1",
                       queueName: 'step1',
                       data: {
-                        jobUUID,
                         newJob
                       }
                     }

@@ -18,6 +18,8 @@ export class Step3Consumer extends WorkerHost {
 
     async process(job: Job, token?: string): Promise<any> {
 
+        const {newJob: jobRecord} = job.data;
+        const jobUUID = jobRecord.jobId;
 
         try {
             
@@ -25,14 +27,14 @@ export class Step3Consumer extends WorkerHost {
             //     apiKey: process.env['GROQ_TOKEN']
             // });
 
-            const {segments, words}:Record<string, any> = JSON.parse(await this.redisClient.getdel(`${job.data.jobUUID}-${this.STEP2.REDIS_KEY_RESULT}`));
+            const {segments, words}:Record<string, any> = JSON.parse(await this.redisClient.getdel(`${jobUUID}-${this.STEP2.REDIS_KEY_RESULT}`));
 
             if ( process.env.WITH_COMPLETION as string === "false" ) {
-                this.logger.log(`${this.STEP2.LOG_PREFIX} (jobId :${job.id} - jobUUID:${job.data.jobUUID}) Completion simulated used ( NO GROQ )`);
+                this.logger.log(`${this.STEP2.LOG_PREFIX} (jobId :${job.id} - jobUUID:${jobUUID}) Completion simulated used ( NO GROQ )`);
 
                 const path = require('path');
                 const completionJson = require(path.resolve(process.cwd(), "fixtures", "completion.json"));
-                await this.redisClient.set(`${job.data.jobUUID}-${this.STEP3.REDIS_KEY_RESULT}`, JSON.stringify(completionJson));
+                await this.redisClient.set(`${jobUUID}-${this.STEP3.REDIS_KEY_RESULT}`, JSON.stringify(completionJson));
                 await job.updateProgress(100/STEPS.TOTAL);
                 return Promise.resolve();
             }
@@ -138,13 +140,13 @@ export class Step3Consumer extends WorkerHost {
 
             const completionResultJSON = await completionResult.json();            
 
-            await this.redisClient.set(`${job.data.jobUUID}-${this.STEP3.REDIS_KEY_RESULT}`, JSON.stringify(completionResultJSON.choices[0].message.content));
+            await this.redisClient.set(`${jobUUID}-${this.STEP3.REDIS_KEY_RESULT}`, JSON.stringify(completionResultJSON.choices[0].message.content));
 
             await job.updateProgress(100/STEPS.TOTAL);
             return Promise.resolve();
 
         } catch ( error ) {
-            this.logger.error(`${this.STEP3.LOG_PREFIX} (jobId :${job.id} - jobUUID:${job.data.jobUUID}) - ${error}`);
+            this.logger.error(`${this.STEP3.LOG_PREFIX} (jobId :${job.id} - jobUUID:${jobUUID}) - ${error}`);
             return Promise.reject(error);
         }
         
