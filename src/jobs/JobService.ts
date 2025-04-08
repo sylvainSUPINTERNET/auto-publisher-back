@@ -1,27 +1,47 @@
 import { Injectable, Logger } from "@nestjs/common";
-import { InjectModel } from "@nestjs/mongoose";
-import { Model } from "mongoose";
+import { InjectConnection, InjectModel } from "@nestjs/mongoose";
+import { Connection, Model } from "mongoose";
 import { Job } from "./schemas/job.schema";
 import { v4 as uuidv4 } from 'uuid';
 import { createJobDto } from "./dto/createJobDto";
+import { InjectFlowProducer } from "@nestjs/bullmq";
+import { FlowOpts, FlowProducer } from "bullmq";
 
 @Injectable()
 export class JobService {
   private readonly logger = new Logger(JobService.name);
 
-    constructor(@InjectModel(Job.name) private jobModel: Model<Job>) { }
+    constructor(
+      @InjectConnection() private readonly connection: Connection,
+      @InjectModel(Job.name) private jobModel: Model<Job>,
+    ) { }
 
-    public async create(job:createJobDto): Promise<Job> {
-      const resp = await new this.jobModel({
-          jobId: uuidv4(),
+    public async create(job: createJobDto): Promise<Job> {
+      const jobId:string = uuidv4();
+
+      const session = await this.connection.startSession();
+      session.startTransaction();
+  
+      try {
+        const newJob = new this.jobModel({
+          jobId,
           sub: job.sub,
           status: job.status,
           youtubeUrl: job.youtubeUrl,
-          gcpBucketKey: job.youtubeUrl
-        })
-        .save();
-
+          gcpBucketKey: job.youtubeUrl,
+        });
+  
+        const resp = await newJob.save({ session });
+        await session.commitTransaction();
+        this.logger.log(`Success creating job ${jobId}`);
         return resp;
+      } catch (error) {
+        this.logger.error(`Error creating job: ${error}`);
+        await session.abortTransaction();
+        throw error;
+      } finally {
+        session.endSession();
+      }
     }
 
 }

@@ -109,6 +109,62 @@ export class AppService {
     // })();
   }
 
+
+
+  public async produceJob(newJob: Job) {  
+    const jobUUID:string = newJob.jobId;    
+
+    this.logger.log(`New jobUUID : ${jobUUID}`);
+    const job = await this.flowProducer.add({
+      name: 'job-magic-clip',
+      queueName: 'magic-clip',
+      data: {
+        step: 'End',
+        foo: 'bar'
+      },
+      children: [ // can use different queue for children to execute in parallel
+        {
+          name: "step4",
+          queueName: "step4",
+          data: {
+            jobUUID
+          },
+          children: [
+            {
+              name: "step3",
+              queueName: "step3",
+              data: {
+                jobUUID
+              },
+              children: [
+                {
+                  name: "step2",
+                  queueName: 'step2',
+                  data: {
+                    jobUUID
+                  },
+                  children: [
+                    {
+                      name: "step1",
+                      queueName: 'step1',
+                      data: {
+                        jobUUID
+                      }
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ],
+    }, 
+    this.flowOpts);
+  }
+  
+
+
+  // TODO remove this
   async getHello() {
     const jobUUID = uuidv4();
     this.logger.log(`New jobUUID : ${jobUUID}`);
@@ -157,8 +213,7 @@ export class AppService {
       ],
     }, 
     this.flowOpts);
-    
-
-
   }
+
+  
 }
