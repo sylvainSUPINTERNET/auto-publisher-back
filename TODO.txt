@@ -1,2 +1,6 @@
 => update status for each steps ( use updateStatus from JobService.ts ) 
 => use data from the job on each steps ( find by jobId ? )
+=> Step1 -> upload to GCP bucket ( stop using R2 for now )
+=> Step2 -> use TTS Google instead of Whisper for transcription
+=> Step3 -> Keep groq to build the clips with deepseek ( rework prompt to use the TTS result JSON )
+=> Step4 -> Integrate FFMPEG method ( check testV2 )
