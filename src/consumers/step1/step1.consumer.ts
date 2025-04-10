@@ -8,6 +8,8 @@ export class Step1Consumer extends WorkerHost {
     private readonly logger = new Logger(Step1Consumer.name);
     private readonly STEP1 = STEPS["1"];
 
+    private readonly MAX_DOWNLOAD_DURATION_MINS:number = 5;
+
     constructor(@Inject("REDIS_CLIENT") private redisClient) {
         super();
     }
@@ -19,6 +21,11 @@ export class Step1Consumer extends WorkerHost {
         const jobUUID = jobRecord.jobId;
 
         console.log("Start with newJob : ", jobRecord);
+
+
+
+        // TODO => download just audio 5mins for the moment MAX.
+        // TODO => upload to GCP bucket
      
         this.logger.log(`${this.STEP1.LOG_PREFIX} (jobUUID:${jobUUID} - queue jobId ${job.id}) - started`);
         // TODO ( video download with python etc .. 
