@@ -3,6 +3,7 @@ import { Inject, Logger } from "@nestjs/common";
 import { Job } from "bullmq";
 import { STEPS } from "../constant";
 import { YtbService } from "src/services/YtbService";
+import { delay } from "src/utils";
 
 @Processor('step1')
 export class Step1Consumer extends WorkerHost {
@@ -15,16 +16,15 @@ export class Step1Consumer extends WorkerHost {
     }
 
     async process(job: Job, token?: string): Promise<any> {
-
-        this.logger.log(`${this.STEP1.LOG_PREFIX} - ${job.id} started`);
         const {newJob: jobRecord} = job.data;
-        console.log(jobRecord)
-
+        this.logger.log(`${this.STEP1.LOG_PREFIX} - ${job.id} started : ${jobRecord}`);
         try {
 
-            //this.ytbService.downloadAudio(jobRecord.youtubeUrl, "00:00:00", `${this.MAX_DOWNLOAD_DURATION_MINS}`)
-            
-            
+            // TODO : 
+            // check for duration
+            // Use env variable to skip download / and skip tmp (read/delete) locally
+
+            //await this.ytbService.downloadAudio(jobRecord.youtubeUrl, "00:00:00", `${this.MAX_DOWNLOAD_DURATION_MINS}`)
             // await this.redisClient.set(`${jobUUID}-${this.STEP1.REDIS_KEY_RESULT}`, "Se lever tôt ne te rendra pas meilleur (et c'est tant mieux).webm");
             // this.logger.log(`${this.STEP1.LOG_PREFIX} (jobId :${job.id} - jobUUID:${jobUUID}) - ${ytbVideoName} - redis ${this.STEP1.REDIS_KEY_RESULT} key created - Download OK`);
             // await job.updateProgress(100/STEPS.TOTAL);
