@@ -18,9 +18,6 @@ export class AppController {
 
   @Post("/jobs")
   async create(@Body() createJobDto: createJobDto, @Res() res:Response): Promise<Record<string, any>> {
-    if ( !createJobDto.youtubeUrl ) {
-        createJobDto["youtubeUrl"] = null;
-    }
 
     if ( !createJobDto.gcpBucketKey ) {
         createJobDto["gcpBucketKey"] = null;
@@ -33,8 +30,7 @@ export class AppController {
       this.appService.produceJob(job); // do not await here ! ( we need to send a response and let the job run in the background )
       
       return res.status(HttpStatus.OK).json({
-        jobId: job.jobId,
-        message: "Job created and added to queue"
+        jobId: job.jobId
       })
 
     } catch ( e ) {

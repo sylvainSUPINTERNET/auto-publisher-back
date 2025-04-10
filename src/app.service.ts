@@ -29,6 +29,7 @@ export class AppService {
         defaultJobOptions: {
           removeOnComplete: true,
           removeOnFail: true,
+          
         },
       },
       "step3": {

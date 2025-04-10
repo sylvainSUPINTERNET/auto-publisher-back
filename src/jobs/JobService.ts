@@ -28,13 +28,14 @@ export class JobService {
           sub: job.sub,
           status: STEPS["0"].REDIS_KEY_RESULT,
           youtubeUrl: job.youtubeUrl,
-          gcpBucketKey: job.youtubeUrl,
+          gcpBucketKey: job.gcpBucketKey,
         });
   
         const resp = await newJob.save({ session });
         await session.commitTransaction();
         this.logger.log(`Success creating job ${jobId}`);
-        return resp;
+        
+        return resp.toObject();
       } catch (error) {
         this.logger.error(`Error creating job: ${error}`);
         await session.abortTransaction();

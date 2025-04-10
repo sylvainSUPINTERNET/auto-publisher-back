@@ -17,7 +17,7 @@ export class Job {
     @Prop({required: true, default: "STEP0"})
     status: string;
     
-    @Prop({default: null, type: String})
+    @Prop({required:true, type: String})
     youtubeUrl: string;
 
     @Prop({default: null, type: String})
