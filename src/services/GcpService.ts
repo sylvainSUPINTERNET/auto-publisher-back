@@ -32,7 +32,6 @@ export class GcpService {
             // preconditionOpts: {ifGenerationMatch: generationMatchPrecondition},
           };
         try {
-            console.log(this.bucketName)
             await this.storage.bucket(this.bucketName).upload(filePath, uploadOptions);
             this.logger.log(`GCP upload success : ${filePath} to ${this.bucketName}/${uploadOptions.destination}`);
             return Promise.resolve();
