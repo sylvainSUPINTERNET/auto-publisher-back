@@ -1,6 +1,8 @@
+import { SpeechClient } from "@google-cloud/speech";
 import { Injectable, Logger } from "@nestjs/common";
 const {Storage} = require('@google-cloud/storage');
 const path = require('node:path');
+const speech = require('@google-cloud/speech');
 
 
 @Injectable()
@@ -14,11 +16,20 @@ export class GcpService {
 
     private readonly storage:Storage = new Storage({keyFilename: path.resolve(process.cwd(), process.env.GCP_KEY_FILE as string)});
 
+    private readonly speechClient:SpeechClient = new speech.SpeechClient();
+
 
     constructor( ) { }
 
-    public async uploadFileAndRemoveTmp(filePath:string, destFileName:string,) {
 
+    /**
+     * Use in step1 :
+     * Upload to gs bucket and remove the tmp file locally
+     * @param filePath 
+     * @param destFileName 
+     * @returns 
+     */
+    public async uploadFileAndRemoveTmp(filePath:string, destFileName:string,) {
         const uploadOptions = {
             destination: `${this.bucketKey}/${destFileName}`,
             // // Optional:
@@ -38,7 +49,16 @@ export class GcpService {
         } catch (e) {
             this.logger.error(`GCP upload error : ${e}`);
             return Promise.reject(e);
-        }
-        
+        }   
     }
+
+    public async transcribeAudio(fileName:string) {
+
+        const file = `gs://${this.bucketName}/${this.bucketKey}/${fileName}`;
+        
+
+
+        console.log("wait : ", file)
+    }
+    
 }
