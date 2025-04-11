@@ -23,42 +23,40 @@ export class Step1Consumer extends WorkerHost {
 
         const downloadObj:{filePath:string, fileName:string} = {filePath:"", fileName:""};
         try {
-
             const { filePath, fileName } = await this.ytbService.downloadAudio(jobRecord.youtubeUrl, "00:00:00", `${this.MAX_DOWNLOAD_DURATION_MINS}`)
             downloadObj.filePath = filePath;
             downloadObj.fileName = fileName;
             this.logger.log(`  ${this.STEP1.LOG_PREFIX} - ${job.id} download OK : ${JSON.stringify(downloadObj)}`);
-
         } catch ( e ) {
             this.logger.error(`${this.STEP1.LOG_PREFIX} - ${job.id} download error : ${e}`);
             return Promise.reject(e);
         }
 
 
-
         try {
 
-            // TODO : 
-            // check for duration
-            // Use env variable to skip download / and skip tmp (read/delete) locally
+            await this.gcpService.uploadFileAndRemoveTmp(downloadObj.filePath, downloadObj.fileName);
 
-            // autopublisher_media/transcripts/be2c87f4-6c47-4089-b963-555d4ab023b8.opus
-            
-            const { filePath, fileName } = await this.ytbService.downloadAudio(jobRecord.youtubeUrl, "00:00:00", `${this.MAX_DOWNLOAD_DURATION_MINS}`)
+            await this.redisClient.set(`${job.id}-${this.STEP1.REDIS_KEY_RESULT}`, `${downloadObj.fileName}`);
 
-            await this.gcpService.uploadFileAndRemoveTmp(filePath, fileName);
+            this.logger.log(`${this.STEP1.LOG_PREFIX} (jobId :${job.id} - jobUUID:${jobRecord.jobId}) - ${jobRecord.youtubeUrl} - redis ${this.STEP1.REDIS_KEY_RESULT} key created - Download and Upload OK`);
+            await job.updateProgress(100/STEPS.TOTAL);
 
-            // TOOD => delete file
+            return Promise.resolve();
 
-
-            // await this.redisClient.set(`${jobUUID}-${this.STEP1.REDIS_KEY_RESULT}`, "Se lever tôt ne te rendra pas meilleur (et c'est tant mieux).webm");
-            // this.logger.log(`${this.STEP1.LOG_PREFIX} (jobId :${job.id} - jobUUID:${jobUUID}) - ${ytbVideoName} - redis ${this.STEP1.REDIS_KEY_RESULT} key created - Download OK`);
-            // await job.updateProgress(100/STEPS.TOTAL);
-            // return Promise.resolve();
         } catch ( e ) {
-            this.logger.error(`${this.STEP1.LOG_PREFIX} - ${job.id} error : ${e}`);
+
+            this.logger.error(`${this.STEP1.LOG_PREFIX} - ${job.id} gs upload error : ${e}`);
             return Promise.reject(e);
+
+        } finally {
+
+            // remove file locally
+            
+            
         }
+
+
     }
 
 
