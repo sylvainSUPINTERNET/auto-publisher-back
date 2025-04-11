@@ -16,6 +16,7 @@ import { Step4Consumer } from './consumers/step4/step4.consumer';
 import { MongooseModule } from '@nestjs/mongoose';
 import { JobsModule } from './jobs/jobs.module';
 import { YtbService } from './services/YtbService';
+import { GcpService } from './services/GcpService';
 
 @Module({
   imports: [
@@ -52,7 +53,8 @@ import { YtbService } from './services/YtbService';
     Step2EventListener,
     Step3EventListener,
     Step4EventListener,
-    YtbService
+    YtbService,
+    GcpService,
   ],
 })
 export class AppModule {}
