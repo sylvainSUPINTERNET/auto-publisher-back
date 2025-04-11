@@ -4,6 +4,7 @@ import { Job } from "bullmq";
 import { STEPS } from "../constant";
 import { YtbService } from "src/services/YtbService";
 import { GcpService } from "src/services/GcpService";
+const fs = require('fs');
 
 @Processor('step1')
 export class Step1Consumer extends WorkerHost {
@@ -22,13 +23,18 @@ export class Step1Consumer extends WorkerHost {
         this.logger.log(`${this.STEP1.LOG_PREFIX} - ${job.id} started : ${JSON.stringify(jobRecord)}`);
 
         const downloadObj:{filePath:string, fileName:string} = {filePath:"", fileName:""};
+
         try {
+
             const { filePath, fileName } = await this.ytbService.downloadAudio(jobRecord.youtubeUrl, "00:00:00", `${this.MAX_DOWNLOAD_DURATION_MINS}`)
             downloadObj.filePath = filePath;
             downloadObj.fileName = fileName;
-            this.logger.log(`  ${this.STEP1.LOG_PREFIX} - ${job.id} download OK : ${JSON.stringify(downloadObj)}`);
+            this.logger.log(`${this.STEP1.LOG_PREFIX} - ${job.id} download OK : ${JSON.stringify(downloadObj)}`);
+
         } catch ( e ) {
+
             this.logger.error(`${this.STEP1.LOG_PREFIX} - ${job.id} download error : ${e}`);
+
             return Promise.reject(e);
         }
 
@@ -52,10 +58,15 @@ export class Step1Consumer extends WorkerHost {
         } finally {
 
             // remove file locally
-            
-            
+            fs.unlink(downloadObj.filePath, err => {
+                if (err) {
+                    this.logger.error(`Error while removing file ${downloadObj.filePath} : ${err}`);
+                } else {
+                    this.logger.log(`File ${downloadObj.filePath} has been successfully removed.`);
+                }
+              });
+           
         }
-
 
     }
 
