@@ -23,6 +23,9 @@ export class Job {
     @Prop({default: null, type: String})
     gcpBucketKey: string;
 
+    @Prop({type:String})
+    languageCode: string; // fr-Fr, en-US, etc.
+
     @Prop({type: Date, default: Date.now})
     createdAt: Date;
 

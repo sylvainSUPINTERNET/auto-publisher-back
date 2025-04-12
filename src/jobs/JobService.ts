@@ -29,6 +29,7 @@ export class JobService {
           status: STEPS["0"].REDIS_KEY_RESULT,
           youtubeUrl: job.youtubeUrl,
           gcpBucketKey: job.gcpBucketKey,
+          languageCode: job.languageCode
         });
   
         const resp = await newJob.save({ session });

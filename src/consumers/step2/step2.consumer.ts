@@ -47,7 +47,7 @@ export class Step2Consumer extends WorkerHost {
 
             const fileName = await this.redisClient.getdel(`${jobUUID}-${this.STEP1.REDIS_KEY_RESULT}`);
 
-            this.gcpService.transcribeAudio(fileName);
+            await this.gcpService.transcribeAudio(fileName, jobRecord);
 
             //await this.redisClient.set(`${jobUUID}-${this.STEP2.REDIS_KEY_RESULT}`, JSON.stringify(transcription));
             

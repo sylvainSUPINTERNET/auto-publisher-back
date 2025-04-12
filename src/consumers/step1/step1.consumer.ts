@@ -26,12 +26,12 @@ export class Step1Consumer extends WorkerHost {
 
         if ( process.env.SKIP_STEP_1 && process.env.SKIP_STEP_1 === "true" ) {
 
-            this.logger.log("SKIP_STEP_1 is set to true, simulate step 1 processing using be2c87f4-6c47-4089-b963-555d4ab023b8.opus transcription");
+            this.logger.log("[SKIP_STEP_1] is set to true, simulate step 1 processing using 8c747a32-8d73-4d3f-94dc-f6864dbfe4b7.opus transcription");
             
-            const fixtureOpus: string = "be2c87f4-6c47-4089-b963-555d4ab023b8.opus";
+            const fixtureOpus: string = "8c747a32-8d73-4d3f-94dc-f6864dbfe4b7.opus";
             await this.redisClient.set(`${jobRecord.jobId}-${this.STEP1.REDIS_KEY_RESULT}`, `${fixtureOpus}`);
 
-            this.logger.log(`${this.STEP1.LOG_PREFIX} (jobId :${job.id} - jobUUID:${jobRecord.jobId}) - ${jobRecord.youtubeUrl} - redis ${this.STEP1.REDIS_KEY_RESULT} key created - Download and Upload OK`);
+            this.logger.log(`[SKIP_STEP_1] ${this.STEP1.LOG_PREFIX} (jobId :${job.id} - jobUUID:${jobRecord.jobId}) - ${jobRecord.youtubeUrl} - redis ${this.STEP1.REDIS_KEY_RESULT} key created - Download and Upload OK`);
             await job.updateProgress(100/STEPS.TOTAL);
 
             return Promise.resolve();

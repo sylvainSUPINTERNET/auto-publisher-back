@@ -3,4 +3,5 @@ export type createJobDto = {
     sub: string;
     youtubeUrl: string | null;
     gcpBucketKey: string | null;
+    languageCode: string
 }
