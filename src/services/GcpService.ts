@@ -61,9 +61,13 @@ export class GcpService {
                 uri: `gs://${this.bucketName}/${this.bucketKey}/${fileName}`,
             },
             config: {
+                useEnhanced: true,
+                model: 'default',
                 encoding: 'WEBM_OPUS',
-                sampleRateHertz: 16000,
+                sampleRateHertz: 48000,
                 languageCode: `${jobRecord.languageCode}`,
+                enableWordTimeOffsets: true,
+                enableAutomaticPunctuation: false
             }
         };
 
