@@ -2,8 +2,8 @@
   {
     "alternatives": [
       {
-        "transcript": "alors vous l'avez sans doute vu chatte j'ai pété a mis à jour sur générateur d'images qui est en train de rendre complètement fou la planète et",
-        "confidence": 0.9111152291297913,
+        "transcript": "alors vous l'avez sans doute vu chaque GPT a mis à jour sur générateur d'images qui est en train de rendre complètement fou la planète et",
+        "confidence": 0.902245819568634,
         "words": [
           {
             "startTime": {},
@@ -73,7 +73,7 @@
               "seconds": "2",
               "nanos": 100000000
             },
-            "word": "chatte"
+            "word": "chaque"
           },
           {
             "startTime": {
@@ -82,25 +82,14 @@
             },
             "endTime": {
               "seconds": "2",
-              "nanos": 200000000
+              "nanos": 400000000
             },
-            "word": "j'ai"
+            "word": "GPT"
           },
           {
             "startTime": {
               "seconds": "2",
-              "nanos": 200000000
-            },
-            "endTime": {
-              "seconds": "2",
-              "nanos": 500000000
-            },
-            "word": "pété"
-          },
-          {
-            "startTime": {
-              "seconds": "2",
-              "nanos": 500000000
+              "nanos": 400000000
             },
             "endTime": {
               "seconds": "2",
@@ -304,7 +293,7 @@
     "alternatives": [
       {
         "transcript": " il s'avère que l'Inde est-il choisi les plus mise en avant les plus utilisés les plus viral c'est studio Ghibli alors Jacky et un dessinateur incroyable qui a créé une pâte extrêmement spécifique",
-        "confidence": 0.9066330194473267,
+        "confidence": 0.9066330790519714,
         "words": [
           {
             "startTime": {
@@ -675,8 +664,8 @@
   {
     "alternatives": [
       {
-        "transcript": " et il a un style que les gens adorent à l'univers qui fait vraiment rêver et puis ça se ça se rencontre avec Lilia et c'est devenu une folie virale une folie au point où en fait les serveurs de ne tiennent pas ça mal ma demande désespérément de la capacité de calcul sur Twitter carrément il était prêt à payer le prix qu'il fallait pour toute personne qui avait la capacité c'est sûr que le niveau de ce qu'elle est complètement dingue on parle centaines de millions de générer et il y a des voir qu'on commençait chez les artistes chez les dessinateurs a expliqué que c'est une honte que c'est le vol du travail de Miyazaki que les gens n'ont aucun goût aucun respect pour le travail je sais pas quoi je sais pas quoi",
-        "confidence": 0.9320545792579651,
+        "transcript": " et il a un style que les gens adorent à l'univers qui fait vraiment rêver et puis ça se ça se rencontre avec Lilia et c'est devenu une folie virale une folie au point où en fait les serveurs de openai ils ne tiennent pas ça mal ma demande désespérément de la capacité de calcul sur Twitter carrément il était prêt à payer le prix qu'il fallait pour toute personne qui avait la capacité c'est sûr que le niveau de ce qu'elle est complètement dingue on parle centaines de millions de générer et il y a des voir qu'on commençait chez les artistes chez les dessinateurs a expliqué que c'est une honte que c'est le vol du travail de Miyazaki que les gens n'ont aucun goût aucun respect pour le travail je sais pas quoi je sais pas quoi",
+        "confidence": 0.9327727556228638,
         "words": [
           {
             "startTime": {
@@ -1121,7 +1110,7 @@
               "seconds": "44",
               "nanos": 800000000
             },
-            "word": "ne"
+            "word": "openai"
           },
           {
             "startTime": {
@@ -1129,15 +1118,37 @@
               "nanos": 800000000
             },
             "endTime": {
+              "seconds": "44",
+              "nanos": 900000000
+            },
+            "word": "ils"
+          },
+          {
+            "startTime": {
+              "seconds": "44",
+              "nanos": 900000000
+            },
+            "endTime": {
               "seconds": "45",
-              "nanos": 300000000
+              "nanos": 100000000
+            },
+            "word": "ne"
+          },
+          {
+            "startTime": {
+              "seconds": "45",
+              "nanos": 100000000
+            },
+            "endTime": {
+              "seconds": "45",
+              "nanos": 200000000
             },
             "word": "tiennent"
           },
           {
             "startTime": {
               "seconds": "45",
-              "nanos": 300000000
+              "nanos": 200000000
             },
             "endTime": {
               "seconds": "45",
@@ -2160,7 +2171,7 @@
     "alternatives": [
       {
         "transcript": " alors déjà je comprends d'où ils viennent je comprends la leur sensibilité au travail je comprends que c'est des gens qui mettent du cœur de l'émission je comprends que que ça peut être partant mais je pense que il y a 3 choses il faut vraiment regardé en face la première chose c'est l'hypocrisie de ce milieu et l'hypocrisie du milieu de l'art en général Ayoub nous accueillit les dirigeants studio qui est rempli de robot depuis des années",
-        "confidence": 0.9310338497161865,
+        "confidence": 0.931033730506897,
         "words": [
           {
             "startTime": {
@@ -3030,7 +3041,7 @@
     "alternatives": [
       {
         "transcript": " il y a 300 personnes qui tous les jours font des dessins dans son style gisait un article du monde sur lui qui expliquer le processus de recrutement ou ou en fait les gens s'entraîner pendant des années des années à dessiner comme lui et il fallait que le trait soit exactement parfait comme lui ils n'ont droit aucune originalité ils n'ont droit à aucune spécificité en fait ils doivent devenir à Younes et s'il y a bien quelque chose qui le reniement de la vie artistique bah c'est ce besoin en fait c'est des gens qui n'ont jamais pu développer leurs talents qui n'ont plus jamais pu être autre chose que robotique au service du maître alors entre nous que ce soit une IA qui exécute les dessins ou des humains payée par le mettre moi personnellement je serai pas trop profondément la de la différence et ça c'est l'hypocrisie du milieu parce qu'on est dans un milieu",
-        "confidence": 0.9297112822532654,
+        "confidence": 0.9297123551368713,
         "words": [
           {
             "startTime": {
@@ -3351,14 +3362,14 @@
             },
             "endTime": {
               "seconds": "143",
-              "nanos": 800000000
+              "nanos": 900000000
             },
             "word": "ou"
           },
           {
             "startTime": {
               "seconds": "143",
-              "nanos": 800000000
+              "nanos": 900000000
             },
             "endTime": {
               "seconds": "144",
@@ -6671,7 +6682,7 @@
     "alternatives": [
       {
         "transcript": " des gens il y a quelque chose de beaucoup plus profond il y a le fait que les gens ont peur terriblement peur ils disent j'ai mis des années à maîtriser une technique et la Liam l'a fait sauter en plus quand j'ai mis des années à maîtriser un art et la Liam l'a fait sauter en quelques secondes alors à ces gens qui ont peur j'aimerais leur dire de choses d'abord que vous ayez peur ouvrez pas peur la réalité resteras toujours la même lorsqu'un tsunami arrive au loin",
-        "confidence": 0.924829363822937,
+        "confidence": 0.9248292446136475,
         "words": [
           {
             "startTime": {
@@ -7660,7 +7671,7 @@
     "alternatives": [
       {
         "transcript": " on ne peut pas négocier avec le tsunami on peut pas dire à son ami s'il te plaît reviens la semaine prochaine on peut pas appeler les politiciens élan dire s'il vous plaît interdisez le sunamis je peux pas dire il faut oublier que le tsunami existe cette technologie n'a jamais",
-        "confidence": 0.9124395251274109,
+        "confidence": 0.9124391674995422,
         "words": [
           {
             "startTime": {
@@ -8059,14 +8070,14 @@
             },
             "endTime": {
               "seconds": "294",
-              "nanos": 600000000
+              "nanos": 700000000
             },
             "word": "je"
           },
           {
             "startTime": {
               "seconds": "294",
-              "nanos": 600000000
+              "nanos": 700000000
             },
             "endTime": {
               "seconds": "294",

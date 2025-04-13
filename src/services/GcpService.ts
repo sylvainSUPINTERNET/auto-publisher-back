@@ -67,7 +67,14 @@ export class GcpService {
                 sampleRateHertz: 48000,
                 languageCode: `${jobRecord.languageCode}`,
                 enableWordTimeOffsets: true,
-                enableAutomaticPunctuation: false
+                enableAutomaticPunctuation: false,
+                alternativeLanguageCodes: ['en-US'],
+                speechContexts: [
+                    {
+                        phrases: ['ChatGPT', 'GPT', 'OpenAI','chat gpt'],
+                        boost: 20.0,
+                    }
+                ]
             }
         };
 
